@@ -1,0 +1,157 @@
+{
+  "method": "Real curses application under PTY; terminal bytes parsed with pyte, cells rendered with Pillow. Captions are outside the terminal; screen content is unmodified. Selected moments are compressed into a 25-second sequence.",
+  "seconds": 25,
+  "runtime_sha256": "2bea58a6412e8baab0e6e2f8043f5dacec9b962e85d78d1ad317925e79d7e17c",
+  "frames": [
+    {
+      "frame": "01-select-item.png",
+      "caption": "1 / Select the padded ITEM field in the original report",
+      "duration_seconds": 2
+    },
+    {
+      "frame": "02-select-qty.png",
+      "caption": "2 / Select QTY; choose its built-in field type",
+      "duration_seconds": 2
+    },
+    {
+      "frame": "03-select-context.png",
+      "caption": "3 / Select WAREHOUSE as inherited context",
+      "duration_seconds": 2
+    },
+    {
+      "frame": "04-preview.png",
+      "caption": "4 / Explicit headings + context + fields produce candidate rows",
+      "duration_seconds": 2
+    },
+    {
+      "frame": "05-provenance.png",
+      "caption": "5 / Inspect QTY: exact source hash, line, range, and substring",
+      "duration_seconds": 3
+    },
+    {
+      "frame": "06-rejected.png",
+      "caption": "6 / Shifted data is REJECTED; an unknown notice stays UNRESOLVED",
+      "duration_seconds": 2
+    },
+    {
+      "frame": "07-blocked.png",
+      "caption": "7 / Clean CSV is blocked; exact failing source lines remain visible",
+      "duration_seconds": 3
+    },
+    {
+      "frame": "08-exception.png",
+      "caption": "8 / Explicit exception ZIP preserves candidate CSV and full audit",
+      "duration_seconds": 3
+    },
+    {
+      "frame": "09-reopened.png",
+      "caption": "9 / Fresh process: reopen saved JSON and replay valid report A",
+      "duration_seconds": 3
+    },
+    {
+      "frame": "10-clean-export.png",
+      "caption": "10 / Valid replay exports clean CSV with provenance + audit",
+      "duration_seconds": 3
+    }
+  ],
+  "checks": {
+    "source_unchanged": true,
+    "A_csv_matches_frozen": true,
+    "exception_status": "EXPLICIT_EXCEPTION",
+    "C_csv_matches_frozen": true
+  },
+  "files": {
+    "01-select-item.png": {
+      "sha256": "1c5884e54f258af4e9b82f0158049006090b81eb1f8b2b9eeddaea35410f177d",
+      "bytes": 78779
+    },
+    "01-select-item.txt": {
+      "sha256": "c46ebfda48279bbb69b0ce2b132a9ccff7a84c61f745b524569ff9ce7a7c68c6",
+      "bytes": 3872
+    },
+    "02-select-qty.png": {
+      "sha256": "32426f83bf6658e4675646194ae640e3168bb8923178eb4288094de4d15ba2a0",
+      "bytes": 79474
+    },
+    "02-select-qty.txt": {
+      "sha256": "edce7e1d9b2b22a79b164ebd7f2ae56f2a4e4053f8278b41574195b44ed42fdc",
+      "bytes": 3872
+    },
+    "03-select-context.png": {
+      "sha256": "2caf20e221dcc8c92e6e18da0ee7ede3ff4b3f617b3acc960da3357a992b6c1d",
+      "bytes": 80838
+    },
+    "03-select-context.txt": {
+      "sha256": "a159b2d161a1cf5f540e3105bc3b5671e4cac366697f85e391498e97288d5053",
+      "bytes": 3872
+    },
+    "04-preview.png": {
+      "sha256": "8859b5030eb9c84dc9e2110d05f4159a57847b5f0b6015b9d7dabeeb9869b24e",
+      "bytes": 80969
+    },
+    "04-preview.txt": {
+      "sha256": "737232b22c28d3b1427fda830e4a91243bdc1ef5885e35d10e1c0fd825393129",
+      "bytes": 3872
+    },
+    "05-provenance.png": {
+      "sha256": "27fce5483e65479d7da0bb3b922f324b5515555d0fc2a9e8d7a78b8cc63f4fe2",
+      "bytes": 33948
+    },
+    "05-provenance.txt": {
+      "sha256": "4d7e416543faec255f30f226ed7b5d60bf714b564db1ed583bd6d4cdefd38d3d",
+      "bytes": 3872
+    },
+    "06-rejected.png": {
+      "sha256": "39fc40838ac612e3bb6f23010f25fc181e002ee873fe23d126a345ef81e02c48",
+      "bytes": 97113
+    },
+    "06-rejected.txt": {
+      "sha256": "af3d11e22359f422c84dcaf3d83015fab72f4b730c526f64321546b85a3e774d",
+      "bytes": 3874
+    },
+    "07-blocked.png": {
+      "sha256": "be654e26321813b5e55e04fa7d0b5b47f2cbc5966b7b6319aaa291b936072c6f",
+      "bytes": 72515
+    },
+    "07-blocked.txt": {
+      "sha256": "815433f9ed61dfc48a41e3e441f043b206c82f70db9b8506e02c747a14abfbd1",
+      "bytes": 3872
+    },
+    "08-exception.png": {
+      "sha256": "5b04815d276ac6e493633de166d91fda4a120b1877cc13a14a84cfc477d60d4f",
+      "bytes": 37607
+    },
+    "08-exception.txt": {
+      "sha256": "537b05df25eb159ef41f1d4031aaa4502aaffdd4e7b4a557588365660174b04d",
+      "bytes": 3872
+    },
+    "09-reopened.png": {
+      "sha256": "40c1b37a5724011540dc765acf13feb8efc4b9d70e5d1bf4aa42a8be23766e77",
+      "bytes": 83408
+    },
+    "09-reopened.txt": {
+      "sha256": "db7a2a1647c0e6f420298d410ad60a0039bd5e4611fb5153be507ff0116e26be",
+      "bytes": 3872
+    },
+    "10-clean-export.png": {
+      "sha256": "85faf15621fad4eedf9dbfd201db48f07f72c790f8bbf2d1b76ac5a51b462c28",
+      "bytes": 38798
+    },
+    "10-clean-export.txt": {
+      "sha256": "342f673af925b4374e88fccab10eae1e64a6612426c332eb1b14145fe978f8ef",
+      "bytes": 3872
+    },
+    "README.md": {
+      "sha256": "20caf01f5217bdd5a283cb30174027cec20cbd8d542c5cc33c8ff7fd9a963530",
+      "bytes": 2280
+    },
+    "actual-session.ansi": {
+      "sha256": "1199b506461a33ffb35ce2cbcbe55a81ccd920a53c6fb9a1f92268db74db05f8",
+      "bytes": 53691
+    },
+    "spoollens-demo.gif": {
+      "sha256": "3194f8a3008675563f80ba8cac1c87b5d4faf7512d1d7bb20f5ee3cf493f52e3",
+      "bytes": 408854
+    }
+  }
+}

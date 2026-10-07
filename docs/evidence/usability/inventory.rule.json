@@ -1,0 +1,90 @@
+{
+  "character_policy": "ascii",
+  "detail": {
+    "detector": {
+      "digits": 3,
+      "kind": "letter_digits",
+      "letters": 1,
+      "start": 0
+    },
+    "fields": [
+      {
+        "alignment": "left",
+        "end": 8,
+        "name": "item",
+        "start": 0,
+        "type": "item_code"
+      },
+      {
+        "alignment": "right",
+        "end": 37,
+        "name": "qty",
+        "start": 32,
+        "type": "unsigned_integer"
+      },
+      {
+        "alignment": "right",
+        "end": 47,
+        "name": "price",
+        "start": 39,
+        "type": "decimal_2"
+      }
+    ],
+    "spaces": [
+      [
+        8,
+        10
+      ],
+      [
+        30,
+        32
+      ],
+      [
+        37,
+        39
+      ]
+    ],
+    "width": 47
+  },
+  "encoding": "utf-8",
+  "header": {
+    "field": {
+      "alignment": "left",
+      "end": 19,
+      "name": "warehouse",
+      "start": 11,
+      "type": "uppercase"
+    },
+    "invalid_clears_context": true,
+    "name": "warehouse",
+    "prefix": "WAREHOUSE: ",
+    "width": 19
+  },
+  "ignore": [
+    {
+      "mode": "prefix",
+      "name": "page_header",
+      "reset": true,
+      "text": "INVENTORY VALUATION  PAGE "
+    },
+    {
+      "mode": "exact",
+      "name": "column_header",
+      "reset": false,
+      "text": "ITEM      DESCRIPTION             QTY     PRICE"
+    },
+    {
+      "mode": "exact",
+      "name": "page_footer",
+      "reset": true,
+      "text": "END OF PAGE"
+    },
+    {
+      "mode": "exact",
+      "name": "form_feed_boundary",
+      "reset": true,
+      "text": "\f"
+    }
+  ],
+  "version": 1
+}

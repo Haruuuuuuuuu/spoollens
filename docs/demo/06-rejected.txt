@@ -1,0 +1,32 @@
+SpoolLens | C_dangerous.txt | utf-8 / ASCII | ? help                                                                    
+Arrows move | Space select | f field | h warehouse | i ignore | p page break | ? help                                   
+w save | l reload | o open report | v inspect value | e clean CSV | x exception | u undo | q quit                       
+HEADER 2 | DETAIL 2 | IGNORED_BY_EXPLICIT_RULE 7 | UNRESOLVED 1 | REJECTED 5                                            
+CLEAN EXPORT BLOCKED | e explains; n finds issues                                                                       
+line/status  0         1         2         3         4         5         6         7         8         9         0      
+char index   0123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345 
+   1 IGNORE  INVENTORY VALUATION  PAGE 001                                                                              
+   2 IGNORE  ITEM      DESCRIPTION             QTY     PRICE                                                            
+   3 REJECT  C000      ORPHAN BEFORE             2      1.00                                                            
+   4 BLANK   (empty)                                                                                                    
+   5 HEADER  WAREHOUSE: NORTH                                                                                           
+   6 DETAIL  C100      VALID GEAR                3     12.50                                                            
+>  7 REJECT  C111      SHIFTED QTY               17     2.00                                                            
+   8 REJECT  C112      BAD QUANTITY             2O      8.00                                                            
+   9 UNKNOWN NOTICE: PRICE REVIEW PENDING                                                                               
+  10 REJECT  C113      SHORT RECORD              9      4.7                                                             
+  11 IGNORE  END OF PAGE                                                                                                
+  12 IGNORE  ␌                                                                                                          
+  13 IGNORE  INVENTORY VALUATION  PAGE 002                                                                              
+  14 IGNORE  ITEM      DESCRIPTION             QTY     PRICE                                                            
+  15 REJECT  C200      ORPHAN AFTER              1      6.00                                                            
+  16 HEADER  WAREHOUSE: SOUTH                                                                                           
+Line 7 char 38 | selected [37,39) | REJECTED: non_space_separator                                                       
+Candidate output (inspect any row/field with v)                                                                         
+ row  warehouse    item       qty        price       detail source                                                      
+   1  NORTH        C100       3          12.50       line 6                                                             
+   2  SOUTH        C201       6          3.25        line 17                                                            
+                                                                                                                        
+                                                                                                                        
+non_space_separator                                                                                                     
+Rule unchanged | a full status/paths | r review rules | g go to line/character | s add space guard | Esc clear selectio 

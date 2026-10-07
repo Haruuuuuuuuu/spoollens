@@ -1,0 +1,364 @@
+{
+  "source_sha256": "3200a9701b09370afc19676678feeab4159506876ab19f8ea3b54b6b96ab05a3",
+  "csv_sha256": "13b943fdc3284a9dc5d6155d843f080478c6565e52ba632f2eb3431cc3e8ac21",
+  "counts": {
+    "HEADER": 5,
+    "DETAIL": 4,
+    "IGNORED_BY_EXPLICIT_RULE": 4,
+    "UNRESOLVED": 0,
+    "REJECTED": 3
+  },
+  "physical_line_count": 18,
+  "whitespace_only_line_count": 2,
+  "clean_export_allowed": false,
+  "lines": [
+    {
+      "line": 1,
+      "raw": "WAREHOUSE: NORTH   ",
+      "category": "HEADER",
+      "context_before": null,
+      "context_after": "NORTH"
+    },
+    {
+      "line": 2,
+      "raw": "R001      BEFORE FOOTER             1      1.00",
+      "category": "DETAIL",
+      "context_before": "NORTH",
+      "context_after": "NORTH"
+    },
+    {
+      "line": 3,
+      "raw": "END OF PAGE",
+      "category": "IGNORED_BY_EXPLICIT_RULE",
+      "context_before": "NORTH",
+      "context_after": null
+    },
+    {
+      "line": 4,
+      "raw": "R002      AFTER FOOTER              2      2.00",
+      "category": "REJECTED",
+      "context_before": null,
+      "context_after": null
+    },
+    {
+      "line": 5,
+      "raw": "WAREHOUSE: WEST    ",
+      "category": "HEADER",
+      "context_before": null,
+      "context_after": "WEST"
+    },
+    {
+      "line": 6,
+      "raw": "\f",
+      "category": "IGNORED_BY_EXPLICIT_RULE",
+      "context_before": "WEST",
+      "context_after": null
+    },
+    {
+      "line": 7,
+      "raw": "R003      AFTER FF                  3      3.00",
+      "category": "REJECTED",
+      "context_before": null,
+      "context_after": null
+    },
+    {
+      "line": 8,
+      "raw": "WAREHOUSE: EAST    ",
+      "category": "HEADER",
+      "context_before": null,
+      "context_after": "EAST"
+    },
+    {
+      "line": 9,
+      "raw": "INVENTORY VALUATION  PAGE 010",
+      "category": "IGNORED_BY_EXPLICIT_RULE",
+      "context_before": "EAST",
+      "context_after": null
+    },
+    {
+      "line": 10,
+      "raw": "R004      AFTER PAGE                4      4.00",
+      "category": "REJECTED",
+      "context_before": null,
+      "context_after": null
+    },
+    {
+      "line": 11,
+      "raw": "WAREHOUSE: SOUTH   ",
+      "category": "HEADER",
+      "context_before": null,
+      "context_after": "SOUTH"
+    },
+    {
+      "line": 12,
+      "raw": "  ",
+      "category": "WHITESPACE_ONLY",
+      "context_before": "SOUTH",
+      "context_after": "SOUTH"
+    },
+    {
+      "line": 13,
+      "raw": "ITEM      DESCRIPTION             QTY     PRICE",
+      "category": "IGNORED_BY_EXPLICIT_RULE",
+      "context_before": "SOUTH",
+      "context_after": "SOUTH"
+    },
+    {
+      "line": 14,
+      "raw": "R005      AFTER COLUMN              5      5.00",
+      "category": "DETAIL",
+      "context_before": "SOUTH",
+      "context_after": "SOUTH"
+    },
+    {
+      "line": 15,
+      "raw": "",
+      "category": "WHITESPACE_ONLY",
+      "context_before": "SOUTH",
+      "context_after": "SOUTH"
+    },
+    {
+      "line": 16,
+      "raw": "R006      AFTER BLANK               6      6.00",
+      "category": "DETAIL",
+      "context_before": "SOUTH",
+      "context_after": "SOUTH"
+    },
+    {
+      "line": 17,
+      "raw": "WAREHOUSE: CENTRAL ",
+      "category": "HEADER",
+      "context_before": "SOUTH",
+      "context_after": "CENTRAL"
+    },
+    {
+      "line": 18,
+      "raw": "R007      AFTER CHANGE              7      7.00",
+      "category": "DETAIL",
+      "context_before": "CENTRAL",
+      "context_after": "CENTRAL"
+    }
+  ],
+  "provenance": [
+    {
+      "row": 1,
+      "detail_line": 2,
+      "fields": {
+        "warehouse": {
+          "value": "NORTH",
+          "source_sha256": "3200a9701b09370afc19676678feeab4159506876ab19f8ea3b54b6b96ab05a3",
+          "line": 1,
+          "range": [
+            11,
+            19
+          ],
+          "raw": "NORTH   ",
+          "inherited": true,
+          "header_line": 1,
+          "header_range": [
+            11,
+            19
+          ]
+        },
+        "item": {
+          "value": "R001",
+          "source_sha256": "3200a9701b09370afc19676678feeab4159506876ab19f8ea3b54b6b96ab05a3",
+          "line": 2,
+          "range": [
+            0,
+            8
+          ],
+          "raw": "R001    ",
+          "inherited": false
+        },
+        "qty": {
+          "value": "1",
+          "source_sha256": "3200a9701b09370afc19676678feeab4159506876ab19f8ea3b54b6b96ab05a3",
+          "line": 2,
+          "range": [
+            32,
+            37
+          ],
+          "raw": "    1",
+          "inherited": false
+        },
+        "price": {
+          "value": "1.00",
+          "source_sha256": "3200a9701b09370afc19676678feeab4159506876ab19f8ea3b54b6b96ab05a3",
+          "line": 2,
+          "range": [
+            39,
+            47
+          ],
+          "raw": "    1.00",
+          "inherited": false
+        }
+      }
+    },
+    {
+      "row": 2,
+      "detail_line": 14,
+      "fields": {
+        "warehouse": {
+          "value": "SOUTH",
+          "source_sha256": "3200a9701b09370afc19676678feeab4159506876ab19f8ea3b54b6b96ab05a3",
+          "line": 11,
+          "range": [
+            11,
+            19
+          ],
+          "raw": "SOUTH   ",
+          "inherited": true,
+          "header_line": 11,
+          "header_range": [
+            11,
+            19
+          ]
+        },
+        "item": {
+          "value": "R005",
+          "source_sha256": "3200a9701b09370afc19676678feeab4159506876ab19f8ea3b54b6b96ab05a3",
+          "line": 14,
+          "range": [
+            0,
+            8
+          ],
+          "raw": "R005    ",
+          "inherited": false
+        },
+        "qty": {
+          "value": "5",
+          "source_sha256": "3200a9701b09370afc19676678feeab4159506876ab19f8ea3b54b6b96ab05a3",
+          "line": 14,
+          "range": [
+            32,
+            37
+          ],
+          "raw": "    5",
+          "inherited": false
+        },
+        "price": {
+          "value": "5.00",
+          "source_sha256": "3200a9701b09370afc19676678feeab4159506876ab19f8ea3b54b6b96ab05a3",
+          "line": 14,
+          "range": [
+            39,
+            47
+          ],
+          "raw": "    5.00",
+          "inherited": false
+        }
+      }
+    },
+    {
+      "row": 3,
+      "detail_line": 16,
+      "fields": {
+        "warehouse": {
+          "value": "SOUTH",
+          "source_sha256": "3200a9701b09370afc19676678feeab4159506876ab19f8ea3b54b6b96ab05a3",
+          "line": 11,
+          "range": [
+            11,
+            19
+          ],
+          "raw": "SOUTH   ",
+          "inherited": true,
+          "header_line": 11,
+          "header_range": [
+            11,
+            19
+          ]
+        },
+        "item": {
+          "value": "R006",
+          "source_sha256": "3200a9701b09370afc19676678feeab4159506876ab19f8ea3b54b6b96ab05a3",
+          "line": 16,
+          "range": [
+            0,
+            8
+          ],
+          "raw": "R006    ",
+          "inherited": false
+        },
+        "qty": {
+          "value": "6",
+          "source_sha256": "3200a9701b09370afc19676678feeab4159506876ab19f8ea3b54b6b96ab05a3",
+          "line": 16,
+          "range": [
+            32,
+            37
+          ],
+          "raw": "    6",
+          "inherited": false
+        },
+        "price": {
+          "value": "6.00",
+          "source_sha256": "3200a9701b09370afc19676678feeab4159506876ab19f8ea3b54b6b96ab05a3",
+          "line": 16,
+          "range": [
+            39,
+            47
+          ],
+          "raw": "    6.00",
+          "inherited": false
+        }
+      }
+    },
+    {
+      "row": 4,
+      "detail_line": 18,
+      "fields": {
+        "warehouse": {
+          "value": "CENTRAL",
+          "source_sha256": "3200a9701b09370afc19676678feeab4159506876ab19f8ea3b54b6b96ab05a3",
+          "line": 17,
+          "range": [
+            11,
+            19
+          ],
+          "raw": "CENTRAL ",
+          "inherited": true,
+          "header_line": 17,
+          "header_range": [
+            11,
+            19
+          ]
+        },
+        "item": {
+          "value": "R007",
+          "source_sha256": "3200a9701b09370afc19676678feeab4159506876ab19f8ea3b54b6b96ab05a3",
+          "line": 18,
+          "range": [
+            0,
+            8
+          ],
+          "raw": "R007    ",
+          "inherited": false
+        },
+        "qty": {
+          "value": "7",
+          "source_sha256": "3200a9701b09370afc19676678feeab4159506876ab19f8ea3b54b6b96ab05a3",
+          "line": 18,
+          "range": [
+            32,
+            37
+          ],
+          "raw": "    7",
+          "inherited": false
+        },
+        "price": {
+          "value": "7.00",
+          "source_sha256": "3200a9701b09370afc19676678feeab4159506876ab19f8ea3b54b6b96ab05a3",
+          "line": 18,
+          "range": [
+            39,
+            47
+          ],
+          "raw": "    7.00",
+          "inherited": false
+        }
+      }
+    }
+  ]
+}

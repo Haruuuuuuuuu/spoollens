@@ -1,0 +1,37 @@
+PASS original frozen integrity before
+PASS predeclared variation integrity before
+PASS candidate frozen integrity
+PASS fresh venv README install route
+PASS packaged unittest suite
+PASS A_clean exact accounting and provenance
+PASS A_clean clean CSV and evidence hashes
+PASS A_clean explicit bundle and byte-identical replay
+PASS B_boundaries exact accounting and provenance
+PASS B_boundaries clean CSV and evidence hashes
+PASS B_boundaries explicit bundle and byte-identical replay
+PASS C_dangerous unsafe clean artifact absent
+PASS C_dangerous exact accounting and provenance
+PASS C_dangerous explicit bundle and byte-identical replay
+PASS V1_unseen_values exact accounting and provenance
+PASS V1_unseen_values clean CSV and evidence hashes
+PASS V1_unseen_values explicit bundle and byte-identical replay
+PASS V2_isolated_boundaries unsafe clean artifact absent
+PASS V2_isolated_boundaries exact accounting and provenance
+PASS V2_isolated_boundaries explicit bundle and byte-identical replay
+PASS V3_error_context unsafe clean artifact absent
+PASS V3_error_context exact accounting and provenance
+PASS V3_error_context explicit bundle and byte-identical replay
+PASS V4_invalid_header unsafe clean artifact absent
+PASS V4_invalid_header exact accounting and provenance
+PASS V4_invalid_header explicit bundle and byte-identical replay
+PASS V5_no_final_lf exact accounting and provenance
+PASS V5_no_final_lf clean CSV and evidence hashes
+PASS V5_no_final_lf explicit bundle and byte-identical replay
+PASS documented provenance query direct and inherited
+PASS invalid UTF-8 fails visibly without output
+PASS serialization/reload resaved.rule.json
+PASS serialization/reload reformatted.rule.json
+PASS source and original rule immutability
+PASS original frozen integrity after
+PASS predeclared variation integrity after
+ALL PASS 36 check groups

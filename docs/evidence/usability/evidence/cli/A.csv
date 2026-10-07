@@ -1,0 +1,4 @@
+warehouse,item,qty,price
+NORTH,A100,12,9.95
+NORTH,A101,5,10.50
+SOUTH,A100,8,9.95

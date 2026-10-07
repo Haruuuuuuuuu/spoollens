@@ -1,0 +1,996 @@
+{
+  "source_sha256": "65248ab62aa3ceb0054c25fd9e524070638bd617b4cdf1821304283116c4900e",
+  "coordinates": "1-based line; 0-based, end-exclusive character ranges; LF excluded",
+  "rows": [
+    {
+      "row": 1,
+      "detail_line": 5,
+      "fields": {
+        "warehouse": {
+          "value": "CENTRAL",
+          "source_sha256": "65248ab62aa3ceb0054c25fd9e524070638bd617b4cdf1821304283116c4900e",
+          "line": 2,
+          "range": [
+            17,
+            24
+          ],
+          "raw": "CENTRAL",
+          "inherited": true,
+          "header_line": 2,
+          "header_range": [
+            17,
+            24
+          ]
+        },
+        "item": {
+          "value": "M410",
+          "source_sha256": "65248ab62aa3ceb0054c25fd9e524070638bd617b4cdf1821304283116c4900e",
+          "line": 5,
+          "range": [
+            3,
+            10
+          ],
+          "raw": "M410   ",
+          "inherited": false
+        },
+        "qty": {
+          "value": "7",
+          "source_sha256": "65248ab62aa3ceb0054c25fd9e524070638bd617b4cdf1821304283116c4900e",
+          "line": 5,
+          "range": [
+            39,
+            45
+          ],
+          "raw": "     7",
+          "inherited": false
+        },
+        "price": {
+          "value": "48.20",
+          "source_sha256": "65248ab62aa3ceb0054c25fd9e524070638bd617b4cdf1821304283116c4900e",
+          "line": 5,
+          "range": [
+            47,
+            57
+          ],
+          "raw": "     48.20",
+          "inherited": false
+        }
+      }
+    },
+    {
+      "row": 2,
+      "detail_line": 6,
+      "fields": {
+        "warehouse": {
+          "value": "CENTRAL",
+          "source_sha256": "65248ab62aa3ceb0054c25fd9e524070638bd617b4cdf1821304283116c4900e",
+          "line": 2,
+          "range": [
+            17,
+            24
+          ],
+          "raw": "CENTRAL",
+          "inherited": true,
+          "header_line": 2,
+          "header_range": [
+            17,
+            24
+          ]
+        },
+        "item": {
+          "value": "M411",
+          "source_sha256": "65248ab62aa3ceb0054c25fd9e524070638bd617b4cdf1821304283116c4900e",
+          "line": 6,
+          "range": [
+            3,
+            10
+          ],
+          "raw": "M411   ",
+          "inherited": false
+        },
+        "qty": {
+          "value": "104205",
+          "source_sha256": "65248ab62aa3ceb0054c25fd9e524070638bd617b4cdf1821304283116c4900e",
+          "line": 6,
+          "range": [
+            39,
+            45
+          ],
+          "raw": "104205",
+          "inherited": false
+        },
+        "price": {
+          "value": "0.07",
+          "source_sha256": "65248ab62aa3ceb0054c25fd9e524070638bd617b4cdf1821304283116c4900e",
+          "line": 6,
+          "range": [
+            47,
+            57
+          ],
+          "raw": "      0.07",
+          "inherited": false
+        }
+      }
+    },
+    {
+      "row": 3,
+      "detail_line": 7,
+      "fields": {
+        "warehouse": {
+          "value": "CENTRAL",
+          "source_sha256": "65248ab62aa3ceb0054c25fd9e524070638bd617b4cdf1821304283116c4900e",
+          "line": 2,
+          "range": [
+            17,
+            24
+          ],
+          "raw": "CENTRAL",
+          "inherited": true,
+          "header_line": 2,
+          "header_range": [
+            17,
+            24
+          ]
+        },
+        "item": {
+          "value": "M412",
+          "source_sha256": "65248ab62aa3ceb0054c25fd9e524070638bd617b4cdf1821304283116c4900e",
+          "line": 7,
+          "range": [
+            3,
+            10
+          ],
+          "raw": "M412   ",
+          "inherited": false
+        },
+        "qty": {
+          "value": "12",
+          "source_sha256": "65248ab62aa3ceb0054c25fd9e524070638bd617b4cdf1821304283116c4900e",
+          "line": 7,
+          "range": [
+            39,
+            45
+          ],
+          "raw": "    12",
+          "inherited": false
+        },
+        "price": {
+          "value": "1599.50",
+          "source_sha256": "65248ab62aa3ceb0054c25fd9e524070638bd617b4cdf1821304283116c4900e",
+          "line": 7,
+          "range": [
+            47,
+            57
+          ],
+          "raw": "   1599.50",
+          "inherited": false
+        }
+      }
+    },
+    {
+      "row": 4,
+      "detail_line": 9,
+      "fields": {
+        "warehouse": {
+          "value": "CENTRAL",
+          "source_sha256": "65248ab62aa3ceb0054c25fd9e524070638bd617b4cdf1821304283116c4900e",
+          "line": 2,
+          "range": [
+            17,
+            24
+          ],
+          "raw": "CENTRAL",
+          "inherited": true,
+          "header_line": 2,
+          "header_range": [
+            17,
+            24
+          ]
+        },
+        "item": {
+          "value": "M413",
+          "source_sha256": "65248ab62aa3ceb0054c25fd9e524070638bd617b4cdf1821304283116c4900e",
+          "line": 9,
+          "range": [
+            3,
+            10
+          ],
+          "raw": "M413   ",
+          "inherited": false
+        },
+        "qty": {
+          "value": "90",
+          "source_sha256": "65248ab62aa3ceb0054c25fd9e524070638bd617b4cdf1821304283116c4900e",
+          "line": 9,
+          "range": [
+            39,
+            45
+          ],
+          "raw": "    90",
+          "inherited": false
+        },
+        "price": {
+          "value": "2.00",
+          "source_sha256": "65248ab62aa3ceb0054c25fd9e524070638bd617b4cdf1821304283116c4900e",
+          "line": 9,
+          "range": [
+            47,
+            57
+          ],
+          "raw": "      2.00",
+          "inherited": false
+        }
+      }
+    },
+    {
+      "row": 5,
+      "detail_line": 11,
+      "fields": {
+        "warehouse": {
+          "value": "CENTRAL",
+          "source_sha256": "65248ab62aa3ceb0054c25fd9e524070638bd617b4cdf1821304283116c4900e",
+          "line": 2,
+          "range": [
+            17,
+            24
+          ],
+          "raw": "CENTRAL",
+          "inherited": true,
+          "header_line": 2,
+          "header_range": [
+            17,
+            24
+          ]
+        },
+        "item": {
+          "value": "M414",
+          "source_sha256": "65248ab62aa3ceb0054c25fd9e524070638bd617b4cdf1821304283116c4900e",
+          "line": 11,
+          "range": [
+            3,
+            10
+          ],
+          "raw": "M414   ",
+          "inherited": false
+        },
+        "qty": {
+          "value": "0",
+          "source_sha256": "65248ab62aa3ceb0054c25fd9e524070638bd617b4cdf1821304283116c4900e",
+          "line": 11,
+          "range": [
+            39,
+            45
+          ],
+          "raw": "     0",
+          "inherited": false
+        },
+        "price": {
+          "value": "0.00",
+          "source_sha256": "65248ab62aa3ceb0054c25fd9e524070638bd617b4cdf1821304283116c4900e",
+          "line": 11,
+          "range": [
+            47,
+            57
+          ],
+          "raw": "      0.00",
+          "inherited": false
+        }
+      }
+    },
+    {
+      "row": 6,
+      "detail_line": 13,
+      "fields": {
+        "warehouse": {
+          "value": "CENTRAL",
+          "source_sha256": "65248ab62aa3ceb0054c25fd9e524070638bd617b4cdf1821304283116c4900e",
+          "line": 2,
+          "range": [
+            17,
+            24
+          ],
+          "raw": "CENTRAL",
+          "inherited": true,
+          "header_line": 2,
+          "header_range": [
+            17,
+            24
+          ]
+        },
+        "item": {
+          "value": "M415",
+          "source_sha256": "65248ab62aa3ceb0054c25fd9e524070638bd617b4cdf1821304283116c4900e",
+          "line": 13,
+          "range": [
+            3,
+            10
+          ],
+          "raw": "M415   ",
+          "inherited": false
+        },
+        "qty": {
+          "value": "3",
+          "source_sha256": "65248ab62aa3ceb0054c25fd9e524070638bd617b4cdf1821304283116c4900e",
+          "line": 13,
+          "range": [
+            39,
+            45
+          ],
+          "raw": "     3",
+          "inherited": false
+        },
+        "price": {
+          "value": "189.95",
+          "source_sha256": "65248ab62aa3ceb0054c25fd9e524070638bd617b4cdf1821304283116c4900e",
+          "line": 13,
+          "range": [
+            47,
+            57
+          ],
+          "raw": "    189.95",
+          "inherited": false
+        }
+      }
+    },
+    {
+      "row": 7,
+      "detail_line": 19,
+      "fields": {
+        "warehouse": {
+          "value": "MOBILE",
+          "source_sha256": "65248ab62aa3ceb0054c25fd9e524070638bd617b4cdf1821304283116c4900e",
+          "line": 17,
+          "range": [
+            17,
+            24
+          ],
+          "raw": "MOBILE ",
+          "inherited": true,
+          "header_line": 17,
+          "header_range": [
+            17,
+            24
+          ]
+        },
+        "item": {
+          "value": "R520",
+          "source_sha256": "65248ab62aa3ceb0054c25fd9e524070638bd617b4cdf1821304283116c4900e",
+          "line": 19,
+          "range": [
+            3,
+            10
+          ],
+          "raw": "R520   ",
+          "inherited": false
+        },
+        "qty": {
+          "value": "21",
+          "source_sha256": "65248ab62aa3ceb0054c25fd9e524070638bd617b4cdf1821304283116c4900e",
+          "line": 19,
+          "range": [
+            39,
+            45
+          ],
+          "raw": "    21",
+          "inherited": false
+        },
+        "price": {
+          "value": "9.10",
+          "source_sha256": "65248ab62aa3ceb0054c25fd9e524070638bd617b4cdf1821304283116c4900e",
+          "line": 19,
+          "range": [
+            47,
+            57
+          ],
+          "raw": "      9.10",
+          "inherited": false
+        }
+      }
+    },
+    {
+      "row": 8,
+      "detail_line": 20,
+      "fields": {
+        "warehouse": {
+          "value": "MOBILE",
+          "source_sha256": "65248ab62aa3ceb0054c25fd9e524070638bd617b4cdf1821304283116c4900e",
+          "line": 17,
+          "range": [
+            17,
+            24
+          ],
+          "raw": "MOBILE ",
+          "inherited": true,
+          "header_line": 17,
+          "header_range": [
+            17,
+            24
+          ]
+        },
+        "item": {
+          "value": "R521",
+          "source_sha256": "65248ab62aa3ceb0054c25fd9e524070638bd617b4cdf1821304283116c4900e",
+          "line": 20,
+          "range": [
+            3,
+            10
+          ],
+          "raw": "R521   ",
+          "inherited": false
+        },
+        "qty": {
+          "value": "5",
+          "source_sha256": "65248ab62aa3ceb0054c25fd9e524070638bd617b4cdf1821304283116c4900e",
+          "line": 20,
+          "range": [
+            39,
+            45
+          ],
+          "raw": "     5",
+          "inherited": false
+        },
+        "price": {
+          "value": "62.35",
+          "source_sha256": "65248ab62aa3ceb0054c25fd9e524070638bd617b4cdf1821304283116c4900e",
+          "line": 20,
+          "range": [
+            47,
+            57
+          ],
+          "raw": "     62.35",
+          "inherited": false
+        }
+      }
+    },
+    {
+      "row": 9,
+      "detail_line": 22,
+      "fields": {
+        "warehouse": {
+          "value": "MOBILE",
+          "source_sha256": "65248ab62aa3ceb0054c25fd9e524070638bd617b4cdf1821304283116c4900e",
+          "line": 17,
+          "range": [
+            17,
+            24
+          ],
+          "raw": "MOBILE ",
+          "inherited": true,
+          "header_line": 17,
+          "header_range": [
+            17,
+            24
+          ]
+        },
+        "item": {
+          "value": "R522",
+          "source_sha256": "65248ab62aa3ceb0054c25fd9e524070638bd617b4cdf1821304283116c4900e",
+          "line": 22,
+          "range": [
+            3,
+            10
+          ],
+          "raw": "R522   ",
+          "inherited": false
+        },
+        "qty": {
+          "value": "1800",
+          "source_sha256": "65248ab62aa3ceb0054c25fd9e524070638bd617b4cdf1821304283116c4900e",
+          "line": 22,
+          "range": [
+            39,
+            45
+          ],
+          "raw": "  1800",
+          "inherited": false
+        },
+        "price": {
+          "value": "0.80",
+          "source_sha256": "65248ab62aa3ceb0054c25fd9e524070638bd617b4cdf1821304283116c4900e",
+          "line": 22,
+          "range": [
+            47,
+            57
+          ],
+          "raw": "      0.80",
+          "inherited": false
+        }
+      }
+    },
+    {
+      "row": 10,
+      "detail_line": 24,
+      "fields": {
+        "warehouse": {
+          "value": "HANGAR",
+          "source_sha256": "65248ab62aa3ceb0054c25fd9e524070638bd617b4cdf1821304283116c4900e",
+          "line": 23,
+          "range": [
+            17,
+            24
+          ],
+          "raw": "HANGAR ",
+          "inherited": true,
+          "header_line": 23,
+          "header_range": [
+            17,
+            24
+          ]
+        },
+        "item": {
+          "value": "R523",
+          "source_sha256": "65248ab62aa3ceb0054c25fd9e524070638bd617b4cdf1821304283116c4900e",
+          "line": 24,
+          "range": [
+            3,
+            10
+          ],
+          "raw": "R523   ",
+          "inherited": false
+        },
+        "qty": {
+          "value": "1",
+          "source_sha256": "65248ab62aa3ceb0054c25fd9e524070638bd617b4cdf1821304283116c4900e",
+          "line": 24,
+          "range": [
+            39,
+            45
+          ],
+          "raw": "     1",
+          "inherited": false
+        },
+        "price": {
+          "value": "1234567.89",
+          "source_sha256": "65248ab62aa3ceb0054c25fd9e524070638bd617b4cdf1821304283116c4900e",
+          "line": 24,
+          "range": [
+            47,
+            57
+          ],
+          "raw": "1234567.89",
+          "inherited": false
+        }
+      }
+    },
+    {
+      "row": 11,
+      "detail_line": 25,
+      "fields": {
+        "warehouse": {
+          "value": "HANGAR",
+          "source_sha256": "65248ab62aa3ceb0054c25fd9e524070638bd617b4cdf1821304283116c4900e",
+          "line": 23,
+          "range": [
+            17,
+            24
+          ],
+          "raw": "HANGAR ",
+          "inherited": true,
+          "header_line": 23,
+          "header_range": [
+            17,
+            24
+          ]
+        },
+        "item": {
+          "value": "R524",
+          "source_sha256": "65248ab62aa3ceb0054c25fd9e524070638bd617b4cdf1821304283116c4900e",
+          "line": 25,
+          "range": [
+            3,
+            10
+          ],
+          "raw": "R524   ",
+          "inherited": false
+        },
+        "qty": {
+          "value": "40",
+          "source_sha256": "65248ab62aa3ceb0054c25fd9e524070638bd617b4cdf1821304283116c4900e",
+          "line": 25,
+          "range": [
+            39,
+            45
+          ],
+          "raw": "    40",
+          "inherited": false
+        },
+        "price": {
+          "value": "4.75",
+          "source_sha256": "65248ab62aa3ceb0054c25fd9e524070638bd617b4cdf1821304283116c4900e",
+          "line": 25,
+          "range": [
+            47,
+            57
+          ],
+          "raw": "      4.75",
+          "inherited": false
+        }
+      }
+    },
+    {
+      "row": 12,
+      "detail_line": 27,
+      "fields": {
+        "warehouse": {
+          "value": "HANGAR",
+          "source_sha256": "65248ab62aa3ceb0054c25fd9e524070638bd617b4cdf1821304283116c4900e",
+          "line": 23,
+          "range": [
+            17,
+            24
+          ],
+          "raw": "HANGAR ",
+          "inherited": true,
+          "header_line": 23,
+          "header_range": [
+            17,
+            24
+          ]
+        },
+        "item": {
+          "value": "R525",
+          "source_sha256": "65248ab62aa3ceb0054c25fd9e524070638bd617b4cdf1821304283116c4900e",
+          "line": 27,
+          "range": [
+            3,
+            10
+          ],
+          "raw": "R525   ",
+          "inherited": false
+        },
+        "qty": {
+          "value": "8",
+          "source_sha256": "65248ab62aa3ceb0054c25fd9e524070638bd617b4cdf1821304283116c4900e",
+          "line": 27,
+          "range": [
+            39,
+            45
+          ],
+          "raw": "     8",
+          "inherited": false
+        },
+        "price": {
+          "value": "289.00",
+          "source_sha256": "65248ab62aa3ceb0054c25fd9e524070638bd617b4cdf1821304283116c4900e",
+          "line": 27,
+          "range": [
+            47,
+            57
+          ],
+          "raw": "    289.00",
+          "inherited": false
+        }
+      }
+    },
+    {
+      "row": 13,
+      "detail_line": 33,
+      "fields": {
+        "warehouse": {
+          "value": "HANGAR",
+          "source_sha256": "65248ab62aa3ceb0054c25fd9e524070638bd617b4cdf1821304283116c4900e",
+          "line": 31,
+          "range": [
+            17,
+            24
+          ],
+          "raw": "HANGAR ",
+          "inherited": true,
+          "header_line": 31,
+          "header_range": [
+            17,
+            24
+          ]
+        },
+        "item": {
+          "value": "S630",
+          "source_sha256": "65248ab62aa3ceb0054c25fd9e524070638bd617b4cdf1821304283116c4900e",
+          "line": 33,
+          "range": [
+            3,
+            10
+          ],
+          "raw": "S630   ",
+          "inherited": false
+        },
+        "qty": {
+          "value": "16",
+          "source_sha256": "65248ab62aa3ceb0054c25fd9e524070638bd617b4cdf1821304283116c4900e",
+          "line": 33,
+          "range": [
+            39,
+            45
+          ],
+          "raw": "    16",
+          "inherited": false
+        },
+        "price": {
+          "value": "22.10",
+          "source_sha256": "65248ab62aa3ceb0054c25fd9e524070638bd617b4cdf1821304283116c4900e",
+          "line": 33,
+          "range": [
+            47,
+            57
+          ],
+          "raw": "     22.10",
+          "inherited": false
+        }
+      }
+    },
+    {
+      "row": 14,
+      "detail_line": 34,
+      "fields": {
+        "warehouse": {
+          "value": "HANGAR",
+          "source_sha256": "65248ab62aa3ceb0054c25fd9e524070638bd617b4cdf1821304283116c4900e",
+          "line": 31,
+          "range": [
+            17,
+            24
+          ],
+          "raw": "HANGAR ",
+          "inherited": true,
+          "header_line": 31,
+          "header_range": [
+            17,
+            24
+          ]
+        },
+        "item": {
+          "value": "S631",
+          "source_sha256": "65248ab62aa3ceb0054c25fd9e524070638bd617b4cdf1821304283116c4900e",
+          "line": 34,
+          "range": [
+            3,
+            10
+          ],
+          "raw": "S631   ",
+          "inherited": false
+        },
+        "qty": {
+          "value": "48",
+          "source_sha256": "65248ab62aa3ceb0054c25fd9e524070638bd617b4cdf1821304283116c4900e",
+          "line": 34,
+          "range": [
+            39,
+            45
+          ],
+          "raw": "    48",
+          "inherited": false
+        },
+        "price": {
+          "value": "1.05",
+          "source_sha256": "65248ab62aa3ceb0054c25fd9e524070638bd617b4cdf1821304283116c4900e",
+          "line": 34,
+          "range": [
+            47,
+            57
+          ],
+          "raw": "      1.05",
+          "inherited": false
+        }
+      }
+    },
+    {
+      "row": 15,
+      "detail_line": 35,
+      "fields": {
+        "warehouse": {
+          "value": "HANGAR",
+          "source_sha256": "65248ab62aa3ceb0054c25fd9e524070638bd617b4cdf1821304283116c4900e",
+          "line": 31,
+          "range": [
+            17,
+            24
+          ],
+          "raw": "HANGAR ",
+          "inherited": true,
+          "header_line": 31,
+          "header_range": [
+            17,
+            24
+          ]
+        },
+        "item": {
+          "value": "S632",
+          "source_sha256": "65248ab62aa3ceb0054c25fd9e524070638bd617b4cdf1821304283116c4900e",
+          "line": 35,
+          "range": [
+            3,
+            10
+          ],
+          "raw": "S632   ",
+          "inherited": false
+        },
+        "qty": {
+          "value": "2",
+          "source_sha256": "65248ab62aa3ceb0054c25fd9e524070638bd617b4cdf1821304283116c4900e",
+          "line": 35,
+          "range": [
+            39,
+            45
+          ],
+          "raw": "     2",
+          "inherited": false
+        },
+        "price": {
+          "value": "17999.00",
+          "source_sha256": "65248ab62aa3ceb0054c25fd9e524070638bd617b4cdf1821304283116c4900e",
+          "line": 35,
+          "range": [
+            47,
+            57
+          ],
+          "raw": "  17999.00",
+          "inherited": false
+        }
+      }
+    },
+    {
+      "row": 16,
+      "detail_line": 36,
+      "fields": {
+        "warehouse": {
+          "value": "HANGAR",
+          "source_sha256": "65248ab62aa3ceb0054c25fd9e524070638bd617b4cdf1821304283116c4900e",
+          "line": 31,
+          "range": [
+            17,
+            24
+          ],
+          "raw": "HANGAR ",
+          "inherited": true,
+          "header_line": 31,
+          "header_range": [
+            17,
+            24
+          ]
+        },
+        "item": {
+          "value": "S633",
+          "source_sha256": "65248ab62aa3ceb0054c25fd9e524070638bd617b4cdf1821304283116c4900e",
+          "line": 36,
+          "range": [
+            3,
+            10
+          ],
+          "raw": "S633   ",
+          "inherited": false
+        },
+        "qty": {
+          "value": "120",
+          "source_sha256": "65248ab62aa3ceb0054c25fd9e524070638bd617b4cdf1821304283116c4900e",
+          "line": 36,
+          "range": [
+            39,
+            45
+          ],
+          "raw": "   120",
+          "inherited": false
+        },
+        "price": {
+          "value": "8.40",
+          "source_sha256": "65248ab62aa3ceb0054c25fd9e524070638bd617b4cdf1821304283116c4900e",
+          "line": 36,
+          "range": [
+            47,
+            57
+          ],
+          "raw": "      8.40",
+          "inherited": false
+        }
+      }
+    },
+    {
+      "row": 17,
+      "detail_line": 37,
+      "fields": {
+        "warehouse": {
+          "value": "HANGAR",
+          "source_sha256": "65248ab62aa3ceb0054c25fd9e524070638bd617b4cdf1821304283116c4900e",
+          "line": 31,
+          "range": [
+            17,
+            24
+          ],
+          "raw": "HANGAR ",
+          "inherited": true,
+          "header_line": 31,
+          "header_range": [
+            17,
+            24
+          ]
+        },
+        "item": {
+          "value": "S634",
+          "source_sha256": "65248ab62aa3ceb0054c25fd9e524070638bd617b4cdf1821304283116c4900e",
+          "line": 37,
+          "range": [
+            3,
+            10
+          ],
+          "raw": "S634   ",
+          "inherited": false
+        },
+        "qty": {
+          "value": "9",
+          "source_sha256": "65248ab62aa3ceb0054c25fd9e524070638bd617b4cdf1821304283116c4900e",
+          "line": 37,
+          "range": [
+            39,
+            45
+          ],
+          "raw": "     9",
+          "inherited": false
+        },
+        "price": {
+          "value": "39.99",
+          "source_sha256": "65248ab62aa3ceb0054c25fd9e524070638bd617b4cdf1821304283116c4900e",
+          "line": 37,
+          "range": [
+            47,
+            57
+          ],
+          "raw": "     39.99",
+          "inherited": false
+        }
+      }
+    },
+    {
+      "row": 18,
+      "detail_line": 38,
+      "fields": {
+        "warehouse": {
+          "value": "HANGAR",
+          "source_sha256": "65248ab62aa3ceb0054c25fd9e524070638bd617b4cdf1821304283116c4900e",
+          "line": 31,
+          "range": [
+            17,
+            24
+          ],
+          "raw": "HANGAR ",
+          "inherited": true,
+          "header_line": 31,
+          "header_range": [
+            17,
+            24
+          ]
+        },
+        "item": {
+          "value": "S635",
+          "source_sha256": "65248ab62aa3ceb0054c25fd9e524070638bd617b4cdf1821304283116c4900e",
+          "line": 38,
+          "range": [
+            3,
+            10
+          ],
+          "raw": "S635   ",
+          "inherited": false
+        },
+        "qty": {
+          "value": "6",
+          "source_sha256": "65248ab62aa3ceb0054c25fd9e524070638bd617b4cdf1821304283116c4900e",
+          "line": 38,
+          "range": [
+            39,
+            45
+          ],
+          "raw": "     6",
+          "inherited": false
+        },
+        "price": {
+          "value": "0.50",
+          "source_sha256": "65248ab62aa3ceb0054c25fd9e524070638bd617b4cdf1821304283116c4900e",
+          "line": 38,
+          "range": [
+            47,
+            57
+          ],
+          "raw": "      0.50",
+          "inherited": false
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,327 @@
+{
+  "source_sha256": "65248ab62aa3ceb0054c25fd9e524070638bd617b4cdf1821304283116c4900e",
+  "physical_line_count": 39,
+  "nonempty_line_count": 35,
+  "whitespace_only_line_count": 4,
+  "counts": {
+    "HEADER": 4,
+    "DETAIL": 18,
+    "IGNORED_BY_EXPLICIT_RULE": 12,
+    "UNRESOLVED": 0,
+    "REJECTED": 1
+  },
+  "lines": [
+    {
+      "line": 1,
+      "raw": "WORKSHOP REPLENISHMENT / RUN 06A / PAGE 01",
+      "category": "IGNORED_BY_EXPLICIT_RULE",
+      "reason": "page_header",
+      "context_before": null,
+      "context_after": null
+    },
+    {
+      "line": 2,
+      "raw": "DISPATCH STORE : CENTRAL",
+      "category": "HEADER",
+      "reason": "warehouse_header",
+      "context_before": null,
+      "context_after": "CENTRAL"
+    },
+    {
+      "line": 3,
+      "raw": "",
+      "category": "WHITESPACE_ONLY",
+      "reason": "blank_line",
+      "context_before": "CENTRAL",
+      "context_after": "CENTRAL"
+    },
+    {
+      "line": 4,
+      "raw": "   ITEM     DESCRIPTION                   QTY       PRICE",
+      "category": "IGNORED_BY_EXPLICIT_RULE",
+      "reason": "column_header",
+      "context_before": "CENTRAL",
+      "context_after": "CENTRAL"
+    },
+    {
+      "line": 5,
+      "raw": "   M410     MOTOR MOUNT                     7       48.20",
+      "category": "DETAIL",
+      "reason": "accepted_detail",
+      "context_before": "CENTRAL",
+      "context_after": "CENTRAL"
+    },
+    {
+      "line": 6,
+      "raw": "   M411     CABLE CLAMP                104205        0.07",
+      "category": "DETAIL",
+      "reason": "accepted_detail",
+      "context_before": "CENTRAL",
+      "context_after": "CENTRAL"
+    },
+    {
+      "line": 7,
+      "raw": "   M412     LINEAR ACTUATOR                12     1599.50",
+      "category": "DETAIL",
+      "reason": "accepted_detail",
+      "context_before": "CENTRAL",
+      "context_after": "CENTRAL"
+    },
+    {
+      "line": 8,
+      "raw": "   ITEM     DESCRIPTION                   QTY       PRICE",
+      "category": "IGNORED_BY_EXPLICIT_RULE",
+      "reason": "column_header",
+      "context_before": "CENTRAL",
+      "context_after": "CENTRAL"
+    },
+    {
+      "line": 9,
+      "raw": "   M413     WASHER PACK                    90        2.00",
+      "category": "DETAIL",
+      "reason": "accepted_detail",
+      "context_before": "CENTRAL",
+      "context_after": "CENTRAL"
+    },
+    {
+      "line": 10,
+      "raw": "NOTE FOR PLANNER: quoted lead times are informational only.",
+      "category": "IGNORED_BY_EXPLICIT_RULE",
+      "reason": "planner_note",
+      "context_before": "CENTRAL",
+      "context_after": "CENTRAL"
+    },
+    {
+      "line": 11,
+      "raw": "   M414     SERVICE GASKET                  0        0.00",
+      "category": "DETAIL",
+      "reason": "accepted_detail",
+      "context_before": "CENTRAL",
+      "context_after": "CENTRAL"
+    },
+    {
+      "line": 12,
+      "raw": "   M499     RIVET REFILL                381257       0.03",
+      "category": "REJECTED",
+      "reason": "non_space_separator",
+      "context_before": "CENTRAL",
+      "context_after": "CENTRAL"
+    },
+    {
+      "line": 13,
+      "raw": "   M415     TORQUE ADAPTOR                  3      189.95",
+      "category": "DETAIL",
+      "reason": "accepted_detail",
+      "context_before": "CENTRAL",
+      "context_after": "CENTRAL"
+    },
+    {
+      "line": 14,
+      "raw": "=== DISPATCH PAGE COMPLETE ===",
+      "category": "IGNORED_BY_EXPLICIT_RULE",
+      "reason": "page_footer",
+      "context_before": "CENTRAL",
+      "context_after": null
+    },
+    {
+      "line": 15,
+      "raw": "",
+      "category": "WHITESPACE_ONLY",
+      "reason": "blank_line",
+      "context_before": null,
+      "context_after": null
+    },
+    {
+      "line": 16,
+      "raw": "WORKSHOP REPLENISHMENT / RUN 06A / PAGE 02",
+      "category": "IGNORED_BY_EXPLICIT_RULE",
+      "reason": "page_header",
+      "context_before": null,
+      "context_after": null
+    },
+    {
+      "line": 17,
+      "raw": "DISPATCH STORE : MOBILE ",
+      "category": "HEADER",
+      "reason": "warehouse_header",
+      "context_before": null,
+      "context_after": "MOBILE"
+    },
+    {
+      "line": 18,
+      "raw": "   ITEM     DESCRIPTION                   QTY       PRICE",
+      "category": "IGNORED_BY_EXPLICIT_RULE",
+      "reason": "column_header",
+      "context_before": "MOBILE",
+      "context_after": "MOBILE"
+    },
+    {
+      "line": 19,
+      "raw": "   R520     BRAKE HOSE                     21        9.10",
+      "category": "DETAIL",
+      "reason": "accepted_detail",
+      "context_before": "MOBILE",
+      "context_after": "MOBILE"
+    },
+    {
+      "line": 20,
+      "raw": "   R521     SEAL KIT                        5       62.35",
+      "category": "DETAIL",
+      "reason": "accepted_detail",
+      "context_before": "MOBILE",
+      "context_after": "MOBILE"
+    },
+    {
+      "line": 21,
+      "raw": "     ",
+      "category": "WHITESPACE_ONLY",
+      "reason": "blank_line",
+      "context_before": "MOBILE",
+      "context_after": "MOBILE"
+    },
+    {
+      "line": 22,
+      "raw": "   R522     LOCK WASHER                  1800        0.80",
+      "category": "DETAIL",
+      "reason": "accepted_detail",
+      "context_before": "MOBILE",
+      "context_after": "MOBILE"
+    },
+    {
+      "line": 23,
+      "raw": "DISPATCH STORE : HANGAR ",
+      "category": "HEADER",
+      "reason": "warehouse_header",
+      "context_before": "MOBILE",
+      "context_after": "HANGAR"
+    },
+    {
+      "line": 24,
+      "raw": "   R523     ENGINE MODULE                   1  1234567.89",
+      "category": "DETAIL",
+      "reason": "accepted_detail",
+      "context_before": "HANGAR",
+      "context_after": "HANGAR"
+    },
+    {
+      "line": 25,
+      "raw": "   R524     FLUID FILTER                   40        4.75",
+      "category": "DETAIL",
+      "reason": "accepted_detail",
+      "context_before": "HANGAR",
+      "context_after": "HANGAR"
+    },
+    {
+      "line": 26,
+      "raw": "   ITEM     DESCRIPTION                   QTY       PRICE",
+      "category": "IGNORED_BY_EXPLICIT_RULE",
+      "reason": "column_header",
+      "context_before": "HANGAR",
+      "context_after": "HANGAR"
+    },
+    {
+      "line": 27,
+      "raw": "   R525     TEST GAUGE                      8      289.00",
+      "category": "DETAIL",
+      "reason": "accepted_detail",
+      "context_before": "HANGAR",
+      "context_after": "HANGAR"
+    },
+    {
+      "line": 28,
+      "raw": "=== DISPATCH PAGE COMPLETE ===",
+      "category": "IGNORED_BY_EXPLICIT_RULE",
+      "reason": "page_footer",
+      "context_before": "HANGAR",
+      "context_after": null
+    },
+    {
+      "line": 29,
+      "raw": "",
+      "category": "WHITESPACE_ONLY",
+      "reason": "blank_line",
+      "context_before": null,
+      "context_after": null
+    },
+    {
+      "line": 30,
+      "raw": "WORKSHOP REPLENISHMENT / RUN 06A / PAGE 03",
+      "category": "IGNORED_BY_EXPLICIT_RULE",
+      "reason": "page_header",
+      "context_before": null,
+      "context_after": null
+    },
+    {
+      "line": 31,
+      "raw": "DISPATCH STORE : HANGAR ",
+      "category": "HEADER",
+      "reason": "warehouse_header",
+      "context_before": null,
+      "context_after": "HANGAR"
+    },
+    {
+      "line": 32,
+      "raw": "   ITEM     DESCRIPTION                   QTY       PRICE",
+      "category": "IGNORED_BY_EXPLICIT_RULE",
+      "reason": "column_header",
+      "context_before": "HANGAR",
+      "context_after": "HANGAR"
+    },
+    {
+      "line": 33,
+      "raw": "   S630     CABLE ASSEMBLY                 16       22.10",
+      "category": "DETAIL",
+      "reason": "accepted_detail",
+      "context_before": "HANGAR",
+      "context_after": "HANGAR"
+    },
+    {
+      "line": 34,
+      "raw": "   S631     RUBBER BOOT                    48        1.05",
+      "category": "DETAIL",
+      "reason": "accepted_detail",
+      "context_before": "HANGAR",
+      "context_after": "HANGAR"
+    },
+    {
+      "line": 35,
+      "raw": "   S632     SERVO CONTROLLER                2    17999.00",
+      "category": "DETAIL",
+      "reason": "accepted_detail",
+      "context_before": "HANGAR",
+      "context_after": "HANGAR"
+    },
+    {
+      "line": 36,
+      "raw": "   S633     DRAIN VALVE                   120        8.40",
+      "category": "DETAIL",
+      "reason": "accepted_detail",
+      "context_before": "HANGAR",
+      "context_after": "HANGAR"
+    },
+    {
+      "line": 37,
+      "raw": "   S634     THERMAL SENSOR                  9       39.99",
+      "category": "DETAIL",
+      "reason": "accepted_detail",
+      "context_before": "HANGAR",
+      "context_after": "HANGAR"
+    },
+    {
+      "line": 38,
+      "raw": "   S635     RETAINING PIN                   6        0.50",
+      "category": "DETAIL",
+      "reason": "accepted_detail",
+      "context_before": "HANGAR",
+      "context_after": "HANGAR"
+    },
+    {
+      "line": 39,
+      "raw": "=== DISPATCH PAGE COMPLETE ===",
+      "category": "IGNORED_BY_EXPLICIT_RULE",
+      "reason": "page_footer",
+      "context_before": "HANGAR",
+      "context_after": null
+    }
+  ]
+}

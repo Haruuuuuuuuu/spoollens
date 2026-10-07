@@ -1,0 +1,650 @@
+[
+  {
+    "label": "fresh venv README direct-run installation",
+    "argv": [
+      "<PYTHON_RUNTIME>/runtimes/codex-primary-runtime/dependencies/python/bin/python3.12",
+      "-m",
+      "spoollens",
+      "--help"
+    ],
+    "returncode": 0,
+    "stdout": "usage: spoollens [-h] [--version] {replay,run,inspect,ui} ...\n\nAuditable fixed-width TXT/PRN extraction, offline.\n\npositional arguments:\n  {replay,run,inspect,ui}\n    replay (run)        Replay a saved rule and report the export decision\n    inspect             Query exact source evidence for one accepted field or\n                        physical line\n    ui                  Open the visual terminal editor\n\noptions:\n  -h, --help            show this help message and exit\n  --version             show program's version number and exit\n",
+    "stderr": ""
+  },
+  {
+    "label": "A_clean default export",
+    "argv": [
+      "<PYTHON_RUNTIME>/runtimes/codex-primary-runtime/dependencies/python/bin/python3.12",
+      "-m",
+      "spoollens",
+      "replay",
+      "<WORKSPACE>/spoollens_probe/fixtures/A_clean.txt",
+      "--rule",
+      "<WORKSPACE>/spoollens_probe/verification/candidate_0f04a3a/examples/inventory.rule.json",
+      "--output",
+      "<WORKSPACE>/spoollens_probe/verification/blackbox_0f04a3a/A_clean/A_clean.csv",
+      "--audit",
+      "<WORKSPACE>/spoollens_probe/verification/blackbox_0f04a3a/A_clean/A_clean.audit.json",
+      "--provenance",
+      "<WORKSPACE>/spoollens_probe/verification/blackbox_0f04a3a/A_clean/A_clean.provenance.json"
+    ],
+    "cwd": "<WORKSPACE>/spoollens_probe/verification/candidate_0f04a3a",
+    "returncode": 0,
+    "stdout": "{\n  \"source_sha256\": \"f1c4b2aacdc53d76ffde2d809ce1d4634dc5e48a02fa71606df03e36c509e658\",\n  \"rule_sha256\": \"85807556db918f1ba7d923c726e62bca3f501980245d611114367e4529a07686\",\n  \"accepted_row_count\": 3,\n  \"clean_export_allowed\": true,\n  \"unresolved_count\": 0,\n  \"rejected_count\": 0,\n  \"rule_complete\": true,\n  \"rule_issues\": [],\n  \"errors\": [],\n  \"normal_csv_artifact_created\": true,\n  \"artifact\": \"<WORKSPACE>/spoollens_probe/verification/blackbox_0f04a3a/A_clean/A_clean.csv\",\n  \"export_status\": \"CLEAN\"\n}\n",
+    "stderr": ""
+  },
+  {
+    "label": "A_clean explicit exception",
+    "argv": [
+      "<PYTHON_RUNTIME>/runtimes/codex-primary-runtime/dependencies/python/bin/python3.12",
+      "-m",
+      "spoollens",
+      "replay",
+      "<WORKSPACE>/spoollens_probe/fixtures/A_clean.txt",
+      "--rule",
+      "<WORKSPACE>/spoollens_probe/verification/candidate_0f04a3a/examples/inventory.rule.json",
+      "--exception-bundle",
+      "<WORKSPACE>/spoollens_probe/verification/blackbox_0f04a3a/A_clean/first.exception.zip"
+    ],
+    "cwd": "<WORKSPACE>/spoollens_probe/verification/candidate_0f04a3a",
+    "returncode": 0,
+    "stdout": "{\n  \"source_sha256\": \"f1c4b2aacdc53d76ffde2d809ce1d4634dc5e48a02fa71606df03e36c509e658\",\n  \"rule_sha256\": \"85807556db918f1ba7d923c726e62bca3f501980245d611114367e4529a07686\",\n  \"accepted_row_count\": 3,\n  \"clean_export_allowed\": true,\n  \"unresolved_count\": 0,\n  \"rejected_count\": 0,\n  \"rule_complete\": true,\n  \"rule_issues\": [],\n  \"errors\": [],\n  \"normal_csv_artifact_created\": false,\n  \"artifact\": \"<WORKSPACE>/spoollens_probe/verification/blackbox_0f04a3a/A_clean/first.exception.zip\",\n  \"export_status\": \"EXPLICIT_EXCEPTION\"\n}\n",
+    "stderr": ""
+  },
+  {
+    "label": "A_clean deterministic exception replay",
+    "argv": [
+      "<PYTHON_RUNTIME>/runtimes/codex-primary-runtime/dependencies/python/bin/python3.12",
+      "-m",
+      "spoollens",
+      "replay",
+      "<WORKSPACE>/spoollens_probe/fixtures/A_clean.txt",
+      "--rule",
+      "<WORKSPACE>/spoollens_probe/verification/candidate_0f04a3a/examples/inventory.rule.json",
+      "--exception-bundle",
+      "<WORKSPACE>/spoollens_probe/verification/blackbox_0f04a3a/A_clean/second.exception.zip"
+    ],
+    "cwd": "<WORKSPACE>/spoollens_probe/verification/candidate_0f04a3a",
+    "returncode": 0,
+    "stdout": "{\n  \"source_sha256\": \"f1c4b2aacdc53d76ffde2d809ce1d4634dc5e48a02fa71606df03e36c509e658\",\n  \"rule_sha256\": \"85807556db918f1ba7d923c726e62bca3f501980245d611114367e4529a07686\",\n  \"accepted_row_count\": 3,\n  \"clean_export_allowed\": true,\n  \"unresolved_count\": 0,\n  \"rejected_count\": 0,\n  \"rule_complete\": true,\n  \"rule_issues\": [],\n  \"errors\": [],\n  \"normal_csv_artifact_created\": false,\n  \"artifact\": \"<WORKSPACE>/spoollens_probe/verification/blackbox_0f04a3a/A_clean/second.exception.zip\",\n  \"export_status\": \"EXPLICIT_EXCEPTION\"\n}\n",
+    "stderr": ""
+  },
+  {
+    "label": "B_boundaries default export",
+    "argv": [
+      "<PYTHON_RUNTIME>/runtimes/codex-primary-runtime/dependencies/python/bin/python3.12",
+      "-m",
+      "spoollens",
+      "replay",
+      "<WORKSPACE>/spoollens_probe/fixtures/B_boundaries.txt",
+      "--rule",
+      "<WORKSPACE>/spoollens_probe/verification/candidate_0f04a3a/examples/inventory.rule.json",
+      "--output",
+      "<WORKSPACE>/spoollens_probe/verification/blackbox_0f04a3a/B_boundaries/B_boundaries.csv",
+      "--audit",
+      "<WORKSPACE>/spoollens_probe/verification/blackbox_0f04a3a/B_boundaries/B_boundaries.audit.json",
+      "--provenance",
+      "<WORKSPACE>/spoollens_probe/verification/blackbox_0f04a3a/B_boundaries/B_boundaries.provenance.json"
+    ],
+    "cwd": "<WORKSPACE>/spoollens_probe/verification/candidate_0f04a3a",
+    "returncode": 0,
+    "stdout": "{\n  \"source_sha256\": \"f8c475c6f0764523425512514b3065dd9b5a549f3bda24c9414c28af27cc8868\",\n  \"rule_sha256\": \"85807556db918f1ba7d923c726e62bca3f501980245d611114367e4529a07686\",\n  \"accepted_row_count\": 4,\n  \"clean_export_allowed\": true,\n  \"unresolved_count\": 0,\n  \"rejected_count\": 0,\n  \"rule_complete\": true,\n  \"rule_issues\": [],\n  \"errors\": [],\n  \"normal_csv_artifact_created\": true,\n  \"artifact\": \"<WORKSPACE>/spoollens_probe/verification/blackbox_0f04a3a/B_boundaries/B_boundaries.csv\",\n  \"export_status\": \"CLEAN\"\n}\n",
+    "stderr": ""
+  },
+  {
+    "label": "B_boundaries explicit exception",
+    "argv": [
+      "<PYTHON_RUNTIME>/runtimes/codex-primary-runtime/dependencies/python/bin/python3.12",
+      "-m",
+      "spoollens",
+      "replay",
+      "<WORKSPACE>/spoollens_probe/fixtures/B_boundaries.txt",
+      "--rule",
+      "<WORKSPACE>/spoollens_probe/verification/candidate_0f04a3a/examples/inventory.rule.json",
+      "--exception-bundle",
+      "<WORKSPACE>/spoollens_probe/verification/blackbox_0f04a3a/B_boundaries/first.exception.zip"
+    ],
+    "cwd": "<WORKSPACE>/spoollens_probe/verification/candidate_0f04a3a",
+    "returncode": 0,
+    "stdout": "{\n  \"source_sha256\": \"f8c475c6f0764523425512514b3065dd9b5a549f3bda24c9414c28af27cc8868\",\n  \"rule_sha256\": \"85807556db918f1ba7d923c726e62bca3f501980245d611114367e4529a07686\",\n  \"accepted_row_count\": 4,\n  \"clean_export_allowed\": true,\n  \"unresolved_count\": 0,\n  \"rejected_count\": 0,\n  \"rule_complete\": true,\n  \"rule_issues\": [],\n  \"errors\": [],\n  \"normal_csv_artifact_created\": false,\n  \"artifact\": \"<WORKSPACE>/spoollens_probe/verification/blackbox_0f04a3a/B_boundaries/first.exception.zip\",\n  \"export_status\": \"EXPLICIT_EXCEPTION\"\n}\n",
+    "stderr": ""
+  },
+  {
+    "label": "B_boundaries deterministic exception replay",
+    "argv": [
+      "<PYTHON_RUNTIME>/runtimes/codex-primary-runtime/dependencies/python/bin/python3.12",
+      "-m",
+      "spoollens",
+      "replay",
+      "<WORKSPACE>/spoollens_probe/fixtures/B_boundaries.txt",
+      "--rule",
+      "<WORKSPACE>/spoollens_probe/verification/candidate_0f04a3a/examples/inventory.rule.json",
+      "--exception-bundle",
+      "<WORKSPACE>/spoollens_probe/verification/blackbox_0f04a3a/B_boundaries/second.exception.zip"
+    ],
+    "cwd": "<WORKSPACE>/spoollens_probe/verification/candidate_0f04a3a",
+    "returncode": 0,
+    "stdout": "{\n  \"source_sha256\": \"f8c475c6f0764523425512514b3065dd9b5a549f3bda24c9414c28af27cc8868\",\n  \"rule_sha256\": \"85807556db918f1ba7d923c726e62bca3f501980245d611114367e4529a07686\",\n  \"accepted_row_count\": 4,\n  \"clean_export_allowed\": true,\n  \"unresolved_count\": 0,\n  \"rejected_count\": 0,\n  \"rule_complete\": true,\n  \"rule_issues\": [],\n  \"errors\": [],\n  \"normal_csv_artifact_created\": false,\n  \"artifact\": \"<WORKSPACE>/spoollens_probe/verification/blackbox_0f04a3a/B_boundaries/second.exception.zip\",\n  \"export_status\": \"EXPLICIT_EXCEPTION\"\n}\n",
+    "stderr": ""
+  },
+  {
+    "label": "C_dangerous default export",
+    "argv": [
+      "<PYTHON_RUNTIME>/runtimes/codex-primary-runtime/dependencies/python/bin/python3.12",
+      "-m",
+      "spoollens",
+      "replay",
+      "<WORKSPACE>/spoollens_probe/fixtures/C_dangerous.txt",
+      "--rule",
+      "<WORKSPACE>/spoollens_probe/verification/candidate_0f04a3a/examples/inventory.rule.json",
+      "--output",
+      "<WORKSPACE>/spoollens_probe/verification/blackbox_0f04a3a/C_dangerous/C_dangerous.csv",
+      "--audit",
+      "<WORKSPACE>/spoollens_probe/verification/blackbox_0f04a3a/C_dangerous/C_dangerous.audit.json",
+      "--provenance",
+      "<WORKSPACE>/spoollens_probe/verification/blackbox_0f04a3a/C_dangerous/C_dangerous.provenance.json"
+    ],
+    "cwd": "<WORKSPACE>/spoollens_probe/verification/candidate_0f04a3a",
+    "returncode": 2,
+    "stdout": "{\n  \"source_sha256\": \"318f02610fa08f95b8018f5dd690433ec30ad003a496c15aee4059c457ce4a77\",\n  \"rule_sha256\": \"85807556db918f1ba7d923c726e62bca3f501980245d611114367e4529a07686\",\n  \"accepted_row_count\": 2,\n  \"clean_export_allowed\": false,\n  \"unresolved_count\": 1,\n  \"rejected_count\": 5,\n  \"rule_complete\": true,\n  \"rule_issues\": [],\n  \"errors\": [\n    {\n      \"line\": 3,\n      \"category\": \"REJECTED\",\n      \"reason\": \"missing_warehouse_context\"\n    },\n    {\n      \"line\": 7,\n      \"category\": \"REJECTED\",\n      \"reason\": \"non_space_separator\",\n      \"range\": [\n        37,\n        39\n      ],\n      \"raw\": \"7 \"\n    },\n    {\n      \"line\": 8,\n      \"category\": \"REJECTED\",\n      \"reason\": \"invalid_qty_integer\",\n      \"range\": [\n        32,\n        37\n      ],\n      \"raw\": \"   2O\"\n    },\n    {\n      \"line\": 9,\n      \"category\": \"UNRESOLVED\",\n      \"reason\": \"no_explicit_rule_matched\"\n    },\n    {\n      \"line\": 10,\n      \"category\": \"REJECTED\",\n      \"reason\": \"invalid_record_width\",\n      \"expected_width\": 47,\n      \"actual_width\": 46\n    },\n    {\n      \"line\": 15,\n      \"category\": \"REJECTED\",\n      \"reason\": \"missing_warehouse_context\"\n    }\n  ],\n  \"normal_csv_artifact_created\": false,\n  \"export_error\": \"Clean CSV export blocked: 1 unresolved, 5 rejected\"\n}\n",
+    "stderr": "SpoolLens: Clean CSV export blocked: 1 unresolved, 5 rejected\n"
+  },
+  {
+    "label": "C_dangerous explicit exception",
+    "argv": [
+      "<PYTHON_RUNTIME>/runtimes/codex-primary-runtime/dependencies/python/bin/python3.12",
+      "-m",
+      "spoollens",
+      "replay",
+      "<WORKSPACE>/spoollens_probe/fixtures/C_dangerous.txt",
+      "--rule",
+      "<WORKSPACE>/spoollens_probe/verification/candidate_0f04a3a/examples/inventory.rule.json",
+      "--exception-bundle",
+      "<WORKSPACE>/spoollens_probe/verification/blackbox_0f04a3a/C_dangerous/first.exception.zip"
+    ],
+    "cwd": "<WORKSPACE>/spoollens_probe/verification/candidate_0f04a3a",
+    "returncode": 0,
+    "stdout": "{\n  \"source_sha256\": \"318f02610fa08f95b8018f5dd690433ec30ad003a496c15aee4059c457ce4a77\",\n  \"rule_sha256\": \"85807556db918f1ba7d923c726e62bca3f501980245d611114367e4529a07686\",\n  \"accepted_row_count\": 2,\n  \"clean_export_allowed\": false,\n  \"unresolved_count\": 1,\n  \"rejected_count\": 5,\n  \"rule_complete\": true,\n  \"rule_issues\": [],\n  \"errors\": [\n    {\n      \"line\": 3,\n      \"category\": \"REJECTED\",\n      \"reason\": \"missing_warehouse_context\"\n    },\n    {\n      \"line\": 7,\n      \"category\": \"REJECTED\",\n      \"reason\": \"non_space_separator\",\n      \"range\": [\n        37,\n        39\n      ],\n      \"raw\": \"7 \"\n    },\n    {\n      \"line\": 8,\n      \"category\": \"REJECTED\",\n      \"reason\": \"invalid_qty_integer\",\n      \"range\": [\n        32,\n        37\n      ],\n      \"raw\": \"   2O\"\n    },\n    {\n      \"line\": 9,\n      \"category\": \"UNRESOLVED\",\n      \"reason\": \"no_explicit_rule_matched\"\n    },\n    {\n      \"line\": 10,\n      \"category\": \"REJECTED\",\n      \"reason\": \"invalid_record_width\",\n      \"expected_width\": 47,\n      \"actual_width\": 46\n    },\n    {\n      \"line\": 15,\n      \"category\": \"REJECTED\",\n      \"reason\": \"missing_warehouse_context\"\n    }\n  ],\n  \"normal_csv_artifact_created\": false,\n  \"artifact\": \"<WORKSPACE>/spoollens_probe/verification/blackbox_0f04a3a/C_dangerous/first.exception.zip\",\n  \"export_status\": \"EXPLICIT_EXCEPTION\"\n}\n",
+    "stderr": ""
+  },
+  {
+    "label": "C_dangerous deterministic exception replay",
+    "argv": [
+      "<PYTHON_RUNTIME>/runtimes/codex-primary-runtime/dependencies/python/bin/python3.12",
+      "-m",
+      "spoollens",
+      "replay",
+      "<WORKSPACE>/spoollens_probe/fixtures/C_dangerous.txt",
+      "--rule",
+      "<WORKSPACE>/spoollens_probe/verification/candidate_0f04a3a/examples/inventory.rule.json",
+      "--exception-bundle",
+      "<WORKSPACE>/spoollens_probe/verification/blackbox_0f04a3a/C_dangerous/second.exception.zip"
+    ],
+    "cwd": "<WORKSPACE>/spoollens_probe/verification/candidate_0f04a3a",
+    "returncode": 0,
+    "stdout": "{\n  \"source_sha256\": \"318f02610fa08f95b8018f5dd690433ec30ad003a496c15aee4059c457ce4a77\",\n  \"rule_sha256\": \"85807556db918f1ba7d923c726e62bca3f501980245d611114367e4529a07686\",\n  \"accepted_row_count\": 2,\n  \"clean_export_allowed\": false,\n  \"unresolved_count\": 1,\n  \"rejected_count\": 5,\n  \"rule_complete\": true,\n  \"rule_issues\": [],\n  \"errors\": [\n    {\n      \"line\": 3,\n      \"category\": \"REJECTED\",\n      \"reason\": \"missing_warehouse_context\"\n    },\n    {\n      \"line\": 7,\n      \"category\": \"REJECTED\",\n      \"reason\": \"non_space_separator\",\n      \"range\": [\n        37,\n        39\n      ],\n      \"raw\": \"7 \"\n    },\n    {\n      \"line\": 8,\n      \"category\": \"REJECTED\",\n      \"reason\": \"invalid_qty_integer\",\n      \"range\": [\n        32,\n        37\n      ],\n      \"raw\": \"   2O\"\n    },\n    {\n      \"line\": 9,\n      \"category\": \"UNRESOLVED\",\n      \"reason\": \"no_explicit_rule_matched\"\n    },\n    {\n      \"line\": 10,\n      \"category\": \"REJECTED\",\n      \"reason\": \"invalid_record_width\",\n      \"expected_width\": 47,\n      \"actual_width\": 46\n    },\n    {\n      \"line\": 15,\n      \"category\": \"REJECTED\",\n      \"reason\": \"missing_warehouse_context\"\n    }\n  ],\n  \"normal_csv_artifact_created\": false,\n  \"artifact\": \"<WORKSPACE>/spoollens_probe/verification/blackbox_0f04a3a/C_dangerous/second.exception.zip\",\n  \"export_status\": \"EXPLICIT_EXCEPTION\"\n}\n",
+    "stderr": ""
+  },
+  {
+    "label": "V1_unseen_values default export",
+    "argv": [
+      "<PYTHON_RUNTIME>/runtimes/codex-primary-runtime/dependencies/python/bin/python3.12",
+      "-m",
+      "spoollens",
+      "replay",
+      "<WORKSPACE>/spoollens_probe/verification/predeclared/V1_unseen_values.txt",
+      "--rule",
+      "<WORKSPACE>/spoollens_probe/verification/candidate_0f04a3a/examples/inventory.rule.json",
+      "--output",
+      "<WORKSPACE>/spoollens_probe/verification/blackbox_0f04a3a/V1_unseen_values/V1_unseen_values.csv",
+      "--audit",
+      "<WORKSPACE>/spoollens_probe/verification/blackbox_0f04a3a/V1_unseen_values/V1_unseen_values.audit.json",
+      "--provenance",
+      "<WORKSPACE>/spoollens_probe/verification/blackbox_0f04a3a/V1_unseen_values/V1_unseen_values.provenance.json"
+    ],
+    "cwd": "<WORKSPACE>/spoollens_probe/verification/candidate_0f04a3a",
+    "returncode": 0,
+    "stdout": "{\n  \"source_sha256\": \"5faa54258d7f95fa6f7f0baad4db44172116834e646b75d8d0016b9f97c4fe43\",\n  \"rule_sha256\": \"85807556db918f1ba7d923c726e62bca3f501980245d611114367e4529a07686\",\n  \"accepted_row_count\": 3,\n  \"clean_export_allowed\": true,\n  \"unresolved_count\": 0,\n  \"rejected_count\": 0,\n  \"rule_complete\": true,\n  \"rule_issues\": [],\n  \"errors\": [],\n  \"normal_csv_artifact_created\": true,\n  \"artifact\": \"<WORKSPACE>/spoollens_probe/verification/blackbox_0f04a3a/V1_unseen_values/V1_unseen_values.csv\",\n  \"export_status\": \"CLEAN\"\n}\n",
+    "stderr": ""
+  },
+  {
+    "label": "V1_unseen_values explicit exception",
+    "argv": [
+      "<PYTHON_RUNTIME>/runtimes/codex-primary-runtime/dependencies/python/bin/python3.12",
+      "-m",
+      "spoollens",
+      "replay",
+      "<WORKSPACE>/spoollens_probe/verification/predeclared/V1_unseen_values.txt",
+      "--rule",
+      "<WORKSPACE>/spoollens_probe/verification/candidate_0f04a3a/examples/inventory.rule.json",
+      "--exception-bundle",
+      "<WORKSPACE>/spoollens_probe/verification/blackbox_0f04a3a/V1_unseen_values/first.exception.zip"
+    ],
+    "cwd": "<WORKSPACE>/spoollens_probe/verification/candidate_0f04a3a",
+    "returncode": 0,
+    "stdout": "{\n  \"source_sha256\": \"5faa54258d7f95fa6f7f0baad4db44172116834e646b75d8d0016b9f97c4fe43\",\n  \"rule_sha256\": \"85807556db918f1ba7d923c726e62bca3f501980245d611114367e4529a07686\",\n  \"accepted_row_count\": 3,\n  \"clean_export_allowed\": true,\n  \"unresolved_count\": 0,\n  \"rejected_count\": 0,\n  \"rule_complete\": true,\n  \"rule_issues\": [],\n  \"errors\": [],\n  \"normal_csv_artifact_created\": false,\n  \"artifact\": \"<WORKSPACE>/spoollens_probe/verification/blackbox_0f04a3a/V1_unseen_values/first.exception.zip\",\n  \"export_status\": \"EXPLICIT_EXCEPTION\"\n}\n",
+    "stderr": ""
+  },
+  {
+    "label": "V1_unseen_values deterministic exception replay",
+    "argv": [
+      "<PYTHON_RUNTIME>/runtimes/codex-primary-runtime/dependencies/python/bin/python3.12",
+      "-m",
+      "spoollens",
+      "replay",
+      "<WORKSPACE>/spoollens_probe/verification/predeclared/V1_unseen_values.txt",
+      "--rule",
+      "<WORKSPACE>/spoollens_probe/verification/candidate_0f04a3a/examples/inventory.rule.json",
+      "--exception-bundle",
+      "<WORKSPACE>/spoollens_probe/verification/blackbox_0f04a3a/V1_unseen_values/second.exception.zip"
+    ],
+    "cwd": "<WORKSPACE>/spoollens_probe/verification/candidate_0f04a3a",
+    "returncode": 0,
+    "stdout": "{\n  \"source_sha256\": \"5faa54258d7f95fa6f7f0baad4db44172116834e646b75d8d0016b9f97c4fe43\",\n  \"rule_sha256\": \"85807556db918f1ba7d923c726e62bca3f501980245d611114367e4529a07686\",\n  \"accepted_row_count\": 3,\n  \"clean_export_allowed\": true,\n  \"unresolved_count\": 0,\n  \"rejected_count\": 0,\n  \"rule_complete\": true,\n  \"rule_issues\": [],\n  \"errors\": [],\n  \"normal_csv_artifact_created\": false,\n  \"artifact\": \"<WORKSPACE>/spoollens_probe/verification/blackbox_0f04a3a/V1_unseen_values/second.exception.zip\",\n  \"export_status\": \"EXPLICIT_EXCEPTION\"\n}\n",
+    "stderr": ""
+  },
+  {
+    "label": "V2_isolated_boundaries default export",
+    "argv": [
+      "<PYTHON_RUNTIME>/runtimes/codex-primary-runtime/dependencies/python/bin/python3.12",
+      "-m",
+      "spoollens",
+      "replay",
+      "<WORKSPACE>/spoollens_probe/verification/predeclared/V2_isolated_boundaries.txt",
+      "--rule",
+      "<WORKSPACE>/spoollens_probe/verification/candidate_0f04a3a/examples/inventory.rule.json",
+      "--output",
+      "<WORKSPACE>/spoollens_probe/verification/blackbox_0f04a3a/V2_isolated_boundaries/V2_isolated_boundaries.csv",
+      "--audit",
+      "<WORKSPACE>/spoollens_probe/verification/blackbox_0f04a3a/V2_isolated_boundaries/V2_isolated_boundaries.audit.json",
+      "--provenance",
+      "<WORKSPACE>/spoollens_probe/verification/blackbox_0f04a3a/V2_isolated_boundaries/V2_isolated_boundaries.provenance.json"
+    ],
+    "cwd": "<WORKSPACE>/spoollens_probe/verification/candidate_0f04a3a",
+    "returncode": 2,
+    "stdout": "{\n  \"source_sha256\": \"3200a9701b09370afc19676678feeab4159506876ab19f8ea3b54b6b96ab05a3\",\n  \"rule_sha256\": \"85807556db918f1ba7d923c726e62bca3f501980245d611114367e4529a07686\",\n  \"accepted_row_count\": 4,\n  \"clean_export_allowed\": false,\n  \"unresolved_count\": 0,\n  \"rejected_count\": 3,\n  \"rule_complete\": true,\n  \"rule_issues\": [],\n  \"errors\": [\n    {\n      \"line\": 4,\n      \"category\": \"REJECTED\",\n      \"reason\": \"missing_warehouse_context\"\n    },\n    {\n      \"line\": 7,\n      \"category\": \"REJECTED\",\n      \"reason\": \"missing_warehouse_context\"\n    },\n    {\n      \"line\": 10,\n      \"category\": \"REJECTED\",\n      \"reason\": \"missing_warehouse_context\"\n    }\n  ],\n  \"normal_csv_artifact_created\": false,\n  \"export_error\": \"Clean CSV export blocked: 0 unresolved, 3 rejected\"\n}\n",
+    "stderr": "SpoolLens: Clean CSV export blocked: 0 unresolved, 3 rejected\n"
+  },
+  {
+    "label": "V2_isolated_boundaries explicit exception",
+    "argv": [
+      "<PYTHON_RUNTIME>/runtimes/codex-primary-runtime/dependencies/python/bin/python3.12",
+      "-m",
+      "spoollens",
+      "replay",
+      "<WORKSPACE>/spoollens_probe/verification/predeclared/V2_isolated_boundaries.txt",
+      "--rule",
+      "<WORKSPACE>/spoollens_probe/verification/candidate_0f04a3a/examples/inventory.rule.json",
+      "--exception-bundle",
+      "<WORKSPACE>/spoollens_probe/verification/blackbox_0f04a3a/V2_isolated_boundaries/first.exception.zip"
+    ],
+    "cwd": "<WORKSPACE>/spoollens_probe/verification/candidate_0f04a3a",
+    "returncode": 0,
+    "stdout": "{\n  \"source_sha256\": \"3200a9701b09370afc19676678feeab4159506876ab19f8ea3b54b6b96ab05a3\",\n  \"rule_sha256\": \"85807556db918f1ba7d923c726e62bca3f501980245d611114367e4529a07686\",\n  \"accepted_row_count\": 4,\n  \"clean_export_allowed\": false,\n  \"unresolved_count\": 0,\n  \"rejected_count\": 3,\n  \"rule_complete\": true,\n  \"rule_issues\": [],\n  \"errors\": [\n    {\n      \"line\": 4,\n      \"category\": \"REJECTED\",\n      \"reason\": \"missing_warehouse_context\"\n    },\n    {\n      \"line\": 7,\n      \"category\": \"REJECTED\",\n      \"reason\": \"missing_warehouse_context\"\n    },\n    {\n      \"line\": 10,\n      \"category\": \"REJECTED\",\n      \"reason\": \"missing_warehouse_context\"\n    }\n  ],\n  \"normal_csv_artifact_created\": false,\n  \"artifact\": \"<WORKSPACE>/spoollens_probe/verification/blackbox_0f04a3a/V2_isolated_boundaries/first.exception.zip\",\n  \"export_status\": \"EXPLICIT_EXCEPTION\"\n}\n",
+    "stderr": ""
+  },
+  {
+    "label": "V2_isolated_boundaries deterministic exception replay",
+    "argv": [
+      "<PYTHON_RUNTIME>/runtimes/codex-primary-runtime/dependencies/python/bin/python3.12",
+      "-m",
+      "spoollens",
+      "replay",
+      "<WORKSPACE>/spoollens_probe/verification/predeclared/V2_isolated_boundaries.txt",
+      "--rule",
+      "<WORKSPACE>/spoollens_probe/verification/candidate_0f04a3a/examples/inventory.rule.json",
+      "--exception-bundle",
+      "<WORKSPACE>/spoollens_probe/verification/blackbox_0f04a3a/V2_isolated_boundaries/second.exception.zip"
+    ],
+    "cwd": "<WORKSPACE>/spoollens_probe/verification/candidate_0f04a3a",
+    "returncode": 0,
+    "stdout": "{\n  \"source_sha256\": \"3200a9701b09370afc19676678feeab4159506876ab19f8ea3b54b6b96ab05a3\",\n  \"rule_sha256\": \"85807556db918f1ba7d923c726e62bca3f501980245d611114367e4529a07686\",\n  \"accepted_row_count\": 4,\n  \"clean_export_allowed\": false,\n  \"unresolved_count\": 0,\n  \"rejected_count\": 3,\n  \"rule_complete\": true,\n  \"rule_issues\": [],\n  \"errors\": [\n    {\n      \"line\": 4,\n      \"category\": \"REJECTED\",\n      \"reason\": \"missing_warehouse_context\"\n    },\n    {\n      \"line\": 7,\n      \"category\": \"REJECTED\",\n      \"reason\": \"missing_warehouse_context\"\n    },\n    {\n      \"line\": 10,\n      \"category\": \"REJECTED\",\n      \"reason\": \"missing_warehouse_context\"\n    }\n  ],\n  \"normal_csv_artifact_created\": false,\n  \"artifact\": \"<WORKSPACE>/spoollens_probe/verification/blackbox_0f04a3a/V2_isolated_boundaries/second.exception.zip\",\n  \"export_status\": \"EXPLICIT_EXCEPTION\"\n}\n",
+    "stderr": ""
+  },
+  {
+    "label": "V3_error_context default export",
+    "argv": [
+      "<PYTHON_RUNTIME>/runtimes/codex-primary-runtime/dependencies/python/bin/python3.12",
+      "-m",
+      "spoollens",
+      "replay",
+      "<WORKSPACE>/spoollens_probe/verification/predeclared/V3_error_context.txt",
+      "--rule",
+      "<WORKSPACE>/spoollens_probe/verification/candidate_0f04a3a/examples/inventory.rule.json",
+      "--output",
+      "<WORKSPACE>/spoollens_probe/verification/blackbox_0f04a3a/V3_error_context/V3_error_context.csv",
+      "--audit",
+      "<WORKSPACE>/spoollens_probe/verification/blackbox_0f04a3a/V3_error_context/V3_error_context.audit.json",
+      "--provenance",
+      "<WORKSPACE>/spoollens_probe/verification/blackbox_0f04a3a/V3_error_context/V3_error_context.provenance.json"
+    ],
+    "cwd": "<WORKSPACE>/spoollens_probe/verification/candidate_0f04a3a",
+    "returncode": 2,
+    "stdout": "{\n  \"source_sha256\": \"89c52eaa4d8d79abd2642bfdcd1ffc1b923f0c1a7935f06a48cb2063988d267a\",\n  \"rule_sha256\": \"85807556db918f1ba7d923c726e62bca3f501980245d611114367e4529a07686\",\n  \"accepted_row_count\": 2,\n  \"clean_export_allowed\": false,\n  \"unresolved_count\": 1,\n  \"rejected_count\": 1,\n  \"rule_complete\": true,\n  \"rule_issues\": [],\n  \"errors\": [\n    {\n      \"line\": 3,\n      \"category\": \"UNRESOLVED\",\n      \"reason\": \"no_explicit_rule_matched\"\n    },\n    {\n      \"line\": 4,\n      \"category\": \"REJECTED\",\n      \"reason\": \"invalid_qty_integer\",\n      \"range\": [\n        32,\n        37\n      ],\n      \"raw\": \"   2O\"\n    }\n  ],\n  \"normal_csv_artifact_created\": false,\n  \"export_error\": \"Clean CSV export blocked: 1 unresolved, 1 rejected\"\n}\n",
+    "stderr": "SpoolLens: Clean CSV export blocked: 1 unresolved, 1 rejected\n"
+  },
+  {
+    "label": "V3_error_context explicit exception",
+    "argv": [
+      "<PYTHON_RUNTIME>/runtimes/codex-primary-runtime/dependencies/python/bin/python3.12",
+      "-m",
+      "spoollens",
+      "replay",
+      "<WORKSPACE>/spoollens_probe/verification/predeclared/V3_error_context.txt",
+      "--rule",
+      "<WORKSPACE>/spoollens_probe/verification/candidate_0f04a3a/examples/inventory.rule.json",
+      "--exception-bundle",
+      "<WORKSPACE>/spoollens_probe/verification/blackbox_0f04a3a/V3_error_context/first.exception.zip"
+    ],
+    "cwd": "<WORKSPACE>/spoollens_probe/verification/candidate_0f04a3a",
+    "returncode": 0,
+    "stdout": "{\n  \"source_sha256\": \"89c52eaa4d8d79abd2642bfdcd1ffc1b923f0c1a7935f06a48cb2063988d267a\",\n  \"rule_sha256\": \"85807556db918f1ba7d923c726e62bca3f501980245d611114367e4529a07686\",\n  \"accepted_row_count\": 2,\n  \"clean_export_allowed\": false,\n  \"unresolved_count\": 1,\n  \"rejected_count\": 1,\n  \"rule_complete\": true,\n  \"rule_issues\": [],\n  \"errors\": [\n    {\n      \"line\": 3,\n      \"category\": \"UNRESOLVED\",\n      \"reason\": \"no_explicit_rule_matched\"\n    },\n    {\n      \"line\": 4,\n      \"category\": \"REJECTED\",\n      \"reason\": \"invalid_qty_integer\",\n      \"range\": [\n        32,\n        37\n      ],\n      \"raw\": \"   2O\"\n    }\n  ],\n  \"normal_csv_artifact_created\": false,\n  \"artifact\": \"<WORKSPACE>/spoollens_probe/verification/blackbox_0f04a3a/V3_error_context/first.exception.zip\",\n  \"export_status\": \"EXPLICIT_EXCEPTION\"\n}\n",
+    "stderr": ""
+  },
+  {
+    "label": "V3_error_context deterministic exception replay",
+    "argv": [
+      "<PYTHON_RUNTIME>/runtimes/codex-primary-runtime/dependencies/python/bin/python3.12",
+      "-m",
+      "spoollens",
+      "replay",
+      "<WORKSPACE>/spoollens_probe/verification/predeclared/V3_error_context.txt",
+      "--rule",
+      "<WORKSPACE>/spoollens_probe/verification/candidate_0f04a3a/examples/inventory.rule.json",
+      "--exception-bundle",
+      "<WORKSPACE>/spoollens_probe/verification/blackbox_0f04a3a/V3_error_context/second.exception.zip"
+    ],
+    "cwd": "<WORKSPACE>/spoollens_probe/verification/candidate_0f04a3a",
+    "returncode": 0,
+    "stdout": "{\n  \"source_sha256\": \"89c52eaa4d8d79abd2642bfdcd1ffc1b923f0c1a7935f06a48cb2063988d267a\",\n  \"rule_sha256\": \"85807556db918f1ba7d923c726e62bca3f501980245d611114367e4529a07686\",\n  \"accepted_row_count\": 2,\n  \"clean_export_allowed\": false,\n  \"unresolved_count\": 1,\n  \"rejected_count\": 1,\n  \"rule_complete\": true,\n  \"rule_issues\": [],\n  \"errors\": [\n    {\n      \"line\": 3,\n      \"category\": \"UNRESOLVED\",\n      \"reason\": \"no_explicit_rule_matched\"\n    },\n    {\n      \"line\": 4,\n      \"category\": \"REJECTED\",\n      \"reason\": \"invalid_qty_integer\",\n      \"range\": [\n        32,\n        37\n      ],\n      \"raw\": \"   2O\"\n    }\n  ],\n  \"normal_csv_artifact_created\": false,\n  \"artifact\": \"<WORKSPACE>/spoollens_probe/verification/blackbox_0f04a3a/V3_error_context/second.exception.zip\",\n  \"export_status\": \"EXPLICIT_EXCEPTION\"\n}\n",
+    "stderr": ""
+  },
+  {
+    "label": "V4_invalid_header default export",
+    "argv": [
+      "<PYTHON_RUNTIME>/runtimes/codex-primary-runtime/dependencies/python/bin/python3.12",
+      "-m",
+      "spoollens",
+      "replay",
+      "<WORKSPACE>/spoollens_probe/verification/predeclared/V4_invalid_header.txt",
+      "--rule",
+      "<WORKSPACE>/spoollens_probe/verification/candidate_0f04a3a/examples/inventory.rule.json",
+      "--output",
+      "<WORKSPACE>/spoollens_probe/verification/blackbox_0f04a3a/V4_invalid_header/V4_invalid_header.csv",
+      "--audit",
+      "<WORKSPACE>/spoollens_probe/verification/blackbox_0f04a3a/V4_invalid_header/V4_invalid_header.audit.json",
+      "--provenance",
+      "<WORKSPACE>/spoollens_probe/verification/blackbox_0f04a3a/V4_invalid_header/V4_invalid_header.provenance.json"
+    ],
+    "cwd": "<WORKSPACE>/spoollens_probe/verification/candidate_0f04a3a",
+    "returncode": 2,
+    "stdout": "{\n  \"source_sha256\": \"d59d3c07c99bb951b6083b1908276f2aa104fc7ae4be8ac45be57dab4628fcc4\",\n  \"rule_sha256\": \"85807556db918f1ba7d923c726e62bca3f501980245d611114367e4529a07686\",\n  \"accepted_row_count\": 2,\n  \"clean_export_allowed\": false,\n  \"unresolved_count\": 0,\n  \"rejected_count\": 2,\n  \"rule_complete\": true,\n  \"rule_issues\": [],\n  \"errors\": [\n    {\n      \"line\": 3,\n      \"category\": \"REJECTED\",\n      \"reason\": \"invalid_warehouse_uppercase\",\n      \"range\": [\n        11,\n        19\n      ],\n      \"raw\": \"BAD1    \"\n    },\n    {\n      \"line\": 4,\n      \"category\": \"REJECTED\",\n      \"reason\": \"missing_warehouse_context\"\n    }\n  ],\n  \"normal_csv_artifact_created\": false,\n  \"export_error\": \"Clean CSV export blocked: 0 unresolved, 2 rejected\"\n}\n",
+    "stderr": "SpoolLens: Clean CSV export blocked: 0 unresolved, 2 rejected\n"
+  },
+  {
+    "label": "V4_invalid_header explicit exception",
+    "argv": [
+      "<PYTHON_RUNTIME>/runtimes/codex-primary-runtime/dependencies/python/bin/python3.12",
+      "-m",
+      "spoollens",
+      "replay",
+      "<WORKSPACE>/spoollens_probe/verification/predeclared/V4_invalid_header.txt",
+      "--rule",
+      "<WORKSPACE>/spoollens_probe/verification/candidate_0f04a3a/examples/inventory.rule.json",
+      "--exception-bundle",
+      "<WORKSPACE>/spoollens_probe/verification/blackbox_0f04a3a/V4_invalid_header/first.exception.zip"
+    ],
+    "cwd": "<WORKSPACE>/spoollens_probe/verification/candidate_0f04a3a",
+    "returncode": 0,
+    "stdout": "{\n  \"source_sha256\": \"d59d3c07c99bb951b6083b1908276f2aa104fc7ae4be8ac45be57dab4628fcc4\",\n  \"rule_sha256\": \"85807556db918f1ba7d923c726e62bca3f501980245d611114367e4529a07686\",\n  \"accepted_row_count\": 2,\n  \"clean_export_allowed\": false,\n  \"unresolved_count\": 0,\n  \"rejected_count\": 2,\n  \"rule_complete\": true,\n  \"rule_issues\": [],\n  \"errors\": [\n    {\n      \"line\": 3,\n      \"category\": \"REJECTED\",\n      \"reason\": \"invalid_warehouse_uppercase\",\n      \"range\": [\n        11,\n        19\n      ],\n      \"raw\": \"BAD1    \"\n    },\n    {\n      \"line\": 4,\n      \"category\": \"REJECTED\",\n      \"reason\": \"missing_warehouse_context\"\n    }\n  ],\n  \"normal_csv_artifact_created\": false,\n  \"artifact\": \"<WORKSPACE>/spoollens_probe/verification/blackbox_0f04a3a/V4_invalid_header/first.exception.zip\",\n  \"export_status\": \"EXPLICIT_EXCEPTION\"\n}\n",
+    "stderr": ""
+  },
+  {
+    "label": "V4_invalid_header deterministic exception replay",
+    "argv": [
+      "<PYTHON_RUNTIME>/runtimes/codex-primary-runtime/dependencies/python/bin/python3.12",
+      "-m",
+      "spoollens",
+      "replay",
+      "<WORKSPACE>/spoollens_probe/verification/predeclared/V4_invalid_header.txt",
+      "--rule",
+      "<WORKSPACE>/spoollens_probe/verification/candidate_0f04a3a/examples/inventory.rule.json",
+      "--exception-bundle",
+      "<WORKSPACE>/spoollens_probe/verification/blackbox_0f04a3a/V4_invalid_header/second.exception.zip"
+    ],
+    "cwd": "<WORKSPACE>/spoollens_probe/verification/candidate_0f04a3a",
+    "returncode": 0,
+    "stdout": "{\n  \"source_sha256\": \"d59d3c07c99bb951b6083b1908276f2aa104fc7ae4be8ac45be57dab4628fcc4\",\n  \"rule_sha256\": \"85807556db918f1ba7d923c726e62bca3f501980245d611114367e4529a07686\",\n  \"accepted_row_count\": 2,\n  \"clean_export_allowed\": false,\n  \"unresolved_count\": 0,\n  \"rejected_count\": 2,\n  \"rule_complete\": true,\n  \"rule_issues\": [],\n  \"errors\": [\n    {\n      \"line\": 3,\n      \"category\": \"REJECTED\",\n      \"reason\": \"invalid_warehouse_uppercase\",\n      \"range\": [\n        11,\n        19\n      ],\n      \"raw\": \"BAD1    \"\n    },\n    {\n      \"line\": 4,\n      \"category\": \"REJECTED\",\n      \"reason\": \"missing_warehouse_context\"\n    }\n  ],\n  \"normal_csv_artifact_created\": false,\n  \"artifact\": \"<WORKSPACE>/spoollens_probe/verification/blackbox_0f04a3a/V4_invalid_header/second.exception.zip\",\n  \"export_status\": \"EXPLICIT_EXCEPTION\"\n}\n",
+    "stderr": ""
+  },
+  {
+    "label": "V5_no_final_lf default export",
+    "argv": [
+      "<PYTHON_RUNTIME>/runtimes/codex-primary-runtime/dependencies/python/bin/python3.12",
+      "-m",
+      "spoollens",
+      "replay",
+      "<WORKSPACE>/spoollens_probe/verification/predeclared/V5_no_final_lf.txt",
+      "--rule",
+      "<WORKSPACE>/spoollens_probe/verification/candidate_0f04a3a/examples/inventory.rule.json",
+      "--output",
+      "<WORKSPACE>/spoollens_probe/verification/blackbox_0f04a3a/V5_no_final_lf/V5_no_final_lf.csv",
+      "--audit",
+      "<WORKSPACE>/spoollens_probe/verification/blackbox_0f04a3a/V5_no_final_lf/V5_no_final_lf.audit.json",
+      "--provenance",
+      "<WORKSPACE>/spoollens_probe/verification/blackbox_0f04a3a/V5_no_final_lf/V5_no_final_lf.provenance.json"
+    ],
+    "cwd": "<WORKSPACE>/spoollens_probe/verification/candidate_0f04a3a",
+    "returncode": 0,
+    "stdout": "{\n  \"source_sha256\": \"12fb03aece0d3cde38fa00afe9b070c86fc7a79f4cbd5f34373c483f01b9cb2d\",\n  \"rule_sha256\": \"85807556db918f1ba7d923c726e62bca3f501980245d611114367e4529a07686\",\n  \"accepted_row_count\": 3,\n  \"clean_export_allowed\": true,\n  \"unresolved_count\": 0,\n  \"rejected_count\": 0,\n  \"rule_complete\": true,\n  \"rule_issues\": [],\n  \"errors\": [],\n  \"normal_csv_artifact_created\": true,\n  \"artifact\": \"<WORKSPACE>/spoollens_probe/verification/blackbox_0f04a3a/V5_no_final_lf/V5_no_final_lf.csv\",\n  \"export_status\": \"CLEAN\"\n}\n",
+    "stderr": ""
+  },
+  {
+    "label": "V5_no_final_lf explicit exception",
+    "argv": [
+      "<PYTHON_RUNTIME>/runtimes/codex-primary-runtime/dependencies/python/bin/python3.12",
+      "-m",
+      "spoollens",
+      "replay",
+      "<WORKSPACE>/spoollens_probe/verification/predeclared/V5_no_final_lf.txt",
+      "--rule",
+      "<WORKSPACE>/spoollens_probe/verification/candidate_0f04a3a/examples/inventory.rule.json",
+      "--exception-bundle",
+      "<WORKSPACE>/spoollens_probe/verification/blackbox_0f04a3a/V5_no_final_lf/first.exception.zip"
+    ],
+    "cwd": "<WORKSPACE>/spoollens_probe/verification/candidate_0f04a3a",
+    "returncode": 0,
+    "stdout": "{\n  \"source_sha256\": \"12fb03aece0d3cde38fa00afe9b070c86fc7a79f4cbd5f34373c483f01b9cb2d\",\n  \"rule_sha256\": \"85807556db918f1ba7d923c726e62bca3f501980245d611114367e4529a07686\",\n  \"accepted_row_count\": 3,\n  \"clean_export_allowed\": true,\n  \"unresolved_count\": 0,\n  \"rejected_count\": 0,\n  \"rule_complete\": true,\n  \"rule_issues\": [],\n  \"errors\": [],\n  \"normal_csv_artifact_created\": false,\n  \"artifact\": \"<WORKSPACE>/spoollens_probe/verification/blackbox_0f04a3a/V5_no_final_lf/first.exception.zip\",\n  \"export_status\": \"EXPLICIT_EXCEPTION\"\n}\n",
+    "stderr": ""
+  },
+  {
+    "label": "V5_no_final_lf deterministic exception replay",
+    "argv": [
+      "<PYTHON_RUNTIME>/runtimes/codex-primary-runtime/dependencies/python/bin/python3.12",
+      "-m",
+      "spoollens",
+      "replay",
+      "<WORKSPACE>/spoollens_probe/verification/predeclared/V5_no_final_lf.txt",
+      "--rule",
+      "<WORKSPACE>/spoollens_probe/verification/candidate_0f04a3a/examples/inventory.rule.json",
+      "--exception-bundle",
+      "<WORKSPACE>/spoollens_probe/verification/blackbox_0f04a3a/V5_no_final_lf/second.exception.zip"
+    ],
+    "cwd": "<WORKSPACE>/spoollens_probe/verification/candidate_0f04a3a",
+    "returncode": 0,
+    "stdout": "{\n  \"source_sha256\": \"12fb03aece0d3cde38fa00afe9b070c86fc7a79f4cbd5f34373c483f01b9cb2d\",\n  \"rule_sha256\": \"85807556db918f1ba7d923c726e62bca3f501980245d611114367e4529a07686\",\n  \"accepted_row_count\": 3,\n  \"clean_export_allowed\": true,\n  \"unresolved_count\": 0,\n  \"rejected_count\": 0,\n  \"rule_complete\": true,\n  \"rule_issues\": [],\n  \"errors\": [],\n  \"normal_csv_artifact_created\": false,\n  \"artifact\": \"<WORKSPACE>/spoollens_probe/verification/blackbox_0f04a3a/V5_no_final_lf/second.exception.zip\",\n  \"export_status\": \"EXPLICIT_EXCEPTION\"\n}\n",
+    "stderr": ""
+  },
+  {
+    "label": "inspect warehouse",
+    "argv": [
+      "<PYTHON_RUNTIME>/runtimes/codex-primary-runtime/dependencies/python/bin/python3.12",
+      "-m",
+      "spoollens",
+      "inspect",
+      "<WORKSPACE>/spoollens_probe/fixtures/B_boundaries.txt",
+      "--rule",
+      "<WORKSPACE>/spoollens_probe/verification/candidate_0f04a3a/examples/inventory.rule.json",
+      "--row",
+      "2",
+      "--field",
+      "warehouse"
+    ],
+    "cwd": "<WORKSPACE>/spoollens_probe/verification/candidate_0f04a3a",
+    "returncode": 0,
+    "stdout": "{\n  \"row\": 2,\n  \"detail_line\": 12,\n  \"field\": \"warehouse\",\n  \"evidence\": {\n    \"value\": \"SOUTH\",\n    \"source_sha256\": \"f8c475c6f0764523425512514b3065dd9b5a549f3bda24c9414c28af27cc8868\",\n    \"line\": 11,\n    \"range\": [\n      11,\n      19\n    ],\n    \"raw\": \"SOUTH   \",\n    \"inherited\": true,\n    \"header_line\": 11,\n    \"header_range\": [\n      11,\n      19\n    ]\n  }\n}\n",
+    "stderr": ""
+  },
+  {
+    "label": "inspect price",
+    "argv": [
+      "<PYTHON_RUNTIME>/runtimes/codex-primary-runtime/dependencies/python/bin/python3.12",
+      "-m",
+      "spoollens",
+      "inspect",
+      "<WORKSPACE>/spoollens_probe/fixtures/B_boundaries.txt",
+      "--rule",
+      "<WORKSPACE>/spoollens_probe/verification/candidate_0f04a3a/examples/inventory.rule.json",
+      "--row",
+      "2",
+      "--field",
+      "price"
+    ],
+    "cwd": "<WORKSPACE>/spoollens_probe/verification/candidate_0f04a3a",
+    "returncode": 0,
+    "stdout": "{\n  \"row\": 2,\n  \"detail_line\": 12,\n  \"field\": \"price\",\n  \"evidence\": {\n    \"value\": \"0.20\",\n    \"source_sha256\": \"f8c475c6f0764523425512514b3065dd9b5a549f3bda24c9414c28af27cc8868\",\n    \"line\": 12,\n    \"range\": [\n      39,\n      47\n    ],\n    \"raw\": \"    0.20\",\n    \"inherited\": false\n  }\n}\n",
+    "stderr": ""
+  },
+  {
+    "label": "invalid UTF-8 rejected",
+    "argv": [
+      "<PYTHON_RUNTIME>/runtimes/codex-primary-runtime/dependencies/python/bin/python3.12",
+      "-m",
+      "spoollens",
+      "replay",
+      "<WORKSPACE>/spoollens_probe/verification/predeclared/E1_invalid_utf8.txt",
+      "--rule",
+      "<WORKSPACE>/spoollens_probe/verification/candidate_0f04a3a/examples/inventory.rule.json",
+      "--output",
+      "<WORKSPACE>/spoollens_probe/verification/blackbox_0f04a3a/invalid_utf8.csv"
+    ],
+    "cwd": "<WORKSPACE>/spoollens_probe/verification/candidate_0f04a3a",
+    "returncode": 1,
+    "stdout": "",
+    "stderr": "SpoolLens: Invalid utf-8 input at byte 115; no lines were discarded\n"
+  },
+  {
+    "label": "documented rule serialization API",
+    "returncode": 0,
+    "stdout": "",
+    "stderr": ""
+  },
+  {
+    "label": "saved rule reload A_clean",
+    "argv": [
+      "<PYTHON_RUNTIME>/runtimes/codex-primary-runtime/dependencies/python/bin/python3.12",
+      "-m",
+      "spoollens",
+      "replay",
+      "<WORKSPACE>/spoollens_probe/fixtures/A_clean.txt",
+      "--rule",
+      "<WORKSPACE>/spoollens_probe/verification/blackbox_0f04a3a/resaved.rule.json",
+      "--exception-bundle",
+      "<WORKSPACE>/spoollens_probe/verification/blackbox_0f04a3a/resaved.rule_A_clean.zip"
+    ],
+    "cwd": "<WORKSPACE>/spoollens_probe/verification/candidate_0f04a3a",
+    "returncode": 0,
+    "stdout": "{\n  \"source_sha256\": \"f1c4b2aacdc53d76ffde2d809ce1d4634dc5e48a02fa71606df03e36c509e658\",\n  \"rule_sha256\": \"85807556db918f1ba7d923c726e62bca3f501980245d611114367e4529a07686\",\n  \"accepted_row_count\": 3,\n  \"clean_export_allowed\": true,\n  \"unresolved_count\": 0,\n  \"rejected_count\": 0,\n  \"rule_complete\": true,\n  \"rule_issues\": [],\n  \"errors\": [],\n  \"normal_csv_artifact_created\": false,\n  \"artifact\": \"<WORKSPACE>/spoollens_probe/verification/blackbox_0f04a3a/resaved.rule_A_clean.zip\",\n  \"export_status\": \"EXPLICIT_EXCEPTION\"\n}\n",
+    "stderr": ""
+  },
+  {
+    "label": "saved rule reload B_boundaries",
+    "argv": [
+      "<PYTHON_RUNTIME>/runtimes/codex-primary-runtime/dependencies/python/bin/python3.12",
+      "-m",
+      "spoollens",
+      "replay",
+      "<WORKSPACE>/spoollens_probe/fixtures/B_boundaries.txt",
+      "--rule",
+      "<WORKSPACE>/spoollens_probe/verification/blackbox_0f04a3a/resaved.rule.json",
+      "--exception-bundle",
+      "<WORKSPACE>/spoollens_probe/verification/blackbox_0f04a3a/resaved.rule_B_boundaries.zip"
+    ],
+    "cwd": "<WORKSPACE>/spoollens_probe/verification/candidate_0f04a3a",
+    "returncode": 0,
+    "stdout": "{\n  \"source_sha256\": \"f8c475c6f0764523425512514b3065dd9b5a549f3bda24c9414c28af27cc8868\",\n  \"rule_sha256\": \"85807556db918f1ba7d923c726e62bca3f501980245d611114367e4529a07686\",\n  \"accepted_row_count\": 4,\n  \"clean_export_allowed\": true,\n  \"unresolved_count\": 0,\n  \"rejected_count\": 0,\n  \"rule_complete\": true,\n  \"rule_issues\": [],\n  \"errors\": [],\n  \"normal_csv_artifact_created\": false,\n  \"artifact\": \"<WORKSPACE>/spoollens_probe/verification/blackbox_0f04a3a/resaved.rule_B_boundaries.zip\",\n  \"export_status\": \"EXPLICIT_EXCEPTION\"\n}\n",
+    "stderr": ""
+  },
+  {
+    "label": "saved rule reload C_dangerous",
+    "argv": [
+      "<PYTHON_RUNTIME>/runtimes/codex-primary-runtime/dependencies/python/bin/python3.12",
+      "-m",
+      "spoollens",
+      "replay",
+      "<WORKSPACE>/spoollens_probe/fixtures/C_dangerous.txt",
+      "--rule",
+      "<WORKSPACE>/spoollens_probe/verification/blackbox_0f04a3a/resaved.rule.json",
+      "--exception-bundle",
+      "<WORKSPACE>/spoollens_probe/verification/blackbox_0f04a3a/resaved.rule_C_dangerous.zip"
+    ],
+    "cwd": "<WORKSPACE>/spoollens_probe/verification/candidate_0f04a3a",
+    "returncode": 0,
+    "stdout": "{\n  \"source_sha256\": \"318f02610fa08f95b8018f5dd690433ec30ad003a496c15aee4059c457ce4a77\",\n  \"rule_sha256\": \"85807556db918f1ba7d923c726e62bca3f501980245d611114367e4529a07686\",\n  \"accepted_row_count\": 2,\n  \"clean_export_allowed\": false,\n  \"unresolved_count\": 1,\n  \"rejected_count\": 5,\n  \"rule_complete\": true,\n  \"rule_issues\": [],\n  \"errors\": [\n    {\n      \"line\": 3,\n      \"category\": \"REJECTED\",\n      \"reason\": \"missing_warehouse_context\"\n    },\n    {\n      \"line\": 7,\n      \"category\": \"REJECTED\",\n      \"reason\": \"non_space_separator\",\n      \"range\": [\n        37,\n        39\n      ],\n      \"raw\": \"7 \"\n    },\n    {\n      \"line\": 8,\n      \"category\": \"REJECTED\",\n      \"reason\": \"invalid_qty_integer\",\n      \"range\": [\n        32,\n        37\n      ],\n      \"raw\": \"   2O\"\n    },\n    {\n      \"line\": 9,\n      \"category\": \"UNRESOLVED\",\n      \"reason\": \"no_explicit_rule_matched\"\n    },\n    {\n      \"line\": 10,\n      \"category\": \"REJECTED\",\n      \"reason\": \"invalid_record_width\",\n      \"expected_width\": 47,\n      \"actual_width\": 46\n    },\n    {\n      \"line\": 15,\n      \"category\": \"REJECTED\",\n      \"reason\": \"missing_warehouse_context\"\n    }\n  ],\n  \"normal_csv_artifact_created\": false,\n  \"artifact\": \"<WORKSPACE>/spoollens_probe/verification/blackbox_0f04a3a/resaved.rule_C_dangerous.zip\",\n  \"export_status\": \"EXPLICIT_EXCEPTION\"\n}\n",
+    "stderr": ""
+  },
+  {
+    "label": "saved rule reload A_clean",
+    "argv": [
+      "<PYTHON_RUNTIME>/runtimes/codex-primary-runtime/dependencies/python/bin/python3.12",
+      "-m",
+      "spoollens",
+      "replay",
+      "<WORKSPACE>/spoollens_probe/fixtures/A_clean.txt",
+      "--rule",
+      "<WORKSPACE>/spoollens_probe/verification/blackbox_0f04a3a/reformatted.rule.json",
+      "--exception-bundle",
+      "<WORKSPACE>/spoollens_probe/verification/blackbox_0f04a3a/reformatted.rule_A_clean.zip"
+    ],
+    "cwd": "<WORKSPACE>/spoollens_probe/verification/candidate_0f04a3a",
+    "returncode": 0,
+    "stdout": "{\n  \"source_sha256\": \"f1c4b2aacdc53d76ffde2d809ce1d4634dc5e48a02fa71606df03e36c509e658\",\n  \"rule_sha256\": \"b5da8644d08f7b3ee82396f9594ad98b6cca283ff4f96b4633013f66edaaddfc\",\n  \"accepted_row_count\": 3,\n  \"clean_export_allowed\": true,\n  \"unresolved_count\": 0,\n  \"rejected_count\": 0,\n  \"rule_complete\": true,\n  \"rule_issues\": [],\n  \"errors\": [],\n  \"normal_csv_artifact_created\": false,\n  \"artifact\": \"<WORKSPACE>/spoollens_probe/verification/blackbox_0f04a3a/reformatted.rule_A_clean.zip\",\n  \"export_status\": \"EXPLICIT_EXCEPTION\"\n}\n",
+    "stderr": ""
+  },
+  {
+    "label": "saved rule reload B_boundaries",
+    "argv": [
+      "<PYTHON_RUNTIME>/runtimes/codex-primary-runtime/dependencies/python/bin/python3.12",
+      "-m",
+      "spoollens",
+      "replay",
+      "<WORKSPACE>/spoollens_probe/fixtures/B_boundaries.txt",
+      "--rule",
+      "<WORKSPACE>/spoollens_probe/verification/blackbox_0f04a3a/reformatted.rule.json",
+      "--exception-bundle",
+      "<WORKSPACE>/spoollens_probe/verification/blackbox_0f04a3a/reformatted.rule_B_boundaries.zip"
+    ],
+    "cwd": "<WORKSPACE>/spoollens_probe/verification/candidate_0f04a3a",
+    "returncode": 0,
+    "stdout": "{\n  \"source_sha256\": \"f8c475c6f0764523425512514b3065dd9b5a549f3bda24c9414c28af27cc8868\",\n  \"rule_sha256\": \"b5da8644d08f7b3ee82396f9594ad98b6cca283ff4f96b4633013f66edaaddfc\",\n  \"accepted_row_count\": 4,\n  \"clean_export_allowed\": true,\n  \"unresolved_count\": 0,\n  \"rejected_count\": 0,\n  \"rule_complete\": true,\n  \"rule_issues\": [],\n  \"errors\": [],\n  \"normal_csv_artifact_created\": false,\n  \"artifact\": \"<WORKSPACE>/spoollens_probe/verification/blackbox_0f04a3a/reformatted.rule_B_boundaries.zip\",\n  \"export_status\": \"EXPLICIT_EXCEPTION\"\n}\n",
+    "stderr": ""
+  },
+  {
+    "label": "saved rule reload C_dangerous",
+    "argv": [
+      "<PYTHON_RUNTIME>/runtimes/codex-primary-runtime/dependencies/python/bin/python3.12",
+      "-m",
+      "spoollens",
+      "replay",
+      "<WORKSPACE>/spoollens_probe/fixtures/C_dangerous.txt",
+      "--rule",
+      "<WORKSPACE>/spoollens_probe/verification/blackbox_0f04a3a/reformatted.rule.json",
+      "--exception-bundle",
+      "<WORKSPACE>/spoollens_probe/verification/blackbox_0f04a3a/reformatted.rule_C_dangerous.zip"
+    ],
+    "cwd": "<WORKSPACE>/spoollens_probe/verification/candidate_0f04a3a",
+    "returncode": 0,
+    "stdout": "{\n  \"source_sha256\": \"318f02610fa08f95b8018f5dd690433ec30ad003a496c15aee4059c457ce4a77\",\n  \"rule_sha256\": \"b5da8644d08f7b3ee82396f9594ad98b6cca283ff4f96b4633013f66edaaddfc\",\n  \"accepted_row_count\": 2,\n  \"clean_export_allowed\": false,\n  \"unresolved_count\": 1,\n  \"rejected_count\": 5,\n  \"rule_complete\": true,\n  \"rule_issues\": [],\n  \"errors\": [\n    {\n      \"line\": 3,\n      \"category\": \"REJECTED\",\n      \"reason\": \"missing_warehouse_context\"\n    },\n    {\n      \"line\": 7,\n      \"category\": \"REJECTED\",\n      \"reason\": \"non_space_separator\",\n      \"range\": [\n        37,\n        39\n      ],\n      \"raw\": \"7 \"\n    },\n    {\n      \"line\": 8,\n      \"category\": \"REJECTED\",\n      \"reason\": \"invalid_qty_integer\",\n      \"range\": [\n        32,\n        37\n      ],\n      \"raw\": \"   2O\"\n    },\n    {\n      \"line\": 9,\n      \"category\": \"UNRESOLVED\",\n      \"reason\": \"no_explicit_rule_matched\"\n    },\n    {\n      \"line\": 10,\n      \"category\": \"REJECTED\",\n      \"reason\": \"invalid_record_width\",\n      \"expected_width\": 47,\n      \"actual_width\": 46\n    },\n    {\n      \"line\": 15,\n      \"category\": \"REJECTED\",\n      \"reason\": \"missing_warehouse_context\"\n    }\n  ],\n  \"normal_csv_artifact_created\": false,\n  \"artifact\": \"<WORKSPACE>/spoollens_probe/verification/blackbox_0f04a3a/reformatted.rule_C_dangerous.zip\",\n  \"export_status\": \"EXPLICIT_EXCEPTION\"\n}\n",
+    "stderr": ""
+  }
+]

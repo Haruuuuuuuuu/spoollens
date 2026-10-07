@@ -1,0 +1,4 @@
+warehouse,item,qty,price
+WEST,Z999,0,0.00
+WEST,M321,99999,12345.67
+CENTRAL,Q007,7,0.20

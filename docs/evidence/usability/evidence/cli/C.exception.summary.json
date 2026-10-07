@@ -1,0 +1,57 @@
+{
+  "source_sha256": "318f02610fa08f95b8018f5dd690433ec30ad003a496c15aee4059c457ce4a77",
+  "rule_sha256": "85807556db918f1ba7d923c726e62bca3f501980245d611114367e4529a07686",
+  "accepted_row_count": 2,
+  "clean_export_allowed": false,
+  "unresolved_count": 1,
+  "rejected_count": 5,
+  "rule_complete": true,
+  "rule_issues": [],
+  "errors": [
+    {
+      "line": 3,
+      "category": "REJECTED",
+      "reason": "missing_warehouse_context"
+    },
+    {
+      "line": 7,
+      "category": "REJECTED",
+      "reason": "non_space_separator",
+      "range": [
+        37,
+        39
+      ],
+      "raw": "7 "
+    },
+    {
+      "line": 8,
+      "category": "REJECTED",
+      "reason": "invalid_qty_integer",
+      "range": [
+        32,
+        37
+      ],
+      "raw": "   2O"
+    },
+    {
+      "line": 9,
+      "category": "UNRESOLVED",
+      "reason": "no_explicit_rule_matched"
+    },
+    {
+      "line": 10,
+      "category": "REJECTED",
+      "reason": "invalid_record_width",
+      "expected_width": 47,
+      "actual_width": 46
+    },
+    {
+      "line": 15,
+      "category": "REJECTED",
+      "reason": "missing_warehouse_context"
+    }
+  ],
+  "normal_csv_artifact_created": false,
+  "artifact": "evidence/cli/C.exception.zip",
+  "export_status": "EXPLICIT_EXCEPTION"
+}

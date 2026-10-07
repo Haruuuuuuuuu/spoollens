@@ -1,0 +1,5 @@
+WAREHOUSE: WEST    
+P001      BEFORE ERRORS             1      1.00
+NOTICE: STOCKTAKE TOMORROW
+P002      MALFORMED QTY            2O      2.00
+P003      AFTER ERRORS              3      3.00

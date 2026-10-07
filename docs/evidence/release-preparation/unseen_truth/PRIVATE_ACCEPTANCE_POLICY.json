@@ -1,0 +1,137 @@
+{
+  "schema_version": 1,
+  "status": "FROZEN_BEFORE_FIRST_EXECUTION",
+  "baseline_commit_requested": "78a50976aeea88b92269956e5ec43af6ed2cbd4a",
+  "authorship": "Synthetic workshop spare-parts replenishment report. Independently authored; no imported third-party data.",
+  "scope": "Exactly three built-in detail fields and one built-in inherited warehouse field. Different positions, widths, report subject, prefix, and values from frozen A/B/C.",
+  "source": {
+    "name": "workshop-replenishment-06a.txt",
+    "sha256": "65248ab62aa3ceb0054c25fd9e524070638bd617b4cdf1821304283116c4900e",
+    "bytes": 1783,
+    "encoding": "ASCII-compatible UTF-8",
+    "physical_lines": 39,
+    "nonempty_lines": 35,
+    "whitespace_only_lines": 4,
+    "line_ending": "LF",
+    "terminal_lf": true
+  },
+  "canonical_private_layout": {
+    "detail_width": 57,
+    "leading_spaces": [
+      0,
+      3
+    ],
+    "item": [
+      3,
+      10
+    ],
+    "description_not_exported": [
+      12,
+      37
+    ],
+    "qty": [
+      39,
+      45
+    ],
+    "price": [
+      47,
+      57
+    ],
+    "required_space_guards": [
+      [
+        10,
+        12
+      ],
+      [
+        37,
+        39
+      ],
+      [
+        45,
+        47
+      ]
+    ],
+    "header_prefix": "DISPATCH STORE : ",
+    "header_width": 24,
+    "warehouse": [
+      17,
+      24
+    ]
+  },
+  "field_meanings": {
+    "warehouse": "dispatch store from latest valid header on this page",
+    "item": "catalogue part code",
+    "qty": "replenishment units",
+    "price": "unit price as an exact decimal string"
+  },
+  "canonical_ignore_intent": [
+    {
+      "name": "page_header",
+      "mode": "prefix",
+      "text": "WORKSHOP REPLENISHMENT / RUN 06A / PAGE ",
+      "reset": true
+    },
+    {
+      "name": "column_header",
+      "mode": "exact",
+      "text": "   ITEM     DESCRIPTION                   QTY       PRICE",
+      "reset": false
+    },
+    {
+      "name": "page_footer",
+      "mode": "exact",
+      "text": "=== DISPATCH PAGE COMPLETE ===",
+      "reset": true
+    },
+    {
+      "name": "planner_note",
+      "mode": "exact",
+      "text": "NOTE FOR PLANNER: quoted lead times are informational only.",
+      "reset": false,
+      "stage": "only after explicit review"
+    }
+  ],
+  "stages": {
+    "pre_handling": "After authoring fields/context/page-and-column/footer ignores, leave planner note unresolved. Attempt normal export. It must be blocked and create no clean CSV.",
+    "final": "Explicitly ignore the informational planner note. Keep the malformed business row REJECTED. Attempt normal export again: still blocked. Explicitly confirm exception export; its accepted-row CSV must equal expected.rows.exception.csv. Preserve source bytes."
+  },
+  "final_required_counts": {
+    "HEADER": 4,
+    "DETAIL": 18,
+    "IGNORED_BY_EXPLICIT_RULE": 12,
+    "UNRESOLVED": 0,
+    "REJECTED": 1
+  },
+  "exception_requirements": {
+    "export_status": "EXPLICIT_EXCEPTION",
+    "accepted_row_count": 18,
+    "unresolved_count": 0,
+    "rejected_count": 1,
+    "omitted_problem_lines": [
+      12
+    ],
+    "normal_clean_export_blocked": true,
+    "csv_sha256": "4607522c15c714ab86c92c44a6397e11f687a1dcad32f7faef457e4820883d2d",
+    "input_bytes_must_match_source": true,
+    "retain_full_line_accounting_and_per_value_provenance": true,
+    "rule_bytes_and_manifest_member_hashes_must_verify": true
+  },
+  "unacceptable_shortcuts": [
+    "Editing, normalizing, repairing, or replacing the input report",
+    "Ignoring or classifying the malformed business-detail row as non-data",
+    "Exporting its silently truncated quantity",
+    "Presenting exception CSV as a clean extraction",
+    "Writing a CSV directly from preview/API bytes to bypass normal export",
+    "Giving hidden coordinates, private expected files, a ready-made rule, implementation code, or author hints to the tester"
+  ],
+  "oracle_comparison_policy": {
+    "csv": "Exact byte equality, including column order, row order, lexical values and LF endings.",
+    "line_accounting": "Exact physical lines/raw bytes/categories/context transitions at both stages. Custom explicit-ignore labels may differ, provided the literal source match and reset intent are equivalent. Diagnostic reason wording may differ if it identifies the same defect without concealing its location.",
+    "canonical_provenance": "expected.canonical.provenance.json freezes one canonical full-field representation before testing.",
+    "independent_selection_equivalence": "Different field-padding spans are legitimate only if they select the same exact business value wholly within that field's canonical span, include all non-space characters in that field on every accepted row, and preserve all 18 expected accepted rows. Warehouse start must be its canonical start; item start must be its canonical start. Numeric end must be its canonical end. Each actual raw substring must equal original source[line][start:end], trim to the expected value, carry original source SHA-256, and have correct detail/header lineage and inherited markers. Record every coordinate difference; do not silently call it canonical equality.",
+    "safety_for_equivalent_spans": "Malformed line must remain REJECTED, never unresolved or ignored in final output. The detector/guards must remain complete and clean export blocked.",
+    "rule_hash": "Depends on exact saved bytes; verify directly against them. It is not a predetermined output."
+  },
+  "independence": "Tester receives only raw report, business-intent handout, and public-facing README/instructions. This directory, generator, policy and answers are withheld. Auditor gets the frozen hash manifest before test results.",
+  "acceptance_is_immutable": "Do not alter report, expected answers or these criteria after any SpoolLens execution. A mistake must be disclosed; a new dataset requires a new independent test, never a patched oracle."
+}

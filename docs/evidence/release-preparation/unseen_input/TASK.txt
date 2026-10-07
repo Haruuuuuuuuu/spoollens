@@ -1,0 +1,11 @@
+# Workshop replenishment extraction task
+
+Create a reusable extraction rule for this synthetic dispatch-store replenishment report using SpoolLens and its public-facing instructions. Start with an empty rule.
+
+The requested CSV columns are warehouse, item, qty, price. The DISPATCH STORE heading is the inherited warehouse context. ITEM is the catalogue part code, QTY is replenishment units, and PRICE is unit price. Descriptions help you identify the rows but are not part of the requested CSV. Preserve the values as printed, including decimal places and zero quantities. A page begins a new context; do not carry a store across a page boundary without its heading. A later store heading on the same page replaces the earlier store.
+
+Page and column headings and page-complete footers are non-data. Review any other unmatched text before deciding how to handle it. An informational note may be explicitly ignored after review. A malformed business row must not be ignored or silently repaired to obtain a clean result. Keep the input unchanged and use the documented, clearly labelled exception-export route if needed, retaining its evidence with the CSV.
+
+Use the UI to define the fields and inherited context, inspect unknown or rejected lines, preview values, and inspect at least one value's exact source provenance. Save your rule, close and reopen it, and replay it. Attempt normal CSV export while unmatched text remains, inspect the explanation, then explicitly handle the issues and generate the permitted output.
+
+Record elapsed time, mistakes, documentation lookups, confusing controls or wording, whether regex or code/template syntax was necessary, and whether you needed information beyond this report, this task, and the public instructions. Do not inspect the implementation, tests, previous rules, private expected answers, or other authoring evidence.

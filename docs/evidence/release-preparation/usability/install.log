@@ -1,0 +1,18 @@
+Linux e64e16cbc943 6.18.44 #1 SMP Sat Sep 26 20:02:31 UTC 2026 x86_64 GNU/Linux
+Python 3.12.14
+WARNING: The directory '<USER_HOME>/.cache/pip' or its parent directory is not owned or is not writable by the current user. The cache has been disabled. Check the permissions and owner of that directory. If executing pip with sudo, you should use sudo's -H flag.
+Processing <WORKSPACE>/spoollens_release/usability/fresh-clone
+  Installing build dependencies: started
+  Installing build dependencies: finished with status 'done'
+  Getting requirements to build wheel: started
+  Getting requirements to build wheel: finished with status 'done'
+  Preparing metadata (pyproject.toml): started
+  Preparing metadata (pyproject.toml): finished with status 'done'
+Building wheels for collected packages: spoollens
+  Building wheel for spoollens (pyproject.toml): started
+  Building wheel for spoollens (pyproject.toml): finished with status 'done'
+  Created wheel for spoollens: filename=spoollens-0.1.0-py3-none-any.whl size=24725 sha256=da0c15db3d030a89ca42aa1c3a82495bb6ccbbf4dcb6359e0d323f891eca1190
+  Stored in directory: /tmp/pip-ephem-wheel-cache-vkq_nsda/wheels/c9/b2/2b/4b53c3887eded69d85dc47c02f822d032af8d44fd7c98c2995
+Successfully built spoollens
+Installing collected packages: spoollens
+Successfully installed spoollens-0.1.0

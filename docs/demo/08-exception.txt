@@ -1,0 +1,32 @@
+EXPLICIT EXCEPTION bundle saved                                                                                         
+                                                                                                                        
+ /tmp/spoollens-demo/output/C.exception.zip                                                                             
+ Input SHA256 318f02610fa08f95b8018f5dd690433ec30ad003a496c15aee4059c457ce4a77                                          
+ Rule SHA256 85807556db918f1ba7d923c726e62bca3f501980245d611114367e4529a07686                                           
+ {"status": "EXPLICIT_EXCEPTION", "path": "/tmp/spoollens-demo/output/C.exception.zip", "manifest": {"exception_status> 
+                                                                                                                        
+                                                                                                                        
+                                                                                                                        
+                                                                                                                        
+                                                                                                                        
+                                                                                                                        
+                                                                                                                        
+                                                                                                                        
+                                                                                                                        
+                                                                                                                        
+                                                                                                                        
+                                                                                                                        
+                                                                                                                        
+                                                                                                                        
+                                                                                                                        
+                                                                                                                        
+                                                                                                                        
+                                                                                                                        
+                                                                                                                        
+                                                                                                                        
+                                                                                                                        
+                                                                                                                        
+                                                                                                                        
+                                                                                                                        
+Lines 1-4/4 | chars from 0 | < > means more text                                                                        
+Enter/Esc close | arrows scroll | Home/End width | PgUp/PgDn lines                                                      

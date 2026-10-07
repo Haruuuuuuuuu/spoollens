@@ -1,0 +1,24 @@
+{
+  "verified_at_utc": "2026-10-07T03:34:05.794347+00:00",
+  "manifest_files": 20,
+  "reports": [
+    {
+      "report": "A_clean",
+      "physical_lines": 10,
+      "provenance_values": 12,
+      "status": "PASS"
+    },
+    {
+      "report": "B_boundaries",
+      "physical_lines": 18,
+      "provenance_values": 16,
+      "status": "PASS"
+    },
+    {
+      "report": "C_dangerous",
+      "physical_lines": 19,
+      "provenance_values": 8,
+      "status": "PASS"
+    }
+  ]
+}

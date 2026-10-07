@@ -1,0 +1,5 @@
+warehouse,item,qty,price
+NORTH,R001,1,1.00
+SOUTH,R005,5,5.00
+SOUTH,R006,6,6.00
+CENTRAL,R007,7,7.00

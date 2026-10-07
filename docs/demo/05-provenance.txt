@@ -1,0 +1,32 @@
+Exact source evidence; Enter returns to highlighted source                                                              
+                                                                                                                        
+ row 1 qty='12': line 5 range [32, 37]                                                                                  
+ Source SHA256: f1c4b2aacdc53d76ffde2d809ce1d4634dc5e48a02fa71606df03e36c509e658                                        
+ Exact raw substring: '   12'                                                                                           
+ Detail line: 5                                                                                                         
+ Coordinates: line is 1-based; character range is 0-based, end-exclusive.                                               
+                                                                                                                        
+                                                                                                                        
+                                                                                                                        
+                                                                                                                        
+                                                                                                                        
+                                                                                                                        
+                                                                                                                        
+                                                                                                                        
+                                                                                                                        
+                                                                                                                        
+                                                                                                                        
+                                                                                                                        
+                                                                                                                        
+                                                                                                                        
+                                                                                                                        
+                                                                                                                        
+                                                                                                                        
+                                                                                                                        
+                                                                                                                        
+                                                                                                                        
+                                                                                                                        
+                                                                                                                        
+                                                                                                                        
+Lines 1-5/5 | chars from 0 | < > means more text                                                                        
+Enter/Esc close | arrows scroll | Home/End width | PgUp/PgDn lines                                                      

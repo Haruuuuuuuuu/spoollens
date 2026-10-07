@@ -1,0 +1,170 @@
+{
+  "source_sha256": "d59d3c07c99bb951b6083b1908276f2aa104fc7ae4be8ac45be57dab4628fcc4",
+  "csv_sha256": "f76eb68968382134758ecdc3c3cc370436bae9f8cb48c5e9838a44966c943958",
+  "counts": {
+    "HEADER": 2,
+    "DETAIL": 2,
+    "IGNORED_BY_EXPLICIT_RULE": 0,
+    "UNRESOLVED": 0,
+    "REJECTED": 2
+  },
+  "physical_line_count": 6,
+  "whitespace_only_line_count": 0,
+  "clean_export_allowed": false,
+  "lines": [
+    {
+      "line": 1,
+      "raw": "WAREHOUSE: NORTH   ",
+      "category": "HEADER",
+      "context_before": null,
+      "context_after": "NORTH"
+    },
+    {
+      "line": 2,
+      "raw": "H001      BEFORE BAD HEADER         1      1.00",
+      "category": "DETAIL",
+      "context_before": "NORTH",
+      "context_after": "NORTH"
+    },
+    {
+      "line": 3,
+      "raw": "WAREHOUSE: BAD1    ",
+      "category": "REJECTED",
+      "context_before": "NORTH",
+      "context_after": null
+    },
+    {
+      "line": 4,
+      "raw": "H002      AFTER BAD HEADER          2      2.00",
+      "category": "REJECTED",
+      "context_before": null,
+      "context_after": null
+    },
+    {
+      "line": 5,
+      "raw": "WAREHOUSE: SOUTH   ",
+      "category": "HEADER",
+      "context_before": null,
+      "context_after": "SOUTH"
+    },
+    {
+      "line": 6,
+      "raw": "H003      AFTER GOOD HEADER         3      3.00",
+      "category": "DETAIL",
+      "context_before": "SOUTH",
+      "context_after": "SOUTH"
+    }
+  ],
+  "provenance": [
+    {
+      "row": 1,
+      "detail_line": 2,
+      "fields": {
+        "warehouse": {
+          "value": "NORTH",
+          "source_sha256": "d59d3c07c99bb951b6083b1908276f2aa104fc7ae4be8ac45be57dab4628fcc4",
+          "line": 1,
+          "range": [
+            11,
+            19
+          ],
+          "raw": "NORTH   ",
+          "inherited": true,
+          "header_line": 1,
+          "header_range": [
+            11,
+            19
+          ]
+        },
+        "item": {
+          "value": "H001",
+          "source_sha256": "d59d3c07c99bb951b6083b1908276f2aa104fc7ae4be8ac45be57dab4628fcc4",
+          "line": 2,
+          "range": [
+            0,
+            8
+          ],
+          "raw": "H001    ",
+          "inherited": false
+        },
+        "qty": {
+          "value": "1",
+          "source_sha256": "d59d3c07c99bb951b6083b1908276f2aa104fc7ae4be8ac45be57dab4628fcc4",
+          "line": 2,
+          "range": [
+            32,
+            37
+          ],
+          "raw": "    1",
+          "inherited": false
+        },
+        "price": {
+          "value": "1.00",
+          "source_sha256": "d59d3c07c99bb951b6083b1908276f2aa104fc7ae4be8ac45be57dab4628fcc4",
+          "line": 2,
+          "range": [
+            39,
+            47
+          ],
+          "raw": "    1.00",
+          "inherited": false
+        }
+      }
+    },
+    {
+      "row": 2,
+      "detail_line": 6,
+      "fields": {
+        "warehouse": {
+          "value": "SOUTH",
+          "source_sha256": "d59d3c07c99bb951b6083b1908276f2aa104fc7ae4be8ac45be57dab4628fcc4",
+          "line": 5,
+          "range": [
+            11,
+            19
+          ],
+          "raw": "SOUTH   ",
+          "inherited": true,
+          "header_line": 5,
+          "header_range": [
+            11,
+            19
+          ]
+        },
+        "item": {
+          "value": "H003",
+          "source_sha256": "d59d3c07c99bb951b6083b1908276f2aa104fc7ae4be8ac45be57dab4628fcc4",
+          "line": 6,
+          "range": [
+            0,
+            8
+          ],
+          "raw": "H003    ",
+          "inherited": false
+        },
+        "qty": {
+          "value": "3",
+          "source_sha256": "d59d3c07c99bb951b6083b1908276f2aa104fc7ae4be8ac45be57dab4628fcc4",
+          "line": 6,
+          "range": [
+            32,
+            37
+          ],
+          "raw": "    3",
+          "inherited": false
+        },
+        "price": {
+          "value": "3.00",
+          "source_sha256": "d59d3c07c99bb951b6083b1908276f2aa104fc7ae4be8ac45be57dab4628fcc4",
+          "line": 6,
+          "range": [
+            39,
+            47
+          ],
+          "raw": "    3.00",
+          "inherited": false
+        }
+      }
+    }
+  ]
+}

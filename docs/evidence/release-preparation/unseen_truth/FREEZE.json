@@ -1,0 +1,49 @@
+{
+  "frozen_at_utc": "2026-10-07T06:53:06.991209+00:00",
+  "before_any_spoollens_execution": true,
+  "report_name": "workshop-replenishment-06a.txt",
+  "source_sha256": "65248ab62aa3ceb0054c25fd9e524070638bd617b4cdf1821304283116c4900e",
+  "expected_csv_sha256": "4607522c15c714ab86c92c44a6397e11f687a1dcad32f7faef457e4820883d2d",
+  "files": {
+    "unseen_input/TASK.txt": {
+      "sha256": "72a5c436b60c3464445e7b544cc9da8850e4034842edeaccf2ce940547118445",
+      "bytes": 1873
+    },
+    "unseen_input/workshop-replenishment-06a.txt": {
+      "sha256": "65248ab62aa3ceb0054c25fd9e524070638bd617b4cdf1821304283116c4900e",
+      "bytes": 1783
+    },
+    "unseen_truth/PRIVATE_ACCEPTANCE_POLICY.json": {
+      "sha256": "351f4dcf514f2ba7fcf8ee618dcf24bf4b0a1f71ca10cc41d7279bb5c0a5071b",
+      "bytes": 5897
+    },
+    "unseen_truth/expected.canonical.provenance.json": {
+      "sha256": "7471bdef36e8d6ae0d74618759f16fbc64d1c58e3c7b9eaa1bc8d53cd33b0e39",
+      "bytes": 24769
+    },
+    "unseen_truth/expected.final.accounting.json": {
+      "sha256": "684f6ead31d008449b6711c3c0837775246e18ff15eb3c0fd90d2e9fca24f1bf",
+      "bytes": 9132
+    },
+    "unseen_truth/expected.final.export.json": {
+      "sha256": "95b0d2bf3057ba1f4b29737994181b030b43d46ec631c629ee7b4b30b9a898e2",
+      "bytes": 539
+    },
+    "unseen_truth/expected.pre_handling.accounting.json": {
+      "sha256": "200dbf0acda56755c99d1d6818ddf4ada9f6faf1ab3e647317f7963d4cde6bdf",
+      "bytes": 9130
+    },
+    "unseen_truth/expected.pre_handling.export.json": {
+      "sha256": "53a11d68875454a0d4aa5d390744b4345d78237720a16143627d21d4bdb5d1f9",
+      "bytes": 645
+    },
+    "unseen_truth/expected.rows.exception.csv": {
+      "sha256": "4607522c15c714ab86c92c44a6397e11f687a1dcad32f7faef457e4820883d2d",
+      "bytes": 410
+    },
+    "unseen_truth/freeze_unseen_report.py": {
+      "sha256": "b5889770a66991e4135e73fa0dd17d0f1d91d854c663fccad62f002c0af1003a",
+      "bytes": 16708
+    }
+  }
+}

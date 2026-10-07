@@ -1,0 +1,32 @@
+CLEAN EXPORT BLOCKED: no CSV was created                                                                                
+                                                                                                                        
+ UNRESOLVED 1; REJECTED 5                                                                                               
+ Use n to jump through problem lines and read the reason.                                                               
+ Correct your rule only when the source justifies it.                                                                   
+ For an explicit incomplete-data bundle, use x. It is never a clean CSV.                                                
+                                                                                                                        
+ Line 3: REJECTED - missing_warehouse_context                                                                           
+   Exact source text: 'C000      ORPHAN BEFORE             2      1.00'                                                 
+ Line 7: REJECTED - non_space_separator                                                                                 
+   Exact source text: 'C111      SHIFTED QTY               17     2.00'                                                 
+ Line 8: REJECTED - invalid_qty_integer                                                                                 
+   Exact source text: 'C112      BAD QUANTITY             2O      8.00'                                                 
+ Line 9: UNRESOLVED - no_explicit_rule_matched                                                                          
+   Exact source text: 'NOTICE: PRICE REVIEW PENDING'                                                                    
+ Line 10: REJECTED - invalid_record_width                                                                               
+   Exact source text: 'C113      SHORT RECORD              9      4.7'                                                  
+ Line 15: REJECTED - missing_warehouse_context                                                                          
+   Exact source text: 'C200      ORPHAN AFTER              1      6.00'                                                 
+                                                                                                                        
+                                                                                                                        
+                                                                                                                        
+                                                                                                                        
+                                                                                                                        
+                                                                                                                        
+                                                                                                                        
+                                                                                                                        
+                                                                                                                        
+                                                                                                                        
+                                                                                                                        
+Lines 1-17/17 | chars from 0 | < > means more text                                                                      
+Enter/Esc close | arrows scroll | Home/End width | PgUp/PgDn lines                                                      

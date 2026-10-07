@@ -1,0 +1,163 @@
+{
+  "source_sha256": "89c52eaa4d8d79abd2642bfdcd1ffc1b923f0c1a7935f06a48cb2063988d267a",
+  "csv_sha256": "aa65ee5ed2edc9aa2393bc115446e386613709a978efa871973295479bc79d5e",
+  "counts": {
+    "HEADER": 1,
+    "DETAIL": 2,
+    "IGNORED_BY_EXPLICIT_RULE": 0,
+    "UNRESOLVED": 1,
+    "REJECTED": 1
+  },
+  "physical_line_count": 5,
+  "whitespace_only_line_count": 0,
+  "clean_export_allowed": false,
+  "lines": [
+    {
+      "line": 1,
+      "raw": "WAREHOUSE: WEST    ",
+      "category": "HEADER",
+      "context_before": null,
+      "context_after": "WEST"
+    },
+    {
+      "line": 2,
+      "raw": "P001      BEFORE ERRORS             1      1.00",
+      "category": "DETAIL",
+      "context_before": "WEST",
+      "context_after": "WEST"
+    },
+    {
+      "line": 3,
+      "raw": "NOTICE: STOCKTAKE TOMORROW",
+      "category": "UNRESOLVED",
+      "context_before": "WEST",
+      "context_after": "WEST"
+    },
+    {
+      "line": 4,
+      "raw": "P002      MALFORMED QTY            2O      2.00",
+      "category": "REJECTED",
+      "context_before": "WEST",
+      "context_after": "WEST"
+    },
+    {
+      "line": 5,
+      "raw": "P003      AFTER ERRORS              3      3.00",
+      "category": "DETAIL",
+      "context_before": "WEST",
+      "context_after": "WEST"
+    }
+  ],
+  "provenance": [
+    {
+      "row": 1,
+      "detail_line": 2,
+      "fields": {
+        "warehouse": {
+          "value": "WEST",
+          "source_sha256": "89c52eaa4d8d79abd2642bfdcd1ffc1b923f0c1a7935f06a48cb2063988d267a",
+          "line": 1,
+          "range": [
+            11,
+            19
+          ],
+          "raw": "WEST    ",
+          "inherited": true,
+          "header_line": 1,
+          "header_range": [
+            11,
+            19
+          ]
+        },
+        "item": {
+          "value": "P001",
+          "source_sha256": "89c52eaa4d8d79abd2642bfdcd1ffc1b923f0c1a7935f06a48cb2063988d267a",
+          "line": 2,
+          "range": [
+            0,
+            8
+          ],
+          "raw": "P001    ",
+          "inherited": false
+        },
+        "qty": {
+          "value": "1",
+          "source_sha256": "89c52eaa4d8d79abd2642bfdcd1ffc1b923f0c1a7935f06a48cb2063988d267a",
+          "line": 2,
+          "range": [
+            32,
+            37
+          ],
+          "raw": "    1",
+          "inherited": false
+        },
+        "price": {
+          "value": "1.00",
+          "source_sha256": "89c52eaa4d8d79abd2642bfdcd1ffc1b923f0c1a7935f06a48cb2063988d267a",
+          "line": 2,
+          "range": [
+            39,
+            47
+          ],
+          "raw": "    1.00",
+          "inherited": false
+        }
+      }
+    },
+    {
+      "row": 2,
+      "detail_line": 5,
+      "fields": {
+        "warehouse": {
+          "value": "WEST",
+          "source_sha256": "89c52eaa4d8d79abd2642bfdcd1ffc1b923f0c1a7935f06a48cb2063988d267a",
+          "line": 1,
+          "range": [
+            11,
+            19
+          ],
+          "raw": "WEST    ",
+          "inherited": true,
+          "header_line": 1,
+          "header_range": [
+            11,
+            19
+          ]
+        },
+        "item": {
+          "value": "P003",
+          "source_sha256": "89c52eaa4d8d79abd2642bfdcd1ffc1b923f0c1a7935f06a48cb2063988d267a",
+          "line": 5,
+          "range": [
+            0,
+            8
+          ],
+          "raw": "P003    ",
+          "inherited": false
+        },
+        "qty": {
+          "value": "3",
+          "source_sha256": "89c52eaa4d8d79abd2642bfdcd1ffc1b923f0c1a7935f06a48cb2063988d267a",
+          "line": 5,
+          "range": [
+            32,
+            37
+          ],
+          "raw": "    3",
+          "inherited": false
+        },
+        "price": {
+          "value": "3.00",
+          "source_sha256": "89c52eaa4d8d79abd2642bfdcd1ffc1b923f0c1a7935f06a48cb2063988d267a",
+          "line": 5,
+          "range": [
+            39,
+            47
+          ],
+          "raw": "    3.00",
+          "inherited": false
+        }
+      }
+    }
+  ]
+}

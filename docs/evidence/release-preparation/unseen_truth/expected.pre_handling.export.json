@@ -1,0 +1,27 @@
+{
+  "source_sha256": "65248ab62aa3ceb0054c25fd9e524070638bd617b4cdf1821304283116c4900e",
+  "accepted_row_count": 18,
+  "rule_complete": true,
+  "clean_export_allowed": false,
+  "unresolved_count": 1,
+  "rejected_count": 1,
+  "rule_issues": [],
+  "errors": [
+    {
+      "line": 10,
+      "category": "UNRESOLVED",
+      "reason": "no_explicit_rule_matched"
+    },
+    {
+      "line": 12,
+      "category": "REJECTED",
+      "reason": "non_space_separator",
+      "range": [
+        45,
+        47
+      ],
+      "raw": "7 "
+    }
+  ],
+  "rule_sha256": "Depends on the exact independently authored and saved rule; verify against actual bytes."
+}

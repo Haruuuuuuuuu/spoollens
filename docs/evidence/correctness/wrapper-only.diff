@@ -1,0 +1,28 @@
+--- original/run_blackbox.py
++++ portable/run_blackbox.py
+@@ -10,7 +10,7 @@
+ from pathlib import Path
+ 
+ ROOT = Path(__file__).resolve().parent
+-FROZEN = ROOT.parent / "fixtures"
++FROZEN = None  # supplied through --fixtures; original evidence stays external
+ VARIATIONS = ROOT / "predeclared"
+ 
+ def sha(data):
+@@ -73,12 +73,16 @@
+     return values
+ 
+ def main():
++    global FROZEN, VARIATIONS
+     parser = argparse.ArgumentParser()
+     parser.add_argument("--candidate", type=Path, required=True)
++    parser.add_argument("--fixtures", type=Path, required=True, help="Untouched original frozen fixture directory")
++    parser.add_argument("--variations", type=Path, default=ROOT / "predeclared", help="Predeclared variation directory; defaults beside this script")
+     parser.add_argument("--python", type=Path, required=True)
+     parser.add_argument("--sha", required=True)
+     parser.add_argument("--out", type=Path, required=True)
+     args = parser.parse_args()
++    FROZEN, VARIATIONS = args.fixtures.resolve(), args.variations.resolve()
+     candidate, python, out = args.candidate.resolve(), args.python.resolve(), args.out.resolve()
+     out.mkdir(parents=True, exist_ok=False)
+     commands = []

@@ -1,0 +1,46 @@
+{
+  "A_clean": {
+    "verified_value_origins": 12,
+    "counts": {
+      "HEADER": 2,
+      "DETAIL": 3,
+      "IGNORED_BY_EXPLICIT_RULE": 3,
+      "UNRESOLVED": 0,
+      "REJECTED": 0
+    },
+    "physical_lines": 10,
+    "blank_lines": 2
+  },
+  "B_boundaries": {
+    "verified_value_origins": 16,
+    "counts": {
+      "HEADER": 3,
+      "DETAIL": 4,
+      "IGNORED_BY_EXPLICIT_RULE": 8,
+      "UNRESOLVED": 0,
+      "REJECTED": 0
+    },
+    "physical_lines": 18,
+    "blank_lines": 3
+  },
+  "C_dangerous": {
+    "verified_value_origins": 8,
+    "counts": {
+      "HEADER": 2,
+      "DETAIL": 2,
+      "IGNORED_BY_EXPLICIT_RULE": 7,
+      "UNRESOLVED": 1,
+      "REJECTED": 5
+    },
+    "physical_lines": 19,
+    "blank_lines": 2
+  },
+  "C_UI_CLI_exception_payloads_identical": {
+    "C_dangerous.exception.csv": true,
+    "input.bin": true,
+    "rule.json": true,
+    "accounting.json": true,
+    "provenance.json": true,
+    "manifest.json": true
+  }
+}

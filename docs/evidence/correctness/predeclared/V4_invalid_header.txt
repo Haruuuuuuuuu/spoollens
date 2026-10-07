@@ -1,0 +1,6 @@
+WAREHOUSE: NORTH   
+H001      BEFORE BAD HEADER         1      1.00
+WAREHOUSE: BAD1    
+H002      AFTER BAD HEADER          2      2.00
+WAREHOUSE: SOUTH   
+H003      AFTER GOOD HEADER         3      3.00

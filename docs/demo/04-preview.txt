@@ -1,0 +1,32 @@
+SpoolLens | A_clean.txt | utf-8 / ASCII | ? help                                                                        
+Arrows move | Space select | f field | h warehouse | i ignore | p page break | ? help                                   
+w save | l reload | o open report | v inspect value | e clean CSV | x exception | u undo | q quit                       
+HEADER 2 | DETAIL 3 | IGNORED_BY_EXPLICIT_RULE 3 | UNRESOLVED 0 | REJECTED 0                                            
+CLEAN EXPORT READY                                                                                                      
+line/status  0         1         2         3         4         5         6         7         8         9         0      
+char index   0123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345 
+   1 IGNORE  INVENTORY VALUATION  PAGE 001                                                                              
+   2 HEADER  WAREHOUSE: NORTH                                                                                           
+   3 BLANK   (empty)                                                                                                    
+   4 IGNORE  ITEM      DESCRIPTION             QTY     PRICE                                                            
+   5 DETAIL  A100      WIDGET BLUE              12      9.95                                                            
+   6 DETAIL  A101      WIDGET RED                5     10.50                                                            
+   7 BLANK                                                                                                              
+   8 HEADER  WAREHOUSE: SOUTH                                                                                           
+   9 DETAIL  A100      WIDGET BLUE               8      9.95                                                            
+> 10 IGNORE  END OF PAGE                                                                                                
+                                                                                                                        
+                                                                                                                        
+                                                                                                                        
+                                                                                                                        
+                                                                                                                        
+                                                                                                                        
+Line 10 char 0 | IGNORED_BY_EXPLICIT_RULE: page_footer                                                                  
+Candidate output (inspect any row/field with v)                                                                         
+ row  warehouse    item       qty        price       detail source                                                      
+   1  NORTH        A100       12         9.95        line 5                                                             
+   2  NORTH        A101       5          10.50       line 6                                                             
+   3  SOUTH        A100       8          9.95        line 9                                                             
+                                                                                                                        
+Standalone FF is explicitly ignored and clears warehouse context                                                        
+UNSAVED rule | a full status/paths | r review rules | g go to line/character | s add space guard | Esc clear selection  

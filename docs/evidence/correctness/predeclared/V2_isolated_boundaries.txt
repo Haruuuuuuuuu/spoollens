@@ -1,0 +1,18 @@
+WAREHOUSE: NORTH   
+R001      BEFORE FOOTER             1      1.00
+END OF PAGE
+R002      AFTER FOOTER              2      2.00
+WAREHOUSE: WEST    
+
+R003      AFTER FF                  3      3.00
+WAREHOUSE: EAST    
+INVENTORY VALUATION  PAGE 010
+R004      AFTER PAGE                4      4.00
+WAREHOUSE: SOUTH   
+  
+ITEM      DESCRIPTION             QTY     PRICE
+R005      AFTER COLUMN              5      5.00
+
+R006      AFTER BLANK               6      6.00
+WAREHOUSE: CENTRAL 
+R007      AFTER CHANGE              7      7.00

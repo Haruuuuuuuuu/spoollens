@@ -1,0 +1,15 @@
+{
+  "verified_candidate_sha": "0f04a3ae959460721b0b2142acb72306d2c7ec15",
+  "original_script_sha256": "1de5437ed2977c947c2b30c21bebf6f83ad3342dcff5cba440b9ba2a83943c2f",
+  "portable_script_sha256": "edd9908973c1fce387f1df9adcf9b0d02fda1cd9e344d83457dbc4252797433b",
+  "wrapper_only_changes": [
+    "Original frozen-fixture path is supplied with required --fixtures.",
+    "Variation path can be supplied with --variations; default is bundled predeclared directory.",
+    "No assertions, expected values, extraction invocations, or result-comparison logic changed."
+  ],
+  "original_outputs_preserved": false,
+  "scope": "Local portable evidence only. No implementation or frozen truth changes. No remote publication.",
+  "public_redactions": [
+    "Execution-path prefixes in results/original-commands.json were redacted for public presentation; assertions, source hashes, and outcome data are unchanged."
+  ]
+}

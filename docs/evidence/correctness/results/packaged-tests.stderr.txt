@@ -1,0 +1,46 @@
+test_cli_clean_and_blocked_export (test_engine.CliTests.test_cli_clean_and_blocked_export) ... ok
+test_cli_explicit_evidence_paths_can_match_automatic_sidecars (test_engine.CliTests.test_cli_explicit_evidence_paths_can_match_automatic_sidecars) ... ok
+test_cli_queries_exact_evidence (test_engine.CliTests.test_cli_queries_exact_evidence) ... ok
+test_clean_artifacts_rollback_on_write_failure (test_engine.ExportSafetyTests.test_clean_artifacts_rollback_on_write_failure) ... ok
+test_clean_sidecars_have_verified_counts_hashes_and_exact_evidence (test_engine.ExportSafetyTests.test_clean_sidecars_have_verified_counts_hashes_and_exact_evidence) ... ok
+test_exception_requires_boolean_not_truthy_string (test_engine.ExportSafetyTests.test_exception_requires_boolean_not_truthy_string) ... ok
+test_existing_files_directories_symlinks_never_overwritten (test_engine.ExportSafetyTests.test_existing_files_directories_symlinks_never_overwritten) ... ok
+test_input_source_and_saved_rule_are_never_mutated (test_engine.ExportSafetyTests.test_input_source_and_saved_rule_are_never_mutated) ... ok
+test_mutated_public_preview_fails_closed (test_engine.ExportSafetyTests.test_mutated_public_preview_fails_closed) ... ok
+test_sidecar_collision_does_not_create_csv_or_overwrite_evidence (test_engine.ExportSafetyTests.test_sidecar_collision_does_not_create_csv_or_overwrite_evidence) ... ok
+test_stale_source_and_saved_rule_block_export (test_engine.ExportSafetyTests.test_stale_source_and_saved_rule_block_export) ... ok
+test_c_shifted_quantity_is_never_accepted_or_repaired (test_engine.GoldenContractTests.test_c_shifted_quantity_is_never_accepted_or_repaired) ... ok
+test_clean_export_and_exception_zip (test_engine.GoldenContractTests.test_clean_export_and_exception_zip) ... ok
+test_every_value_traces_back_to_exact_unmodified_characters (test_engine.GoldenContractTests.test_every_value_traces_back_to_exact_unmodified_characters) ... ok
+test_exact_frozen_csv_provenance_accounting_and_errors (test_engine.GoldenContractTests.test_exact_frozen_csv_provenance_accounting_and_errors) ... ok
+test_exception_directory_bundle (test_engine.GoldenContractTests.test_exception_directory_bundle) ... ok
+test_source_and_rule_frozen_integrity_unchanged (test_engine.GoldenContractTests.test_source_and_rule_frozen_integrity_unchanged) ... ok
+test_encoding_is_explicit_and_non_ascii_fails_everywhere (test_engine.InputPolicyTests.test_encoding_is_explicit_and_non_ascii_fails_everywhere) ... ok
+test_ff_is_one_physical_line_not_a_separator (test_engine.InputPolicyTests.test_ff_is_one_physical_line_not_a_separator) ... ok
+test_field_alignment_and_ascii_numeric_types (test_engine.InputPolicyTests.test_field_alignment_and_ascii_numeric_types) ... ok
+test_final_lf_does_not_create_spurious_empty_line (test_engine.InputPolicyTests.test_final_lf_does_not_create_spurious_empty_line) ... ok
+test_illegal_controls_fail_without_silent_line_drop (test_engine.InputPolicyTests.test_illegal_controls_fail_without_silent_line_drop) ... ok
+test_invalid_header_clears_context (test_engine.InputPolicyTests.test_invalid_header_clears_context) ... ok
+test_unknown_notice_never_silently_disappears (test_engine.InputPolicyTests.test_unknown_notice_never_silently_disappears) ... ok
+test_bad_ranges_and_overlaps_rejected (test_engine.RuleSafetyTests.test_bad_ranges_and_overlaps_rejected) ... ok
+test_canonical_rule_preserves_semantics_and_order (test_engine.RuleSafetyTests.test_canonical_rule_preserves_semantics_and_order) ... ok
+test_drafts_are_safe_and_export_blocked (test_engine.RuleSafetyTests.test_drafts_are_safe_and_export_blocked) ... ok
+test_duplicate_json_keys_and_non_json_rejected (test_engine.RuleSafetyTests.test_duplicate_json_keys_and_non_json_rejected) ... ok
+test_exact_loaded_rule_hash_and_mismatch (test_engine.RuleSafetyTests.test_exact_loaded_rule_hash_and_mismatch) ... ok
+test_ignore_rules_cannot_hide_candidates_or_each_other (test_engine.RuleSafetyTests.test_ignore_rules_cannot_hide_candidates_or_each_other) ... ok
+test_oversized_and_extreme_json_numbers_fail_closed (test_engine.RuleSafetyTests.test_oversized_and_extreme_json_numbers_fail_closed) ... ok
+test_schema_type_mutations_fail_with_safe_errors (test_engine.RuleSafetyTests.test_schema_type_mutations_fail_with_safe_errors) ... ok
+test_unknown_keys_and_executable_strings_rejected (test_engine.RuleSafetyTests.test_unknown_keys_and_executable_strings_rejected) ... ok
+test_blocked_export_does_not_even_prompt_for_destination (test_tui.TuiTests.test_blocked_export_does_not_even_prompt_for_destination) ... ok
+test_cancel_open_preserves_current_source (test_tui.TuiTests.test_cancel_open_preserves_current_source) ... ok
+test_keyboard_selection_uses_exact_characters (test_tui.TuiTests.test_keyboard_selection_uses_exact_characters) ... ok
+test_problem_navigation_highlights_engine_error_span (test_tui.TuiTests.test_problem_navigation_highlights_engine_error_span) ... ok
+test_prompt_default_replace_edit_and_cancel (test_tui.TuiTests.test_prompt_default_replace_edit_and_cancel) ... ok
+test_source_alias_cannot_be_saved_over (test_tui.TuiTests.test_source_alias_cannot_be_saved_over) ... ok
+test_visual_fields_generate_guards_and_undo (test_tui.TuiTests.test_visual_fields_generate_guards_and_undo) ... ok
+test_zero_ignore_index_does_not_delete_last_rule (test_tui.TuiTests.test_zero_ignore_index_does_not_delete_last_rule) ... ok
+
+----------------------------------------------------------------------
+Ran 41 tests in 0.384s
+
+OK

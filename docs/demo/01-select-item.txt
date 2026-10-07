@@ -1,0 +1,32 @@
+SpoolLens | A_clean.txt | utf-8 / ASCII | ? help                                                                        
+Arrows move | Space select | f field | h warehouse | i ignore | p page break | ? help                                   
+w save | l reload | o open report | v inspect value | e clean CSV | x exception | u undo | q quit                       
+HEADER 0 | DETAIL 0 | IGNORED_BY_EXPLICIT_RULE 0 | UNRESOLVED 8 | REJECTED 0                                            
+CLEAN EXPORT BLOCKED | e explains; n finds issues | draft: Select the inherited warehouse header field; Select the item 
+line/status  0         1         2         3         4         5         6         7         8         9         0      
+char index   0123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345 
+   1 UNKNOWN INVENTORY VALUATION  PAGE 001                                                                              
+   2 UNKNOWN WAREHOUSE: NORTH                                                                                           
+   3 BLANK   (empty)                                                                                                    
+   4 UNKNOWN ITEM      DESCRIPTION             QTY     PRICE                                                            
+>  5 UNKNOWN A100      WIDGET BLUE              12      9.95                                                            
+   6 UNKNOWN A101      WIDGET RED                5     10.50                                                            
+   7 BLANK                                                                                                              
+   8 UNKNOWN WAREHOUSE: SOUTH                                                                                           
+   9 UNKNOWN A100      WIDGET BLUE               8      9.95                                                            
+  10 UNKNOWN END OF PAGE                                                                                                
+                                                                                                                        
+                                                                                                                        
+                                                                                                                        
+                                                                                                                        
+                                                                                                                        
+                                                                                                                        
+Line 5 char 7 | selected [0,8) | UNRESOLVED: no_explicit_rule_matched                                                   
+Candidate output (inspect any row/field with v)                                                                         
+ row  warehouse    item       qty        price       detail source                                                      
+                                                                                                                        
+                                                                                                                        
+                                                                                                                        
+                                                                                                                        
+Selection started; move to the last included character, then f/h/i/s                                                    
+Rule unchanged | a full status/paths | r review rules | g go to line/character | s add space guard | Esc clear selectio 

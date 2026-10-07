@@ -1,0 +1,483 @@
+{
+  "candidate_sha": "0f04a3ae959460721b0b2142acb72306d2c7ec15",
+  "started_at_utc": "2026-10-07T04:11:58.064722+00:00",
+  "tests": [
+    {
+      "name": "A_clean",
+      "status": "PASS",
+      "line_count": 10,
+      "values": 12,
+      "counts": {
+        "HEADER": 2,
+        "DETAIL": 3,
+        "IGNORED_BY_EXPLICIT_RULE": 3,
+        "UNRESOLVED": 0,
+        "REJECTED": 0
+      },
+      "zip_sha256": "c22e199de290675b861043d73ddebb5fd94f41e541f027c452c87cabc8ffa9f6",
+      "csv_sha256": "1c49a81800d6fdf96bb292e684db86b19b7c00213ea46642eae7ed44198859e7",
+      "source_sha256": "f1c4b2aacdc53d76ffde2d809ce1d4634dc5e48a02fa71606df03e36c509e658",
+      "clean_export_allowed": true
+    },
+    {
+      "name": "B_boundaries",
+      "status": "PASS",
+      "line_count": 18,
+      "values": 16,
+      "counts": {
+        "HEADER": 3,
+        "DETAIL": 4,
+        "IGNORED_BY_EXPLICIT_RULE": 8,
+        "UNRESOLVED": 0,
+        "REJECTED": 0
+      },
+      "zip_sha256": "f41f575d2e6ef93bacaf59b8e8ce973153adaf4bd77277282c1348157d151a3e",
+      "csv_sha256": "176a947371746d16a3a937178bd380913e18ff5470214645d792643fa2f14ac6",
+      "source_sha256": "f8c475c6f0764523425512514b3065dd9b5a549f3bda24c9414c28af27cc8868",
+      "clean_export_allowed": true
+    },
+    {
+      "name": "C_dangerous",
+      "status": "PASS",
+      "line_count": 19,
+      "values": 8,
+      "counts": {
+        "HEADER": 2,
+        "DETAIL": 2,
+        "IGNORED_BY_EXPLICIT_RULE": 7,
+        "UNRESOLVED": 1,
+        "REJECTED": 5
+      },
+      "zip_sha256": "5e37024129f062423246bcaafeb6b3b0b2d57bb3eebd6e163ee7de84bee443d5",
+      "csv_sha256": "4dce295d70f1bd7370b6e0fb7ea890506ef8945696cf08c37ff599f30e8f655c",
+      "source_sha256": "318f02610fa08f95b8018f5dd690433ec30ad003a496c15aee4059c457ce4a77",
+      "clean_export_allowed": false
+    },
+    {
+      "name": "V1_unseen_values",
+      "status": "PASS",
+      "line_count": 9,
+      "values": 12,
+      "counts": {
+        "HEADER": 2,
+        "DETAIL": 3,
+        "IGNORED_BY_EXPLICIT_RULE": 3,
+        "UNRESOLVED": 0,
+        "REJECTED": 0
+      },
+      "zip_sha256": "13de3050dfb3906bc5710470d25b491b7d7ebe8d73204ad9e761bbe0a2b271cc",
+      "csv_sha256": "596be45f4ed963b2cb7812f1251be283248a51d2ad18d3dee6ecd40da0dfcf6f",
+      "source_sha256": "5faa54258d7f95fa6f7f0baad4db44172116834e646b75d8d0016b9f97c4fe43",
+      "clean_export_allowed": true
+    },
+    {
+      "name": "V2_isolated_boundaries",
+      "status": "PASS",
+      "line_count": 18,
+      "values": 16,
+      "counts": {
+        "HEADER": 5,
+        "DETAIL": 4,
+        "IGNORED_BY_EXPLICIT_RULE": 4,
+        "UNRESOLVED": 0,
+        "REJECTED": 3
+      },
+      "zip_sha256": "fdd665288eef5cf97dff88a8909cfc919a5755a016ce9205afe69e6c38c3d452",
+      "csv_sha256": "13b943fdc3284a9dc5d6155d843f080478c6565e52ba632f2eb3431cc3e8ac21",
+      "source_sha256": "3200a9701b09370afc19676678feeab4159506876ab19f8ea3b54b6b96ab05a3",
+      "clean_export_allowed": false
+    },
+    {
+      "name": "V3_error_context",
+      "status": "PASS",
+      "line_count": 5,
+      "values": 8,
+      "counts": {
+        "HEADER": 1,
+        "DETAIL": 2,
+        "IGNORED_BY_EXPLICIT_RULE": 0,
+        "UNRESOLVED": 1,
+        "REJECTED": 1
+      },
+      "zip_sha256": "8ffe671ded4b95e11b7a315d32450d6a778b3928fd01ceb2db99b5ab4ee908d5",
+      "csv_sha256": "aa65ee5ed2edc9aa2393bc115446e386613709a978efa871973295479bc79d5e",
+      "source_sha256": "89c52eaa4d8d79abd2642bfdcd1ffc1b923f0c1a7935f06a48cb2063988d267a",
+      "clean_export_allowed": false
+    },
+    {
+      "name": "V4_invalid_header",
+      "status": "PASS",
+      "line_count": 6,
+      "values": 8,
+      "counts": {
+        "HEADER": 2,
+        "DETAIL": 2,
+        "IGNORED_BY_EXPLICIT_RULE": 0,
+        "UNRESOLVED": 0,
+        "REJECTED": 2
+      },
+      "zip_sha256": "665a5981200c809c46bef417222e61d12f8a89743faa21735c589b3b52d7a46e",
+      "csv_sha256": "f76eb68968382134758ecdc3c3cc370436bae9f8cb48c5e9838a44966c943958",
+      "source_sha256": "d59d3c07c99bb951b6083b1908276f2aa104fc7ae4be8ac45be57dab4628fcc4",
+      "clean_export_allowed": false
+    },
+    {
+      "name": "V5_no_final_lf",
+      "status": "PASS",
+      "line_count": 9,
+      "values": 12,
+      "counts": {
+        "HEADER": 2,
+        "DETAIL": 3,
+        "IGNORED_BY_EXPLICIT_RULE": 3,
+        "UNRESOLVED": 0,
+        "REJECTED": 0
+      },
+      "zip_sha256": "250de28c542a77857b2b42a01956bd1cb442bdd0fc0d4d2f8a7d2ab9af29ac10",
+      "csv_sha256": "596be45f4ed963b2cb7812f1251be283248a51d2ad18d3dee6ecd40da0dfcf6f",
+      "source_sha256": "12fb03aece0d3cde38fa00afe9b070c86fc7a79f4cbd5f34373c483f01b9cb2d",
+      "clean_export_allowed": true
+    }
+  ],
+  "checks": [
+    {
+      "name": "original frozen integrity before",
+      "status": "PASS",
+      "detail": 20
+    },
+    {
+      "name": "predeclared variation integrity before",
+      "status": "PASS",
+      "detail": 17
+    },
+    {
+      "name": "candidate frozen integrity",
+      "status": "PASS",
+      "detail": 20
+    },
+    {
+      "name": "fresh venv README install route",
+      "status": "PASS",
+      "detail": true
+    },
+    {
+      "name": "packaged unittest suite",
+      "status": "PASS",
+      "detail": true
+    },
+    {
+      "name": "A_clean exact accounting and provenance",
+      "status": "PASS",
+      "detail": {
+        "line_count": 10,
+        "values": 12,
+        "counts": {
+          "HEADER": 2,
+          "DETAIL": 3,
+          "IGNORED_BY_EXPLICIT_RULE": 3,
+          "UNRESOLVED": 0,
+          "REJECTED": 0
+        }
+      }
+    },
+    {
+      "name": "A_clean clean CSV and evidence hashes",
+      "status": "PASS",
+      "detail": "1c49a81800d6fdf96bb292e684db86b19b7c00213ea46642eae7ed44198859e7"
+    },
+    {
+      "name": "A_clean explicit bundle and byte-identical replay",
+      "status": "PASS",
+      "detail": {
+        "zip_sha256": "c22e199de290675b861043d73ddebb5fd94f41e541f027c452c87cabc8ffa9f6",
+        "csv_sha256": "1c49a81800d6fdf96bb292e684db86b19b7c00213ea46642eae7ed44198859e7"
+      }
+    },
+    {
+      "name": "B_boundaries exact accounting and provenance",
+      "status": "PASS",
+      "detail": {
+        "line_count": 18,
+        "values": 16,
+        "counts": {
+          "HEADER": 3,
+          "DETAIL": 4,
+          "IGNORED_BY_EXPLICIT_RULE": 8,
+          "UNRESOLVED": 0,
+          "REJECTED": 0
+        }
+      }
+    },
+    {
+      "name": "B_boundaries clean CSV and evidence hashes",
+      "status": "PASS",
+      "detail": "176a947371746d16a3a937178bd380913e18ff5470214645d792643fa2f14ac6"
+    },
+    {
+      "name": "B_boundaries explicit bundle and byte-identical replay",
+      "status": "PASS",
+      "detail": {
+        "zip_sha256": "f41f575d2e6ef93bacaf59b8e8ce973153adaf4bd77277282c1348157d151a3e",
+        "csv_sha256": "176a947371746d16a3a937178bd380913e18ff5470214645d792643fa2f14ac6"
+      }
+    },
+    {
+      "name": "C_dangerous unsafe clean artifact absent",
+      "status": "PASS",
+      "detail": true
+    },
+    {
+      "name": "C_dangerous exact accounting and provenance",
+      "status": "PASS",
+      "detail": {
+        "line_count": 19,
+        "values": 8,
+        "counts": {
+          "HEADER": 2,
+          "DETAIL": 2,
+          "IGNORED_BY_EXPLICIT_RULE": 7,
+          "UNRESOLVED": 1,
+          "REJECTED": 5
+        }
+      }
+    },
+    {
+      "name": "C_dangerous explicit bundle and byte-identical replay",
+      "status": "PASS",
+      "detail": {
+        "zip_sha256": "5e37024129f062423246bcaafeb6b3b0b2d57bb3eebd6e163ee7de84bee443d5",
+        "csv_sha256": "4dce295d70f1bd7370b6e0fb7ea890506ef8945696cf08c37ff599f30e8f655c"
+      }
+    },
+    {
+      "name": "V1_unseen_values exact accounting and provenance",
+      "status": "PASS",
+      "detail": {
+        "line_count": 9,
+        "values": 12,
+        "counts": {
+          "HEADER": 2,
+          "DETAIL": 3,
+          "IGNORED_BY_EXPLICIT_RULE": 3,
+          "UNRESOLVED": 0,
+          "REJECTED": 0
+        }
+      }
+    },
+    {
+      "name": "V1_unseen_values clean CSV and evidence hashes",
+      "status": "PASS",
+      "detail": "596be45f4ed963b2cb7812f1251be283248a51d2ad18d3dee6ecd40da0dfcf6f"
+    },
+    {
+      "name": "V1_unseen_values explicit bundle and byte-identical replay",
+      "status": "PASS",
+      "detail": {
+        "zip_sha256": "13de3050dfb3906bc5710470d25b491b7d7ebe8d73204ad9e761bbe0a2b271cc",
+        "csv_sha256": "596be45f4ed963b2cb7812f1251be283248a51d2ad18d3dee6ecd40da0dfcf6f"
+      }
+    },
+    {
+      "name": "V2_isolated_boundaries unsafe clean artifact absent",
+      "status": "PASS",
+      "detail": true
+    },
+    {
+      "name": "V2_isolated_boundaries exact accounting and provenance",
+      "status": "PASS",
+      "detail": {
+        "line_count": 18,
+        "values": 16,
+        "counts": {
+          "HEADER": 5,
+          "DETAIL": 4,
+          "IGNORED_BY_EXPLICIT_RULE": 4,
+          "UNRESOLVED": 0,
+          "REJECTED": 3
+        }
+      }
+    },
+    {
+      "name": "V2_isolated_boundaries explicit bundle and byte-identical replay",
+      "status": "PASS",
+      "detail": {
+        "zip_sha256": "fdd665288eef5cf97dff88a8909cfc919a5755a016ce9205afe69e6c38c3d452",
+        "csv_sha256": "13b943fdc3284a9dc5d6155d843f080478c6565e52ba632f2eb3431cc3e8ac21"
+      }
+    },
+    {
+      "name": "V3_error_context unsafe clean artifact absent",
+      "status": "PASS",
+      "detail": true
+    },
+    {
+      "name": "V3_error_context exact accounting and provenance",
+      "status": "PASS",
+      "detail": {
+        "line_count": 5,
+        "values": 8,
+        "counts": {
+          "HEADER": 1,
+          "DETAIL": 2,
+          "IGNORED_BY_EXPLICIT_RULE": 0,
+          "UNRESOLVED": 1,
+          "REJECTED": 1
+        }
+      }
+    },
+    {
+      "name": "V3_error_context explicit bundle and byte-identical replay",
+      "status": "PASS",
+      "detail": {
+        "zip_sha256": "8ffe671ded4b95e11b7a315d32450d6a778b3928fd01ceb2db99b5ab4ee908d5",
+        "csv_sha256": "aa65ee5ed2edc9aa2393bc115446e386613709a978efa871973295479bc79d5e"
+      }
+    },
+    {
+      "name": "V4_invalid_header unsafe clean artifact absent",
+      "status": "PASS",
+      "detail": true
+    },
+    {
+      "name": "V4_invalid_header exact accounting and provenance",
+      "status": "PASS",
+      "detail": {
+        "line_count": 6,
+        "values": 8,
+        "counts": {
+          "HEADER": 2,
+          "DETAIL": 2,
+          "IGNORED_BY_EXPLICIT_RULE": 0,
+          "UNRESOLVED": 0,
+          "REJECTED": 2
+        }
+      }
+    },
+    {
+      "name": "V4_invalid_header explicit bundle and byte-identical replay",
+      "status": "PASS",
+      "detail": {
+        "zip_sha256": "665a5981200c809c46bef417222e61d12f8a89743faa21735c589b3b52d7a46e",
+        "csv_sha256": "f76eb68968382134758ecdc3c3cc370436bae9f8cb48c5e9838a44966c943958"
+      }
+    },
+    {
+      "name": "V5_no_final_lf exact accounting and provenance",
+      "status": "PASS",
+      "detail": {
+        "line_count": 9,
+        "values": 12,
+        "counts": {
+          "HEADER": 2,
+          "DETAIL": 3,
+          "IGNORED_BY_EXPLICIT_RULE": 3,
+          "UNRESOLVED": 0,
+          "REJECTED": 0
+        }
+      }
+    },
+    {
+      "name": "V5_no_final_lf clean CSV and evidence hashes",
+      "status": "PASS",
+      "detail": "596be45f4ed963b2cb7812f1251be283248a51d2ad18d3dee6ecd40da0dfcf6f"
+    },
+    {
+      "name": "V5_no_final_lf explicit bundle and byte-identical replay",
+      "status": "PASS",
+      "detail": {
+        "zip_sha256": "250de28c542a77857b2b42a01956bd1cb442bdd0fc0d4d2f8a7d2ab9af29ac10",
+        "csv_sha256": "596be45f4ed963b2cb7812f1251be283248a51d2ad18d3dee6ecd40da0dfcf6f"
+      }
+    },
+    {
+      "name": "documented provenance query direct and inherited",
+      "status": "PASS",
+      "detail": {
+        "warehouse": {
+          "row": 2,
+          "detail_line": 12,
+          "field": "warehouse",
+          "evidence": {
+            "value": "SOUTH",
+            "source_sha256": "f8c475c6f0764523425512514b3065dd9b5a549f3bda24c9414c28af27cc8868",
+            "line": 11,
+            "range": [
+              11,
+              19
+            ],
+            "raw": "SOUTH   ",
+            "inherited": true,
+            "header_line": 11,
+            "header_range": [
+              11,
+              19
+            ]
+          }
+        },
+        "price": {
+          "row": 2,
+          "detail_line": 12,
+          "field": "price",
+          "evidence": {
+            "value": "0.20",
+            "source_sha256": "f8c475c6f0764523425512514b3065dd9b5a549f3bda24c9414c28af27cc8868",
+            "line": 12,
+            "range": [
+              39,
+              47
+            ],
+            "raw": "    0.20",
+            "inherited": false
+          }
+        }
+      }
+    },
+    {
+      "name": "invalid UTF-8 fails visibly without output",
+      "status": "PASS",
+      "detail": true
+    },
+    {
+      "name": "serialization/reload resaved.rule.json",
+      "status": "PASS",
+      "detail": {
+        "rule_sha256": "85807556db918f1ba7d923c726e62bca3f501980245d611114367e4529a07686",
+        "outputs": {
+          "A_clean": "1c49a81800d6fdf96bb292e684db86b19b7c00213ea46642eae7ed44198859e7",
+          "B_boundaries": "176a947371746d16a3a937178bd380913e18ff5470214645d792643fa2f14ac6",
+          "C_dangerous": "4dce295d70f1bd7370b6e0fb7ea890506ef8945696cf08c37ff599f30e8f655c"
+        }
+      }
+    },
+    {
+      "name": "serialization/reload reformatted.rule.json",
+      "status": "PASS",
+      "detail": {
+        "rule_sha256": "b5da8644d08f7b3ee82396f9594ad98b6cca283ff4f96b4633013f66edaaddfc",
+        "outputs": {
+          "A_clean": "1c49a81800d6fdf96bb292e684db86b19b7c00213ea46642eae7ed44198859e7",
+          "B_boundaries": "176a947371746d16a3a937178bd380913e18ff5470214645d792643fa2f14ac6",
+          "C_dangerous": "4dce295d70f1bd7370b6e0fb7ea890506ef8945696cf08c37ff599f30e8f655c"
+        }
+      }
+    },
+    {
+      "name": "source and original rule immutability",
+      "status": "PASS",
+      "detail": true
+    },
+    {
+      "name": "original frozen integrity after",
+      "status": "PASS",
+      "detail": 20
+    },
+    {
+      "name": "predeclared variation integrity after",
+      "status": "PASS",
+      "detail": 17
+    }
+  ],
+  "status": "PASS",
+  "rule_sha256": "85807556db918f1ba7d923c726e62bca3f501980245d611114367e4529a07686",
+  "completed_at_utc": "2026-10-07T04:12:00.747064+00:00"
+}

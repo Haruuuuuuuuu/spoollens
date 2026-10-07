@@ -1,0 +1,24 @@
+{
+  "source_sha256": "65248ab62aa3ceb0054c25fd9e524070638bd617b4cdf1821304283116c4900e",
+  "rule_sha256": "f91c1784b089f52eb95f77020b2bbee3a65050b101438a523f4bbe0800592388",
+  "accepted_row_count": 18,
+  "clean_export_allowed": false,
+  "unresolved_count": 0,
+  "rejected_count": 1,
+  "rule_complete": true,
+  "rule_issues": [],
+  "errors": [
+    {
+      "line": 12,
+      "category": "REJECTED",
+      "reason": "non_space_separator",
+      "range": [
+        45,
+        47
+      ],
+      "raw": "7 "
+    }
+  ],
+  "normal_csv_artifact_created": false,
+  "export_error": "Clean CSV export blocked: 0 unresolved, 1 rejected"
+}
