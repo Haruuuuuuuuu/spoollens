@@ -23,8 +23,8 @@ People repeatedly converting the same supported inventory layout into CSV who ne
 Requires Python 3.10+ with the standard `curses` module, and a Linux or macOS terminal. Linux is tested. Use a terminal at least 100 columns × 30 rows for a comfortable view; smaller terminals can scroll evidence. Native Windows is unsupported; WSL is unverified.
 
 ```sh
-git clone https://github.com/Haruuuuuuuuu/astra-lab-spoollens.git
-cd astra-lab-spoollens
+git clone https://github.com/Haruuuuuuuuu/spoollens.git
+cd spoollens
 python3 -m venv .venv
 . .venv/bin/activate
 python -m pip install .
