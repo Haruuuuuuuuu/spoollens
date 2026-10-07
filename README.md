@@ -1,12 +1,18 @@
 # SpoolLens
 
-Open-source extraction for recurring fixed-width TXT/PRN reports, with source provenance and safe export.
+Turn recurring fixed-width TXT/PRN reports into traceable CSV with reusable visual rules.
 
-- Visually define fixed-width fields and an inherited header
-- Trace every output value back to original source characters
-- Account for every non-empty source line
-- Block clean export when unresolved or rejected data remains
-- Save open JSON rules and replay them offline
+![A fixed-width inventory report becomes structured rows through visual ITEM, QTY, PRICE, and inherited WAREHOUSE selections in SpoolLens](docs/demo/overview/spoollens-hero.png)
+
+- Select the fields once and reuse the extraction rule
+- Trace every value to its exact original source characters
+- Block clean export while unresolved or rejected input remains
+
+## 14-second demo
+
+![Select fields, replay the rule, block malformed input, and trace an exported value to its exact source](docs/demo/overview/spoollens-overview.gif)
+
+Real terminal captures and actual CSV output, cropped and annotated for readability. [Demo details and the full technical walkthrough](docs/demo/overview/README.md).
 
 ## What it is
 
@@ -42,12 +48,6 @@ spoollens inspect tests/fixtures/A_clean.txt --rule examples/inventory.rule.json
 ```
 
 Use a new output filename on subsequent runs. SpoolLens never overwrites existing output files. Keep the adjacent `.audit.json`, `.provenance.json`, and `.manifest.json` files with a clean CSV.
-
-## 30-second demo
-
-![Actual SpoolLens terminal workflow](docs/demo/spoollens-demo.gif)
-
-[Demo captions and original captures](docs/demo/README.md). The sequence shows actual synthetic-report interaction, including an unsafe export being blocked, an explicit exception bundle, and clean replay of a valid report. No report is repaired behind the scenes.
 
 ## Example workflow
 
