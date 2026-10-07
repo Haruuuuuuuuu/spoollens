@@ -1,0 +1,79 @@
+{
+  "status": "PASS",
+  "cases": [
+    {
+      "name": "A_clean",
+      "status": "PASS",
+      "physical_lines": 10,
+      "provenance_values": 12,
+      "counts": {
+        "HEADER": 2,
+        "DETAIL": 3,
+        "IGNORED_BY_EXPLICIT_RULE": 3,
+        "UNRESOLVED": 0,
+        "REJECTED": 0
+      },
+      "clean_export_allowed": true,
+      "deterministic_all_artifacts": true,
+      "source_sha256": "f1c4b2aacdc53d76ffde2d809ce1d4634dc5e48a02fa71606df03e36c509e658"
+    },
+    {
+      "name": "B_boundaries",
+      "status": "PASS",
+      "physical_lines": 18,
+      "provenance_values": 16,
+      "counts": {
+        "HEADER": 3,
+        "DETAIL": 4,
+        "IGNORED_BY_EXPLICIT_RULE": 8,
+        "UNRESOLVED": 0,
+        "REJECTED": 0
+      },
+      "clean_export_allowed": true,
+      "deterministic_all_artifacts": true,
+      "source_sha256": "f8c475c6f0764523425512514b3065dd9b5a549f3bda24c9414c28af27cc8868"
+    },
+    {
+      "name": "C_dangerous",
+      "status": "PASS",
+      "physical_lines": 19,
+      "provenance_values": 8,
+      "counts": {
+        "HEADER": 2,
+        "DETAIL": 2,
+        "IGNORED_BY_EXPLICIT_RULE": 7,
+        "UNRESOLVED": 1,
+        "REJECTED": 5
+      },
+      "clean_export_allowed": false,
+      "deterministic_all_artifacts": true,
+      "source_sha256": "318f02610fa08f95b8018f5dd690433ec30ad003a496c15aee4059c457ce4a77"
+    }
+  ],
+  "source_and_rule_immutable": true,
+  "frozen_manifest_intact": true,
+  "input_hashes": {
+    "<WORKSPACE>/spoollens_release/validation/first-run/astra-lab-spoollens/examples/inventory.rule.json": "85807556db918f1ba7d923c726e62bca3f501980245d611114367e4529a07686",
+    "<WORKSPACE>/spoollens_release/validation/first-run/astra-lab-spoollens/tests/fixtures/SHA256SUMS": "cee78cfa473ea689eeaf246861c0f540eb6b48ab6c55efc517a8650fdf851af7",
+    "<WORKSPACE>/spoollens_release/validation/first-run/astra-lab-spoollens/tests/fixtures/B_boundaries.txt": "f8c475c6f0764523425512514b3065dd9b5a549f3bda24c9414c28af27cc8868",
+    "<WORKSPACE>/spoollens_release/validation/first-run/astra-lab-spoollens/tests/fixtures/README.md": "5d0ad678564c205b5a8d58f3b9fdabe5248660bcf368784093906279eacbaa85",
+    "<WORKSPACE>/spoollens_release/validation/first-run/astra-lab-spoollens/tests/fixtures/FREEZE.json": "f041e4abe3e7aa41e2a3f58aa60ea53380a61492212f6d6b486e29dc815e2b24",
+    "<WORKSPACE>/spoollens_release/validation/first-run/astra-lab-spoollens/tests/fixtures/A_clean.txt": "f1c4b2aacdc53d76ffde2d809ce1d4634dc5e48a02fa71606df03e36c509e658",
+    "<WORKSPACE>/spoollens_release/validation/first-run/astra-lab-spoollens/tests/fixtures/reference-policy.json": "dd163b724b49b29b16d573a88c6b0b3f22f06ce02b4eb5bc266cd2504d1b3d06",
+    "<WORKSPACE>/spoollens_release/validation/first-run/astra-lab-spoollens/tests/fixtures/build_frozen_fixtures.py": "e12593d1fe5df7618dee7c545fdb89923fbed09cb61456fad268b6bed7eb314d",
+    "<WORKSPACE>/spoollens_release/validation/first-run/astra-lab-spoollens/tests/fixtures/C_dangerous.txt": "318f02610fa08f95b8018f5dd690433ec30ad003a496c15aee4059c457ce4a77",
+    "<WORKSPACE>/spoollens_release/validation/first-run/astra-lab-spoollens/tests/fixtures/expected/C_dangerous.export.json": "3e910dcaddb69e2886aa6ed2710a2565f6859fad03a6ad4f552a39e350fbca5d",
+    "<WORKSPACE>/spoollens_release/validation/first-run/astra-lab-spoollens/tests/fixtures/expected/A_clean.export.json": "9e40eaeae6150b5b0cc97fd7bfda55c174d320c08f5e55f7a6362e5fbcd949f0",
+    "<WORKSPACE>/spoollens_release/validation/first-run/astra-lab-spoollens/tests/fixtures/expected/B_boundaries.rows.csv": "176a947371746d16a3a937178bd380913e18ff5470214645d792643fa2f14ac6",
+    "<WORKSPACE>/spoollens_release/validation/first-run/astra-lab-spoollens/tests/fixtures/expected/C_dangerous.provenance.json": "393458c29e5ddf07b1e792a84d570fc697e0e28bd9961495305e1431709e81c1",
+    "<WORKSPACE>/spoollens_release/validation/first-run/astra-lab-spoollens/tests/fixtures/expected/B_boundaries.accounting.json": "9fa6eac184c2916360a62bb8fe7d0e48922209d378b873c166b11ab476df8e6f",
+    "<WORKSPACE>/spoollens_release/validation/first-run/astra-lab-spoollens/tests/fixtures/expected/A_clean.accounting.json": "9a50620a8aba1a53296118e612219d022ff0b4340c57290cc9bc4d773bf0e1c6",
+    "<WORKSPACE>/spoollens_release/validation/first-run/astra-lab-spoollens/tests/fixtures/expected/B_boundaries.export.json": "515658cc047ceb81f8c9dc630d1b87c88fd11fc8b5922828586a60968accd6a9",
+    "<WORKSPACE>/spoollens_release/validation/first-run/astra-lab-spoollens/tests/fixtures/expected/A_clean.provenance.json": "385c4d7266e7668928b332455c7dcd1e149df6482e78d0137e3cc69f5dd67b0d",
+    "<WORKSPACE>/spoollens_release/validation/first-run/astra-lab-spoollens/tests/fixtures/expected/A_clean.rows.csv": "1c49a81800d6fdf96bb292e684db86b19b7c00213ea46642eae7ed44198859e7",
+    "<WORKSPACE>/spoollens_release/validation/first-run/astra-lab-spoollens/tests/fixtures/expected/C_dangerous.accounting.json": "8742ab0b5d39828a7e1b47c576e193715ec4e7bd57dfa6d0de02507f7bca8f83",
+    "<WORKSPACE>/spoollens_release/validation/first-run/astra-lab-spoollens/tests/fixtures/expected/C_dangerous.exception.manifest.json": "d560f3900058fb7bc0d718739c8c91f7146e6d379f9cc3558ed06427f4ff226c",
+    "<WORKSPACE>/spoollens_release/validation/first-run/astra-lab-spoollens/tests/fixtures/expected/B_boundaries.provenance.json": "0d37dd4b8e9cc5ada4bc0ab42b3ad13a89a5846aa036b991b12f3565b5dd06ad",
+    "<WORKSPACE>/spoollens_release/validation/first-run/astra-lab-spoollens/tests/fixtures/expected/C_dangerous.rows.csv": "4dce295d70f1bd7370b6e0fb7ea890506ef8945696cf08c37ff599f30e8f655c"
+  }
+}

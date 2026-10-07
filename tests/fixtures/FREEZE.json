@@ -1,0 +1,57 @@
+{
+  "frozen_at_utc": "2026-10-07T02:34:30.510391Z",
+  "phase": "Competitor verification, before implementation or repository creation",
+  "ground_truth_method": "Manual enumeration of accepted values, source line numbers, header line numbers, classifications, and exceptions. Generator only formats known records and attaches exact source slices; no extraction engine runs.",
+  "reference_policy_sha256": "dd163b724b49b29b16d573a88c6b0b3f22f06ce02b4eb5bc266cd2504d1b3d06",
+  "reports": [
+    {
+      "report": "A_clean",
+      "input_sha256": "f1c4b2aacdc53d76ffde2d809ce1d4634dc5e48a02fa71606df03e36c509e658",
+      "input_bytes": 279,
+      "accepted_csv_sha256": "1c49a81800d6fdf96bb292e684db86b19b7c00213ea46642eae7ed44198859e7",
+      "row_count": 3,
+      "counts": {
+        "HEADER": 2,
+        "DETAIL": 3,
+        "IGNORED_BY_EXPLICIT_RULE": 3,
+        "UNRESOLVED": 0,
+        "REJECTED": 0
+      },
+      "whitespace_only_line_count": 2,
+      "clean_export_allowed": true
+    },
+    {
+      "report": "B_boundaries",
+      "input_sha256": "f8c475c6f0764523425512514b3065dd9b5a549f3bda24c9414c28af27cc8868",
+      "input_bytes": 489,
+      "accepted_csv_sha256": "176a947371746d16a3a937178bd380913e18ff5470214645d792643fa2f14ac6",
+      "row_count": 4,
+      "counts": {
+        "HEADER": 3,
+        "DETAIL": 4,
+        "IGNORED_BY_EXPLICIT_RULE": 8,
+        "UNRESOLVED": 0,
+        "REJECTED": 0
+      },
+      "whitespace_only_line_count": 3,
+      "clean_export_allowed": true
+    },
+    {
+      "report": "C_dangerous",
+      "input_sha256": "318f02610fa08f95b8018f5dd690433ec30ad003a496c15aee4059c457ce4a77",
+      "input_bytes": 590,
+      "accepted_csv_sha256": "4dce295d70f1bd7370b6e0fb7ea890506ef8945696cf08c37ff599f30e8f655c",
+      "row_count": 2,
+      "counts": {
+        "HEADER": 2,
+        "DETAIL": 2,
+        "IGNORED_BY_EXPLICIT_RULE": 7,
+        "UNRESOLVED": 1,
+        "REJECTED": 5
+      },
+      "whitespace_only_line_count": 2,
+      "clean_export_allowed": false
+    }
+  ],
+  "do_not_modify_after_freeze": true
+}

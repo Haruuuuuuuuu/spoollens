@@ -1,0 +1,159 @@
+{
+  "source_sha256": "f8c475c6f0764523425512514b3065dd9b5a549f3bda24c9414c28af27cc8868",
+  "physical_line_count": 18,
+  "nonempty_line_count": 15,
+  "whitespace_only_line_count": 3,
+  "counts": {
+    "HEADER": 3,
+    "DETAIL": 4,
+    "IGNORED_BY_EXPLICIT_RULE": 8,
+    "UNRESOLVED": 0,
+    "REJECTED": 0
+  },
+  "lines": [
+    {
+      "line": 1,
+      "raw": "INVENTORY VALUATION  PAGE 001",
+      "category": "IGNORED_BY_EXPLICIT_RULE",
+      "reason": "page_header",
+      "context_before": null,
+      "context_after": null
+    },
+    {
+      "line": 2,
+      "raw": "WAREHOUSE: NORTH   ",
+      "category": "HEADER",
+      "reason": "warehouse_header",
+      "context_before": null,
+      "context_after": "NORTH"
+    },
+    {
+      "line": 3,
+      "raw": "ITEM      DESCRIPTION             QTY     PRICE",
+      "category": "IGNORED_BY_EXPLICIT_RULE",
+      "reason": "column_header",
+      "context_before": "NORTH",
+      "context_after": "NORTH"
+    },
+    {
+      "line": 4,
+      "raw": "B200      HEX BOLT                 24      0.35",
+      "category": "DETAIL",
+      "reason": "accepted_detail",
+      "context_before": "NORTH",
+      "context_after": "NORTH"
+    },
+    {
+      "line": 5,
+      "raw": "",
+      "category": "WHITESPACE_ONLY",
+      "reason": "blank_line",
+      "context_before": "NORTH",
+      "context_after": "NORTH"
+    },
+    {
+      "line": 6,
+      "raw": "END OF PAGE",
+      "category": "IGNORED_BY_EXPLICIT_RULE",
+      "reason": "page_footer",
+      "context_before": "NORTH",
+      "context_after": null
+    },
+    {
+      "line": 7,
+      "raw": "\f",
+      "category": "IGNORED_BY_EXPLICIT_RULE",
+      "reason": "form_feed_boundary",
+      "context_before": null,
+      "context_after": null
+    },
+    {
+      "line": 8,
+      "raw": "INVENTORY VALUATION  PAGE 002",
+      "category": "IGNORED_BY_EXPLICIT_RULE",
+      "reason": "page_header",
+      "context_before": null,
+      "context_after": null
+    },
+    {
+      "line": 9,
+      "raw": "ITEM      DESCRIPTION             QTY     PRICE",
+      "category": "IGNORED_BY_EXPLICIT_RULE",
+      "reason": "column_header",
+      "context_before": null,
+      "context_after": null
+    },
+    {
+      "line": 10,
+      "raw": "",
+      "category": "WHITESPACE_ONLY",
+      "reason": "blank_line",
+      "context_before": null,
+      "context_after": null
+    },
+    {
+      "line": 11,
+      "raw": "WAREHOUSE: SOUTH   ",
+      "category": "HEADER",
+      "reason": "warehouse_header",
+      "context_before": null,
+      "context_after": "SOUTH"
+    },
+    {
+      "line": 12,
+      "raw": "B201      LOCK NUT                 40      0.20",
+      "category": "DETAIL",
+      "reason": "accepted_detail",
+      "context_before": "SOUTH",
+      "context_after": "SOUTH"
+    },
+    {
+      "line": 13,
+      "raw": "    ",
+      "category": "WHITESPACE_ONLY",
+      "reason": "blank_line",
+      "context_before": "SOUTH",
+      "context_after": "SOUTH"
+    },
+    {
+      "line": 14,
+      "raw": "WAREHOUSE: EAST    ",
+      "category": "HEADER",
+      "reason": "warehouse_header",
+      "context_before": "SOUTH",
+      "context_after": "EAST"
+    },
+    {
+      "line": 15,
+      "raw": "B202      FLAT WASHER              60      0.10",
+      "category": "DETAIL",
+      "reason": "accepted_detail",
+      "context_before": "EAST",
+      "context_after": "EAST"
+    },
+    {
+      "line": 16,
+      "raw": "ITEM      DESCRIPTION             QTY     PRICE",
+      "category": "IGNORED_BY_EXPLICIT_RULE",
+      "reason": "column_header",
+      "context_before": "EAST",
+      "context_after": "EAST"
+    },
+    {
+      "line": 17,
+      "raw": "B203      SPRING WASHER            30      0.15",
+      "category": "DETAIL",
+      "reason": "accepted_detail",
+      "context_before": "EAST",
+      "context_after": "EAST"
+    },
+    {
+      "line": 18,
+      "raw": "END OF PAGE",
+      "category": "IGNORED_BY_EXPLICIT_RULE",
+      "reason": "page_footer",
+      "context_before": "EAST",
+      "context_after": null
+    }
+  ]
+}

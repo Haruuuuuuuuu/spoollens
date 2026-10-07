@@ -1,0 +1,29 @@
+# Python, environments, and local tooling
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+*.egg-info/
+build/
+dist/
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.coverage
+htmlcov/
+
+# OS/editor temporary files
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*~
+
+# Local extraction outputs and the tutorial rule
+output/
+/inventory.rule.json
+
+# Never commit local credentials
+.env
+.env.*
+!.env.example

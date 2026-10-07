@@ -1,0 +1,19 @@
+INVENTORY VALUATION  PAGE 001
+ITEM      DESCRIPTION             QTY     PRICE
+C000      ORPHAN BEFORE             2      1.00
+
+WAREHOUSE: NORTH   
+C100      VALID GEAR                3     12.50
+C111      SHIFTED QTY               17     2.00
+C112      BAD QUANTITY             2O      8.00
+NOTICE: PRICE REVIEW PENDING
+C113      SHORT RECORD              9      4.7
+END OF PAGE
+
+INVENTORY VALUATION  PAGE 002
+ITEM      DESCRIPTION             QTY     PRICE
+C200      ORPHAN AFTER              1      6.00
+WAREHOUSE: SOUTH   
+C201      VALID SEAL                6      3.25
+  
+END OF PAGE

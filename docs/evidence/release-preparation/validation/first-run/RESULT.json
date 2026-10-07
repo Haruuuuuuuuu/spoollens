@@ -1,0 +1,68 @@
+{
+  "candidate_local_sha": "bed54bc204b60e171dd69189f2370b119192479a",
+  "candidate_tree": "c9e3f1fed79b0ecab1a760ca9b16cfa0190fb140",
+  "readme_sha256": "9c0765c9c668d6e211d2ea4ac99ba9c72dc3adbbe8965b64cafed19f48e13329",
+  "os": "Debian GNU/Linux 13.6 (trixie), Linux",
+  "python": "3.12.14",
+  "setup_started_at_utc": "2026-10-07T06:55:35Z",
+  "install_tests_completed_at_utc": "2026-10-07T06:55:57Z",
+  "setup_install_tests_elapsed_seconds": 22,
+  "bundled_ui_and_cli_completed_at_utc": "2026-10-07T06:57:44Z",
+  "local_clone_to_bundled_ui_cli_and_abc_elapsed_seconds": 129,
+  "test_count": 45,
+  "test_result": "PASS",
+  "installed_runtime_matches_checkout": true,
+  "runtime_sha256": {
+    "__init__.py": "279ebe093ae5765d1b04c4d6c81f78ca43c69dc744382ba3d454defffe25870e",
+    "__main__.py": "03e0a2fa9d3d4a2ed0ce453a879e0badb54ce8d0c5a90e9c976667db6a43876a",
+    "cli.py": "e52da13ee13cccb5dd543ccf4e1ad9d7d2b152b2ea8caff87b663d1468c8d9ea",
+    "engine.py": "92b97f237c9eaded2a755f5b04d94e0212d23a26a142d8b82e67496996792612",
+    "tui.py": "2bea58a6412e8baab0e6e2f8043f5dacec9b962e85d78d1ad317925e79d7e17c"
+  },
+  "terminal": {
+    "kind": "real PTY",
+    "TERM": "xterm-256color",
+    "rows": 30,
+    "columns": 100
+  },
+  "actual_github_clone": {
+    "status": "AUTHENTICATION_UNAVAILABLE",
+    "exact_command": "GIT_TERMINAL_PROMPT=0 git clone https://github.com/Haruuuuuuuuu/astra-lab-spoollens.git spoollens_release/validation/first-run/astra-lab-spoollens",
+    "error": "fatal: could not read Username for 'https://github.com': terminal prompts disabled",
+    "started_at_utc": "2026-10-07T06:55:00Z"
+  },
+  "clone_workaround": "Independent local Git clone pinned to bed54bc; baseline content independently proved equivalent to remote. Final remote equivalence pending. No credential or authorization bypass.",
+  "install_workarounds": [],
+  "nonfatal_environment_warning": "pip disabled its non-writable cache; install succeeded without changes",
+  "installed_import_paths": [
+    "<WORKSPACE>/spoollens_release/validation/first-run/astra-lab-spoollens/.venv/bin/python",
+    "<WORKSPACE>/spoollens_release/validation/first-run/astra-lab-spoollens/.venv/lib/python3.12/site-packages/spoollens/__init__.py",
+    "<WORKSPACE>/spoollens_release/validation/first-run/astra-lab-spoollens/.venv/lib/python3.12/site-packages/spoollens/engine.py"
+  ],
+  "commands_after_clone": [
+    "git checkout --detach bed54bc204b60e171dd69189f2370b119192479a",
+    "python3 -m venv .venv",
+    ". .venv/bin/activate",
+    "python -m pip install .",
+    "spoollens --help",
+    "spoollens ui tests/fixtures/A_clean.txt",
+    "mkdir -p output",
+    "spoollens replay tests/fixtures/A_clean.txt --rule examples/inventory.rule.json --output output/example.csv",
+    "spoollens inspect tests/fixtures/A_clean.txt --rule examples/inventory.rule.json --row 1 --field qty",
+    "python -m unittest discover -s tests -v",
+    "(cd tests/fixtures && sha256sum -c SHA256SUMS)",
+    "python -m compileall -q spoollens"
+  ],
+  "ui_steps": [
+    "launch with empty rule",
+    "a: inspect complete long source path; End exposes path suffix",
+    "l: reopen examples/inventory.rule.json",
+    "v: row 1 qty; inspect exact hash, line, range, substring",
+    "e: clean export ../ui-example.csv",
+    "End in export receipt: inspect previously clipped JSON ending at character offset 1868",
+    "q: normal clean quit"
+  ],
+  "bundled_ui_csv_equals_frozen_expected": true,
+  "bundled_cli_csv_equals_frozen_expected": true,
+  "ui_scope_note": "This is independent fresh-install/runtime validation using the bundled example rule; the separate unseen test assesses blind rule authoring."
+}

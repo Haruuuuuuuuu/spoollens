@@ -1,0 +1,144 @@
+{
+  "version": 1,
+  "purpose": "Frozen extraction contract; declarative fixture truth, not an implementation",
+  "encoding": "utf-8",
+  "character_repertoire": "ASCII printable characters, LF, and standalone FF only",
+  "line_separator": "LF",
+  "terminal_lf_creates_line": false,
+  "coordinates": "1-based line; 0-based, end-exclusive character ranges; LF excluded",
+  "blank_line_characters": "ASCII space only; empty line also blank",
+  "detail": {
+    "detector": {
+      "first_four_characters": "one uppercase ASCII letter then three ASCII digits"
+    },
+    "record_width": 47,
+    "fields": [
+      {
+        "name": "item",
+        "range": [
+          0,
+          8
+        ],
+        "trim": "ASCII space",
+        "type": "one uppercase ASCII letter then three ASCII digits",
+        "alignment": "left"
+      },
+      {
+        "name": "qty",
+        "range": [
+          32,
+          37
+        ],
+        "trim": "ASCII space",
+        "type": "unsigned ASCII integer",
+        "alignment": "right"
+      },
+      {
+        "name": "price",
+        "range": [
+          39,
+          47
+        ],
+        "trim": "ASCII space",
+        "type": "unsigned ASCII decimal with exactly two fractional digits",
+        "alignment": "right"
+      }
+    ],
+    "separator_ranges_must_be_spaces": [
+      [
+        8,
+        10
+      ],
+      [
+        30,
+        32
+      ],
+      [
+        37,
+        39
+      ]
+    ],
+    "description_range_not_exported": [
+      10,
+      30
+    ],
+    "required_context": "warehouse",
+    "validation_order": [
+      "record_width",
+      "separators",
+      "item",
+      "qty",
+      "price",
+      "required_context"
+    ]
+  },
+  "header": {
+    "detector": {
+      "prefix": "WAREHOUSE: "
+    },
+    "record_width": 19,
+    "field": {
+      "name": "warehouse",
+      "range": [
+        11,
+        19
+      ],
+      "trim": "ASCII space",
+      "type": "one to eight uppercase ASCII letters",
+      "alignment": "left"
+    },
+    "on_valid_header": "replace previous context and its provenance",
+    "on_invalid_header": "clear context and REJECT the header"
+  },
+  "ignore": [
+    {
+      "name": "page_header",
+      "starts_with": "INVENTORY VALUATION  PAGE ",
+      "reset_context": true
+    },
+    {
+      "name": "column_header",
+      "equals": "ITEM      DESCRIPTION             QTY     PRICE",
+      "reset_context": false
+    },
+    {
+      "name": "page_footer",
+      "equals": "END OF PAGE",
+      "reset_context": true
+    },
+    {
+      "name": "form_feed_boundary",
+      "equals": "\f",
+      "reset_context": true
+    }
+  ],
+  "initial_context": null,
+  "blank_lines_change_context": false,
+  "rejected_detail_changes_context": false,
+  "unresolved_line_changes_context": false,
+  "classification_order": [
+    "explicit_ignore_in_declared_order",
+    "ASCII_space_only_blank",
+    "header_candidate",
+    "detail_candidate",
+    "UNRESOLVED"
+  ],
+  "candidate_validation_failure": "REJECTED",
+  "accepted_detail_classification": "DETAIL",
+  "csv": {
+    "columns": [
+      "warehouse",
+      "item",
+      "qty",
+      "price"
+    ],
+    "delimiter": ",",
+    "quoting": "minimal",
+    "line_ending": "LF",
+    "encoding": "utf-8",
+    "terminal_lf": true,
+    "preserve_lexical_decimal": true
+  },
+  "clean_export": "block if any UNRESOLVED or REJECTED lines exist; no clean CSV artifact",
+  "exception_export": "requires explicit request; accepted detail rows only, with an inseparable exception manifest"
+}

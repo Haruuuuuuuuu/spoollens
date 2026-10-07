@@ -1,0 +1,10 @@
+{
+  "source_sha256": "f8c475c6f0764523425512514b3065dd9b5a549f3bda24c9414c28af27cc8868",
+  "reference_policy_sha256": "dd163b724b49b29b16d573a88c6b0b3f22f06ce02b4eb5bc266cd2504d1b3d06",
+  "accepted_row_count": 4,
+  "clean_export_allowed": true,
+  "normal_csv_artifact_created": true,
+  "unresolved_count": 0,
+  "rejected_count": 0,
+  "errors": []
+}

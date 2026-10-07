@@ -1,0 +1,95 @@
+{
+  "source_sha256": "f1c4b2aacdc53d76ffde2d809ce1d4634dc5e48a02fa71606df03e36c509e658",
+  "physical_line_count": 10,
+  "nonempty_line_count": 8,
+  "whitespace_only_line_count": 2,
+  "counts": {
+    "HEADER": 2,
+    "DETAIL": 3,
+    "IGNORED_BY_EXPLICIT_RULE": 3,
+    "UNRESOLVED": 0,
+    "REJECTED": 0
+  },
+  "lines": [
+    {
+      "line": 1,
+      "raw": "INVENTORY VALUATION  PAGE 001",
+      "category": "IGNORED_BY_EXPLICIT_RULE",
+      "reason": "page_header",
+      "context_before": null,
+      "context_after": null
+    },
+    {
+      "line": 2,
+      "raw": "WAREHOUSE: NORTH   ",
+      "category": "HEADER",
+      "reason": "warehouse_header",
+      "context_before": null,
+      "context_after": "NORTH"
+    },
+    {
+      "line": 3,
+      "raw": "",
+      "category": "WHITESPACE_ONLY",
+      "reason": "blank_line",
+      "context_before": "NORTH",
+      "context_after": "NORTH"
+    },
+    {
+      "line": 4,
+      "raw": "ITEM      DESCRIPTION             QTY     PRICE",
+      "category": "IGNORED_BY_EXPLICIT_RULE",
+      "reason": "column_header",
+      "context_before": "NORTH",
+      "context_after": "NORTH"
+    },
+    {
+      "line": 5,
+      "raw": "A100      WIDGET BLUE              12      9.95",
+      "category": "DETAIL",
+      "reason": "accepted_detail",
+      "context_before": "NORTH",
+      "context_after": "NORTH"
+    },
+    {
+      "line": 6,
+      "raw": "A101      WIDGET RED                5     10.50",
+      "category": "DETAIL",
+      "reason": "accepted_detail",
+      "context_before": "NORTH",
+      "context_after": "NORTH"
+    },
+    {
+      "line": 7,
+      "raw": "   ",
+      "category": "WHITESPACE_ONLY",
+      "reason": "blank_line",
+      "context_before": "NORTH",
+      "context_after": "NORTH"
+    },
+    {
+      "line": 8,
+      "raw": "WAREHOUSE: SOUTH   ",
+      "category": "HEADER",
+      "reason": "warehouse_header",
+      "context_before": "NORTH",
+      "context_after": "SOUTH"
+    },
+    {
+      "line": 9,
+      "raw": "A100      WIDGET BLUE               8      9.95",
+      "category": "DETAIL",
+      "reason": "accepted_detail",
+      "context_before": "SOUTH",
+      "context_after": "SOUTH"
+    },
+    {
+      "line": 10,
+      "raw": "END OF PAGE",
+      "category": "IGNORED_BY_EXPLICIT_RULE",
+      "reason": "page_footer",
+      "context_before": "SOUTH",
+      "context_after": null
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "exception_status": "EXPLICIT_EXCEPTION",
+  "source_file": "C_dangerous.txt",
+  "source_sha256": "318f02610fa08f95b8018f5dd690433ec30ad003a496c15aee4059c457ce4a77",
+  "rule_sha256": "dd163b724b49b29b16d573a88c6b0b3f22f06ce02b4eb5bc266cd2504d1b3d06",
+  "rule_hash_basis": "Exact bytes of reference-policy.json for this frozen reference. A tool must instead record the exact bytes of its actual saved rule.",
+  "unresolved_count": 1,
+  "rejected_count": 5,
+  "accepted_row_count": 2,
+  "csv_file": "C_dangerous.exception.csv",
+  "csv_sha256": "4dce295d70f1bd7370b6e0fb7ea890506ef8945696cf08c37ff599f30e8f655c",
+  "omitted_line_numbers": [
+    3,
+    7,
+    8,
+    9,
+    10,
+    15
+  ],
+  "normal_clean_export_blocked": true
+}

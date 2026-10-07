@@ -1,0 +1,168 @@
+{
+  "status": "PASS",
+  "frozen_at_utc": "2026-10-07T06:53:06.991209+00:00",
+  "blind_outcomes_frozen_at_utc": "2026-10-07T06:59:13Z",
+  "source_immutable": true,
+  "oracle_unchanged": true,
+  "csv_sha256": "4607522c15c714ab86c92c44a6397e11f687a1dcad32f7faef457e4820883d2d",
+  "stages": [
+    {
+      "stage": "pre_handling",
+      "status": "PASS",
+      "physical_lines": 39,
+      "counts": {
+        "HEADER": 4,
+        "DETAIL": 18,
+        "IGNORED_BY_EXPLICIT_RULE": 11,
+        "UNRESOLVED": 1,
+        "REJECTED": 1
+      },
+      "provenance_values": 72,
+      "canonical_provenance_exact": true,
+      "coordinate_differences": [],
+      "permitted_ignore_label_differences": [
+        {
+          "line": 1,
+          "actual_label": "page_heading",
+          "frozen_label": "page_header"
+        },
+        {
+          "line": 4,
+          "actual_label": "column_heading",
+          "frozen_label": "column_header"
+        },
+        {
+          "line": 8,
+          "actual_label": "column_heading",
+          "frozen_label": "column_header"
+        },
+        {
+          "line": 14,
+          "actual_label": "page_complete",
+          "frozen_label": "page_footer"
+        },
+        {
+          "line": 16,
+          "actual_label": "page_heading",
+          "frozen_label": "page_header"
+        },
+        {
+          "line": 18,
+          "actual_label": "column_heading",
+          "frozen_label": "column_header"
+        },
+        {
+          "line": 26,
+          "actual_label": "column_heading",
+          "frozen_label": "column_header"
+        },
+        {
+          "line": 28,
+          "actual_label": "page_complete",
+          "frozen_label": "page_footer"
+        },
+        {
+          "line": 30,
+          "actual_label": "page_heading",
+          "frozen_label": "page_header"
+        },
+        {
+          "line": 32,
+          "actual_label": "column_heading",
+          "frozen_label": "column_header"
+        },
+        {
+          "line": 39,
+          "actual_label": "page_complete",
+          "frozen_label": "page_footer"
+        }
+      ],
+      "clean_export_blocked": true,
+      "clean_csv_absent": true,
+      "rule_sha256": "396758f51249f81eff692717b3bf07871c86ea4df4da4591d7055e5ee275ca54"
+    },
+    {
+      "stage": "final",
+      "status": "PASS",
+      "physical_lines": 39,
+      "counts": {
+        "HEADER": 4,
+        "DETAIL": 18,
+        "IGNORED_BY_EXPLICIT_RULE": 12,
+        "UNRESOLVED": 0,
+        "REJECTED": 1
+      },
+      "provenance_values": 72,
+      "canonical_provenance_exact": true,
+      "coordinate_differences": [],
+      "permitted_ignore_label_differences": [
+        {
+          "line": 1,
+          "actual_label": "page_heading",
+          "frozen_label": "page_header"
+        },
+        {
+          "line": 4,
+          "actual_label": "column_heading",
+          "frozen_label": "column_header"
+        },
+        {
+          "line": 8,
+          "actual_label": "column_heading",
+          "frozen_label": "column_header"
+        },
+        {
+          "line": 14,
+          "actual_label": "page_complete",
+          "frozen_label": "page_footer"
+        },
+        {
+          "line": 16,
+          "actual_label": "page_heading",
+          "frozen_label": "page_header"
+        },
+        {
+          "line": 18,
+          "actual_label": "column_heading",
+          "frozen_label": "column_header"
+        },
+        {
+          "line": 26,
+          "actual_label": "column_heading",
+          "frozen_label": "column_header"
+        },
+        {
+          "line": 28,
+          "actual_label": "page_complete",
+          "frozen_label": "page_footer"
+        },
+        {
+          "line": 30,
+          "actual_label": "page_heading",
+          "frozen_label": "page_header"
+        },
+        {
+          "line": 32,
+          "actual_label": "column_heading",
+          "frozen_label": "column_header"
+        },
+        {
+          "line": 39,
+          "actual_label": "page_complete",
+          "frozen_label": "page_footer"
+        }
+      ],
+      "clean_export_blocked": true,
+      "clean_csv_absent": true,
+      "rule_sha256": "f91c1784b089f52eb95f77020b2bbee3a65050b101438a523f4bbe0800592388",
+      "exception_csv_exact": true,
+      "exception_bundle_hashes_verified": true,
+      "ui_reopen_and_independent_replay_byte_identical": true,
+      "exception_zip_sha256": "a8836d00da8febeddef22e62f88f2464621022527263052222fce0acf4ef8609",
+      "extra_authored_space_guard": [
+        1,
+        3
+      ]
+    }
+  ]
+}

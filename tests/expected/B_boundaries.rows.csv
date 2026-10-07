@@ -1,0 +1,5 @@
+warehouse,item,qty,price
+NORTH,B200,24,0.35
+SOUTH,B201,40,0.20
+EAST,B202,60,0.10
+EAST,B203,30,0.15

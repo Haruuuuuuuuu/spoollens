@@ -1,0 +1,39 @@
+{
+  "export_status": "CLEAN",
+  "source_file": "A_clean.txt",
+  "source_sha256": "f1c4b2aacdc53d76ffde2d809ce1d4634dc5e48a02fa71606df03e36c509e658",
+  "source_byte_count": 279,
+  "rule_sha256": "85807556db918f1ba7d923c726e62bca3f501980245d611114367e4529a07686",
+  "rule_byte_count": 1594,
+  "rule_hash_basis": "Exact rule bytes executed for this snapshot",
+  "csv_file": "A_reopened.csv",
+  "csv_sha256": "1c49a81800d6fdf96bb292e684db86b19b7c00213ea46642eae7ed44198859e7",
+  "accepted_row_count": 3,
+  "unresolved_count": 0,
+  "rejected_count": 0,
+  "normal_clean_export_blocked": false,
+  "physical_line_count": 10,
+  "whitespace_only_line_count": 2,
+  "counts": {
+    "HEADER": 2,
+    "DETAIL": 3,
+    "IGNORED_BY_EXPLICIT_RULE": 3,
+    "UNRESOLVED": 0,
+    "REJECTED": 0
+  },
+  "coordinates": "1-based line; 0-based, end-exclusive character ranges; LF excluded",
+  "artifacts": {
+    "A_reopened.audit.json": {
+      "sha256": "9a50620a8aba1a53296118e612219d022ff0b4340c57290cc9bc4d773bf0e1c6",
+      "bytes": 2378
+    },
+    "A_reopened.provenance.json": {
+      "sha256": "385c4d7266e7668928b332455c7dcd1e149df6482e78d0137e3cc69f5dd67b0d",
+      "bytes": 4260
+    },
+    "A_reopened.csv": {
+      "sha256": "1c49a81800d6fdf96bb292e684db86b19b7c00213ea46642eae7ed44198859e7",
+      "bytes": 81
+    }
+  }
+}

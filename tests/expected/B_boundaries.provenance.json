@@ -1,0 +1,226 @@
+{
+  "source_sha256": "f8c475c6f0764523425512514b3065dd9b5a549f3bda24c9414c28af27cc8868",
+  "coordinates": "1-based line; 0-based, end-exclusive character ranges; LF excluded",
+  "rows": [
+    {
+      "row": 1,
+      "detail_line": 4,
+      "fields": {
+        "warehouse": {
+          "value": "NORTH",
+          "source_sha256": "f8c475c6f0764523425512514b3065dd9b5a549f3bda24c9414c28af27cc8868",
+          "line": 2,
+          "range": [
+            11,
+            19
+          ],
+          "raw": "NORTH   ",
+          "inherited": true,
+          "header_line": 2,
+          "header_range": [
+            11,
+            19
+          ]
+        },
+        "item": {
+          "value": "B200",
+          "source_sha256": "f8c475c6f0764523425512514b3065dd9b5a549f3bda24c9414c28af27cc8868",
+          "line": 4,
+          "range": [
+            0,
+            8
+          ],
+          "raw": "B200    ",
+          "inherited": false
+        },
+        "qty": {
+          "value": "24",
+          "source_sha256": "f8c475c6f0764523425512514b3065dd9b5a549f3bda24c9414c28af27cc8868",
+          "line": 4,
+          "range": [
+            32,
+            37
+          ],
+          "raw": "   24",
+          "inherited": false
+        },
+        "price": {
+          "value": "0.35",
+          "source_sha256": "f8c475c6f0764523425512514b3065dd9b5a549f3bda24c9414c28af27cc8868",
+          "line": 4,
+          "range": [
+            39,
+            47
+          ],
+          "raw": "    0.35",
+          "inherited": false
+        }
+      }
+    },
+    {
+      "row": 2,
+      "detail_line": 12,
+      "fields": {
+        "warehouse": {
+          "value": "SOUTH",
+          "source_sha256": "f8c475c6f0764523425512514b3065dd9b5a549f3bda24c9414c28af27cc8868",
+          "line": 11,
+          "range": [
+            11,
+            19
+          ],
+          "raw": "SOUTH   ",
+          "inherited": true,
+          "header_line": 11,
+          "header_range": [
+            11,
+            19
+          ]
+        },
+        "item": {
+          "value": "B201",
+          "source_sha256": "f8c475c6f0764523425512514b3065dd9b5a549f3bda24c9414c28af27cc8868",
+          "line": 12,
+          "range": [
+            0,
+            8
+          ],
+          "raw": "B201    ",
+          "inherited": false
+        },
+        "qty": {
+          "value": "40",
+          "source_sha256": "f8c475c6f0764523425512514b3065dd9b5a549f3bda24c9414c28af27cc8868",
+          "line": 12,
+          "range": [
+            32,
+            37
+          ],
+          "raw": "   40",
+          "inherited": false
+        },
+        "price": {
+          "value": "0.20",
+          "source_sha256": "f8c475c6f0764523425512514b3065dd9b5a549f3bda24c9414c28af27cc8868",
+          "line": 12,
+          "range": [
+            39,
+            47
+          ],
+          "raw": "    0.20",
+          "inherited": false
+        }
+      }
+    },
+    {
+      "row": 3,
+      "detail_line": 15,
+      "fields": {
+        "warehouse": {
+          "value": "EAST",
+          "source_sha256": "f8c475c6f0764523425512514b3065dd9b5a549f3bda24c9414c28af27cc8868",
+          "line": 14,
+          "range": [
+            11,
+            19
+          ],
+          "raw": "EAST    ",
+          "inherited": true,
+          "header_line": 14,
+          "header_range": [
+            11,
+            19
+          ]
+        },
+        "item": {
+          "value": "B202",
+          "source_sha256": "f8c475c6f0764523425512514b3065dd9b5a549f3bda24c9414c28af27cc8868",
+          "line": 15,
+          "range": [
+            0,
+            8
+          ],
+          "raw": "B202    ",
+          "inherited": false
+        },
+        "qty": {
+          "value": "60",
+          "source_sha256": "f8c475c6f0764523425512514b3065dd9b5a549f3bda24c9414c28af27cc8868",
+          "line": 15,
+          "range": [
+            32,
+            37
+          ],
+          "raw": "   60",
+          "inherited": false
+        },
+        "price": {
+          "value": "0.10",
+          "source_sha256": "f8c475c6f0764523425512514b3065dd9b5a549f3bda24c9414c28af27cc8868",
+          "line": 15,
+          "range": [
+            39,
+            47
+          ],
+          "raw": "    0.10",
+          "inherited": false
+        }
+      }
+    },
+    {
+      "row": 4,
+      "detail_line": 17,
+      "fields": {
+        "warehouse": {
+          "value": "EAST",
+          "source_sha256": "f8c475c6f0764523425512514b3065dd9b5a549f3bda24c9414c28af27cc8868",
+          "line": 14,
+          "range": [
+            11,
+            19
+          ],
+          "raw": "EAST    ",
+          "inherited": true,
+          "header_line": 14,
+          "header_range": [
+            11,
+            19
+          ]
+        },
+        "item": {
+          "value": "B203",
+          "source_sha256": "f8c475c6f0764523425512514b3065dd9b5a549f3bda24c9414c28af27cc8868",
+          "line": 17,
+          "range": [
+            0,
+            8
+          ],
+          "raw": "B203    ",
+          "inherited": false
+        },
+        "qty": {
+          "value": "30",
+          "source_sha256": "f8c475c6f0764523425512514b3065dd9b5a549f3bda24c9414c28af27cc8868",
+          "line": 17,
+          "range": [
+            32,
+            37
+          ],
+          "raw": "   30",
+          "inherited": false
+        },
+        "price": {
+          "value": "0.15",
+          "source_sha256": "f8c475c6f0764523425512514b3065dd9b5a549f3bda24c9414c28af27cc8868",
+          "line": 17,
+          "range": [
+            39,
+            47
+          ],
+          "raw": "    0.15",
+          "inherited": false
+        }
+      }
+    }
+  ]
+}

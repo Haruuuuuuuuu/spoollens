@@ -1,0 +1,18 @@
+{
+  "A_clean_csv_frozen_exact": true,
+  "A_clean_accounting_frozen_exact": true,
+  "A_clean_provenance_frozen_exact": true,
+  "B_boundaries_csv_frozen_exact": true,
+  "B_boundaries_accounting_frozen_exact": true,
+  "B_boundaries_provenance_frozen_exact": true,
+  "C_dangerous_csv_frozen_exact": true,
+  "C_dangerous_accounting_frozen_exact": true,
+  "C_dangerous_provenance_frozen_exact": true,
+  "exception_artifact_hashes": true,
+  "exception_source_exact": true,
+  "exception_rule_exact": true,
+  "reopened_A_csv_exact": true,
+  "reopened_A_provenance_exact": true,
+  "reopened_A_accounting_exact": true,
+  "blocked_C_csv_absent": true
+}

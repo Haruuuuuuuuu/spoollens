@@ -1,0 +1,10 @@
+INVENTORY VALUATION  PAGE 001
+WAREHOUSE: NORTH   
+
+ITEM      DESCRIPTION             QTY     PRICE
+A100      WIDGET BLUE              12      9.95
+A101      WIDGET RED                5     10.50
+   
+WAREHOUSE: SOUTH   
+A100      WIDGET BLUE               8      9.95
+END OF PAGE

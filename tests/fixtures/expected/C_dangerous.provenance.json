@@ -1,0 +1,116 @@
+{
+  "source_sha256": "318f02610fa08f95b8018f5dd690433ec30ad003a496c15aee4059c457ce4a77",
+  "coordinates": "1-based line; 0-based, end-exclusive character ranges; LF excluded",
+  "rows": [
+    {
+      "row": 1,
+      "detail_line": 6,
+      "fields": {
+        "warehouse": {
+          "value": "NORTH",
+          "source_sha256": "318f02610fa08f95b8018f5dd690433ec30ad003a496c15aee4059c457ce4a77",
+          "line": 5,
+          "range": [
+            11,
+            19
+          ],
+          "raw": "NORTH   ",
+          "inherited": true,
+          "header_line": 5,
+          "header_range": [
+            11,
+            19
+          ]
+        },
+        "item": {
+          "value": "C100",
+          "source_sha256": "318f02610fa08f95b8018f5dd690433ec30ad003a496c15aee4059c457ce4a77",
+          "line": 6,
+          "range": [
+            0,
+            8
+          ],
+          "raw": "C100    ",
+          "inherited": false
+        },
+        "qty": {
+          "value": "3",
+          "source_sha256": "318f02610fa08f95b8018f5dd690433ec30ad003a496c15aee4059c457ce4a77",
+          "line": 6,
+          "range": [
+            32,
+            37
+          ],
+          "raw": "    3",
+          "inherited": false
+        },
+        "price": {
+          "value": "12.50",
+          "source_sha256": "318f02610fa08f95b8018f5dd690433ec30ad003a496c15aee4059c457ce4a77",
+          "line": 6,
+          "range": [
+            39,
+            47
+          ],
+          "raw": "   12.50",
+          "inherited": false
+        }
+      }
+    },
+    {
+      "row": 2,
+      "detail_line": 17,
+      "fields": {
+        "warehouse": {
+          "value": "SOUTH",
+          "source_sha256": "318f02610fa08f95b8018f5dd690433ec30ad003a496c15aee4059c457ce4a77",
+          "line": 16,
+          "range": [
+            11,
+            19
+          ],
+          "raw": "SOUTH   ",
+          "inherited": true,
+          "header_line": 16,
+          "header_range": [
+            11,
+            19
+          ]
+        },
+        "item": {
+          "value": "C201",
+          "source_sha256": "318f02610fa08f95b8018f5dd690433ec30ad003a496c15aee4059c457ce4a77",
+          "line": 17,
+          "range": [
+            0,
+            8
+          ],
+          "raw": "C201    ",
+          "inherited": false
+        },
+        "qty": {
+          "value": "6",
+          "source_sha256": "318f02610fa08f95b8018f5dd690433ec30ad003a496c15aee4059c457ce4a77",
+          "line": 17,
+          "range": [
+            32,
+            37
+          ],
+          "raw": "    6",
+          "inherited": false
+        },
+        "price": {
+          "value": "3.25",
+          "source_sha256": "318f02610fa08f95b8018f5dd690433ec30ad003a496c15aee4059c457ce4a77",
+          "line": 17,
+          "range": [
+            39,
+            47
+          ],
+          "raw": "    3.25",
+          "inherited": false
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,55 @@
+{
+  "method": "Actual interactive curses PTY authoring from empty rule, followed by actual UI clean export, source query/jump, rule reopen, B/C replay, blocked C normal export and explicit C exception ZIP. Separate from independent usability test.",
+  "authoring_rule_sha256": "85807556db918f1ba7d923c726e62bca3f501980245d611114367e4529a07686",
+  "reports": [
+    {
+      "report": "A_clean",
+      "source_sha256": "f1c4b2aacdc53d76ffde2d809ce1d4634dc5e48a02fa71606df03e36c509e658",
+      "rule_sha256": "85807556db918f1ba7d923c726e62bca3f501980245d611114367e4529a07686",
+      "candidate_csv_sha256": "1c49a81800d6fdf96bb292e684db86b19b7c00213ea46642eae7ed44198859e7",
+      "counts": {
+        "HEADER": 2,
+        "DETAIL": 3,
+        "IGNORED_BY_EXPLICIT_RULE": 3,
+        "UNRESOLVED": 0,
+        "REJECTED": 0
+      },
+      "clean_export_allowed": true
+    },
+    {
+      "report": "B_boundaries",
+      "source_sha256": "f8c475c6f0764523425512514b3065dd9b5a549f3bda24c9414c28af27cc8868",
+      "rule_sha256": "85807556db918f1ba7d923c726e62bca3f501980245d611114367e4529a07686",
+      "candidate_csv_sha256": "176a947371746d16a3a937178bd380913e18ff5470214645d792643fa2f14ac6",
+      "counts": {
+        "HEADER": 3,
+        "DETAIL": 4,
+        "IGNORED_BY_EXPLICIT_RULE": 8,
+        "UNRESOLVED": 0,
+        "REJECTED": 0
+      },
+      "clean_export_allowed": true
+    },
+    {
+      "report": "C_dangerous",
+      "source_sha256": "318f02610fa08f95b8018f5dd690433ec30ad003a496c15aee4059c457ce4a77",
+      "rule_sha256": "85807556db918f1ba7d923c726e62bca3f501980245d611114367e4529a07686",
+      "candidate_csv_sha256": "4dce295d70f1bd7370b6e0fb7ea890506ef8945696cf08c37ff599f30e8f655c",
+      "counts": {
+        "HEADER": 2,
+        "DETAIL": 2,
+        "IGNORED_BY_EXPLICIT_RULE": 7,
+        "UNRESOLVED": 1,
+        "REJECTED": 5
+      },
+      "clean_export_allowed": false
+    }
+  ],
+  "platform": "Linux, Python 3.12.14",
+  "installation": "pip --no-build-isolation --no-deps --target succeeded",
+  "unit_tests": 41,
+  "terminal_sizes_exercised": [
+    "80x24",
+    "120x38"
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "export_status": "CLEAN",
+  "source_file": "B_boundaries.txt",
+  "source_sha256": "f8c475c6f0764523425512514b3065dd9b5a549f3bda24c9414c28af27cc8868",
+  "source_byte_count": 489,
+  "rule_sha256": "85807556db918f1ba7d923c726e62bca3f501980245d611114367e4529a07686",
+  "rule_byte_count": 1594,
+  "rule_hash_basis": "Exact rule bytes executed for this snapshot",
+  "csv_file": "B.csv",
+  "csv_sha256": "176a947371746d16a3a937178bd380913e18ff5470214645d792643fa2f14ac6",
+  "accepted_row_count": 4,
+  "unresolved_count": 0,
+  "rejected_count": 0,
+  "normal_clean_export_blocked": false,
+  "physical_line_count": 18,
+  "whitespace_only_line_count": 3,
+  "counts": {
+    "HEADER": 3,
+    "DETAIL": 4,
+    "IGNORED_BY_EXPLICIT_RULE": 8,
+    "UNRESOLVED": 0,
+    "REJECTED": 0
+  },
+  "coordinates": "1-based line; 0-based, end-exclusive character ranges; LF excluded",
+  "artifacts": {
+    "B.audit.json": {
+      "sha256": "9fa6eac184c2916360a62bb8fe7d0e48922209d378b873c166b11ab476df8e6f",
+      "bytes": 4030
+    },
+    "B.provenance.json": {
+      "sha256": "0d37dd4b8e9cc5ada4bc0ab42b3ad13a89a5846aa036b991b12f3565b5dd06ad",
+      "bytes": 5633
+    },
+    "B.csv": {
+      "sha256": "176a947371746d16a3a937178bd380913e18ff5470214645d792643fa2f14ac6",
+      "bytes": 99
+    }
+  }
+}

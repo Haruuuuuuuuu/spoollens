@@ -1,0 +1,18 @@
+INVENTORY VALUATION  PAGE 001
+WAREHOUSE: NORTH   
+ITEM      DESCRIPTION             QTY     PRICE
+B200      HEX BOLT                 24      0.35
+
+END OF PAGE
+
+INVENTORY VALUATION  PAGE 002
+ITEM      DESCRIPTION             QTY     PRICE
+
+WAREHOUSE: SOUTH   
+B201      LOCK NUT                 40      0.20
+    
+WAREHOUSE: EAST    
+B202      FLAT WASHER              60      0.10
+ITEM      DESCRIPTION             QTY     PRICE
+B203      SPRING WASHER            30      0.15
+END OF PAGE

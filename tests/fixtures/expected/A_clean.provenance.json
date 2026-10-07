@@ -1,0 +1,171 @@
+{
+  "source_sha256": "f1c4b2aacdc53d76ffde2d809ce1d4634dc5e48a02fa71606df03e36c509e658",
+  "coordinates": "1-based line; 0-based, end-exclusive character ranges; LF excluded",
+  "rows": [
+    {
+      "row": 1,
+      "detail_line": 5,
+      "fields": {
+        "warehouse": {
+          "value": "NORTH",
+          "source_sha256": "f1c4b2aacdc53d76ffde2d809ce1d4634dc5e48a02fa71606df03e36c509e658",
+          "line": 2,
+          "range": [
+            11,
+            19
+          ],
+          "raw": "NORTH   ",
+          "inherited": true,
+          "header_line": 2,
+          "header_range": [
+            11,
+            19
+          ]
+        },
+        "item": {
+          "value": "A100",
+          "source_sha256": "f1c4b2aacdc53d76ffde2d809ce1d4634dc5e48a02fa71606df03e36c509e658",
+          "line": 5,
+          "range": [
+            0,
+            8
+          ],
+          "raw": "A100    ",
+          "inherited": false
+        },
+        "qty": {
+          "value": "12",
+          "source_sha256": "f1c4b2aacdc53d76ffde2d809ce1d4634dc5e48a02fa71606df03e36c509e658",
+          "line": 5,
+          "range": [
+            32,
+            37
+          ],
+          "raw": "   12",
+          "inherited": false
+        },
+        "price": {
+          "value": "9.95",
+          "source_sha256": "f1c4b2aacdc53d76ffde2d809ce1d4634dc5e48a02fa71606df03e36c509e658",
+          "line": 5,
+          "range": [
+            39,
+            47
+          ],
+          "raw": "    9.95",
+          "inherited": false
+        }
+      }
+    },
+    {
+      "row": 2,
+      "detail_line": 6,
+      "fields": {
+        "warehouse": {
+          "value": "NORTH",
+          "source_sha256": "f1c4b2aacdc53d76ffde2d809ce1d4634dc5e48a02fa71606df03e36c509e658",
+          "line": 2,
+          "range": [
+            11,
+            19
+          ],
+          "raw": "NORTH   ",
+          "inherited": true,
+          "header_line": 2,
+          "header_range": [
+            11,
+            19
+          ]
+        },
+        "item": {
+          "value": "A101",
+          "source_sha256": "f1c4b2aacdc53d76ffde2d809ce1d4634dc5e48a02fa71606df03e36c509e658",
+          "line": 6,
+          "range": [
+            0,
+            8
+          ],
+          "raw": "A101    ",
+          "inherited": false
+        },
+        "qty": {
+          "value": "5",
+          "source_sha256": "f1c4b2aacdc53d76ffde2d809ce1d4634dc5e48a02fa71606df03e36c509e658",
+          "line": 6,
+          "range": [
+            32,
+            37
+          ],
+          "raw": "    5",
+          "inherited": false
+        },
+        "price": {
+          "value": "10.50",
+          "source_sha256": "f1c4b2aacdc53d76ffde2d809ce1d4634dc5e48a02fa71606df03e36c509e658",
+          "line": 6,
+          "range": [
+            39,
+            47
+          ],
+          "raw": "   10.50",
+          "inherited": false
+        }
+      }
+    },
+    {
+      "row": 3,
+      "detail_line": 9,
+      "fields": {
+        "warehouse": {
+          "value": "SOUTH",
+          "source_sha256": "f1c4b2aacdc53d76ffde2d809ce1d4634dc5e48a02fa71606df03e36c509e658",
+          "line": 8,
+          "range": [
+            11,
+            19
+          ],
+          "raw": "SOUTH   ",
+          "inherited": true,
+          "header_line": 8,
+          "header_range": [
+            11,
+            19
+          ]
+        },
+        "item": {
+          "value": "A100",
+          "source_sha256": "f1c4b2aacdc53d76ffde2d809ce1d4634dc5e48a02fa71606df03e36c509e658",
+          "line": 9,
+          "range": [
+            0,
+            8
+          ],
+          "raw": "A100    ",
+          "inherited": false
+        },
+        "qty": {
+          "value": "8",
+          "source_sha256": "f1c4b2aacdc53d76ffde2d809ce1d4634dc5e48a02fa71606df03e36c509e658",
+          "line": 9,
+          "range": [
+            32,
+            37
+          ],
+          "raw": "    8",
+          "inherited": false
+        },
+        "price": {
+          "value": "9.95",
+          "source_sha256": "f1c4b2aacdc53d76ffde2d809ce1d4634dc5e48a02fa71606df03e36c509e658",
+          "line": 9,
+          "range": [
+            39,
+            47
+          ],
+          "raw": "    9.95",
+          "inherited": false
+        }
+      }
+    }
+  ]
+}

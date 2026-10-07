@@ -1,0 +1,167 @@
+{
+  "source_sha256": "318f02610fa08f95b8018f5dd690433ec30ad003a496c15aee4059c457ce4a77",
+  "physical_line_count": 19,
+  "nonempty_line_count": 17,
+  "whitespace_only_line_count": 2,
+  "counts": {
+    "HEADER": 2,
+    "DETAIL": 2,
+    "IGNORED_BY_EXPLICIT_RULE": 7,
+    "UNRESOLVED": 1,
+    "REJECTED": 5
+  },
+  "lines": [
+    {
+      "line": 1,
+      "raw": "INVENTORY VALUATION  PAGE 001",
+      "category": "IGNORED_BY_EXPLICIT_RULE",
+      "reason": "page_header",
+      "context_before": null,
+      "context_after": null
+    },
+    {
+      "line": 2,
+      "raw": "ITEM      DESCRIPTION             QTY     PRICE",
+      "category": "IGNORED_BY_EXPLICIT_RULE",
+      "reason": "column_header",
+      "context_before": null,
+      "context_after": null
+    },
+    {
+      "line": 3,
+      "raw": "C000      ORPHAN BEFORE             2      1.00",
+      "category": "REJECTED",
+      "reason": "missing_warehouse_context",
+      "context_before": null,
+      "context_after": null
+    },
+    {
+      "line": 4,
+      "raw": "",
+      "category": "WHITESPACE_ONLY",
+      "reason": "blank_line",
+      "context_before": null,
+      "context_after": null
+    },
+    {
+      "line": 5,
+      "raw": "WAREHOUSE: NORTH   ",
+      "category": "HEADER",
+      "reason": "warehouse_header",
+      "context_before": null,
+      "context_after": "NORTH"
+    },
+    {
+      "line": 6,
+      "raw": "C100      VALID GEAR                3     12.50",
+      "category": "DETAIL",
+      "reason": "accepted_detail",
+      "context_before": "NORTH",
+      "context_after": "NORTH"
+    },
+    {
+      "line": 7,
+      "raw": "C111      SHIFTED QTY               17     2.00",
+      "category": "REJECTED",
+      "reason": "non_space_separator",
+      "context_before": "NORTH",
+      "context_after": "NORTH"
+    },
+    {
+      "line": 8,
+      "raw": "C112      BAD QUANTITY             2O      8.00",
+      "category": "REJECTED",
+      "reason": "invalid_qty_integer",
+      "context_before": "NORTH",
+      "context_after": "NORTH"
+    },
+    {
+      "line": 9,
+      "raw": "NOTICE: PRICE REVIEW PENDING",
+      "category": "UNRESOLVED",
+      "reason": "no_explicit_rule_matched",
+      "context_before": "NORTH",
+      "context_after": "NORTH"
+    },
+    {
+      "line": 10,
+      "raw": "C113      SHORT RECORD              9      4.7",
+      "category": "REJECTED",
+      "reason": "invalid_record_width",
+      "context_before": "NORTH",
+      "context_after": "NORTH"
+    },
+    {
+      "line": 11,
+      "raw": "END OF PAGE",
+      "category": "IGNORED_BY_EXPLICIT_RULE",
+      "reason": "page_footer",
+      "context_before": "NORTH",
+      "context_after": null
+    },
+    {
+      "line": 12,
+      "raw": "\f",
+      "category": "IGNORED_BY_EXPLICIT_RULE",
+      "reason": "form_feed_boundary",
+      "context_before": null,
+      "context_after": null
+    },
+    {
+      "line": 13,
+      "raw": "INVENTORY VALUATION  PAGE 002",
+      "category": "IGNORED_BY_EXPLICIT_RULE",
+      "reason": "page_header",
+      "context_before": null,
+      "context_after": null
+    },
+    {
+      "line": 14,
+      "raw": "ITEM      DESCRIPTION             QTY     PRICE",
+      "category": "IGNORED_BY_EXPLICIT_RULE",
+      "reason": "column_header",
+      "context_before": null,
+      "context_after": null
+    },
+    {
+      "line": 15,
+      "raw": "C200      ORPHAN AFTER              1      6.00",
+      "category": "REJECTED",
+      "reason": "missing_warehouse_context",
+      "context_before": null,
+      "context_after": null
+    },
+    {
+      "line": 16,
+      "raw": "WAREHOUSE: SOUTH   ",
+      "category": "HEADER",
+      "reason": "warehouse_header",
+      "context_before": null,
+      "context_after": "SOUTH"
+    },
+    {
+      "line": 17,
+      "raw": "C201      VALID SEAL                6      3.25",
+      "category": "DETAIL",
+      "reason": "accepted_detail",
+      "context_before": "SOUTH",
+      "context_after": "SOUTH"
+    },
+    {
+      "line": 18,
+      "raw": "  ",
+      "category": "WHITESPACE_ONLY",
+      "reason": "blank_line",
+      "context_before": "SOUTH",
+      "context_after": "SOUTH"
+    },
+    {
+      "line": 19,
+      "raw": "END OF PAGE",
+      "category": "IGNORED_BY_EXPLICIT_RULE",
+      "reason": "page_footer",
+      "context_before": "SOUTH",
+      "context_after": null
+    }
+  ]
+}
